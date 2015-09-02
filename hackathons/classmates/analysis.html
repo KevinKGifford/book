@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.2.3" data-basepath="../.." data-revision="Tue Sep 01 2015 21:50:28 GMT-0600 (MDT)">
+    <div class="book" data-level="2.2.3" data-basepath="../.." data-revision="Wed Sep 02 2015 12:12:57 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -223,6 +223,42 @@
                         Week 2
                     </a>
             
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="learning/week2/report.html">
+            
+                
+                    <a href="../../learning/week2/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.1.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="learning/week2/viz.html">
+            
+                
+                    <a href="../../learning/week2/viz.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.2.</b>
+                        
+                        Tableau Viz
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -519,7 +555,8 @@ more challenges analyses.</p>
 <p>The answer is 5.</p>
 <h2 id="who-are-the-students-liking-python-the-most">Who are the students liking Python the most?</h2>
 <p><pre>
-<span class="keyword">var</span> answer
+<span class="keyword">var</span> answer = <span class="string">&quot;&quot;</span>
+<span class="keyword">var</span> ndx = <span class="number">0</span>
 <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
     <span class="keyword">var</span> text = data.comments[i].body
     <span class="comment">// console.log(text)</span>
@@ -528,23 +565,20 @@ more challenges analyses.</p>
 
     <span class="keyword">function</span> splitString(stringToSplit, separator) {
         <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
-        <span class="keyword">var</span> j
-        <span class="keyword">var</span> count = <span class="number">0</span>
+        <span class="keyword">var</span> name = arrayOfStrings[<span class="number">0</span>]
+        <span class="keyword">var</span> language = arrayOfStrings[<span class="number">2</span>]
 
         <span class="comment">// console.log(&apos;The original string is: &quot;&apos; + stringToSplit + &apos;&quot;&apos;)</span>
         <span class="comment">// console.log(&apos;The separator is: &quot;&apos; + separator + &apos;&quot;&apos;)</span>
         <span class="comment">// console.log(&apos;The array has &apos; + arrayOfStrings.length + &apos; elements: &apos; + arrayOfStrings.join(&apos; / &apos;))</span>
 
-        <span class="keyword">var</span> name = arrayOfStrings[<span class="number">0</span>]
     <span class="comment">// console.log(name)</span>
         <span class="comment">// console.log(_.last(name.split(&apos;Name:&apos;)))</span>
-        <span class="keyword">var</span> language = arrayOfStrings[<span class="number">2</span>]
     <span class="comment">// console.log(language)</span>
         <span class="comment">// console.log(_.last(language.split(&apos;:&apos;)))</span>
 
         <span class="keyword">if</span> (_.last(language.split(<span class="string">&apos;:&apos;</span>)) == <span class="string">&quot; Python&quot;</span>) {
-            count++ 
-            console.log(<span class="string">&quot;******* FOUND PYTHON *******&quot;</span>)
+            <span class="comment">// console.log(&quot;******* FOUND PYTHON *******&quot;)</span>
         <span class="keyword">return</span> (_.last(name.split(<span class="string">&apos;Name:&apos;</span>)))
         }
         <span class="keyword">else</span> {
@@ -556,29 +590,25 @@ more challenges analyses.</p>
 
     <span class="keyword">if</span> (found_name != <span class="string">&apos;false&apos;</span>) {
         console.log(<span class="string">&apos;-----&gt; &apos;</span> + found_name)
-        answer += found_name
+    answer += (found_name + <span class="string">&apos;,&apos;</span>)
+    <span class="comment">// console.log(answer)</span>
     }
     console.log(<span class="string">&quot;====================================&quot;</span>)
 }
-<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
-</pre><div class="console"><pre>console&gt; &quot;******* FOUND PYTHON *******&quot;
-console&gt; &quot;-----&gt;  William Farmer&quot;
+<span class="keyword">return</span> answer
+</pre><div class="console"><pre>console&gt; &quot;-----&gt;  William Farmer&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
-console&gt; &quot;******* FOUND PYTHON *******&quot;
 console&gt; &quot;-----&gt;  Heather Witte&quot;
 console&gt; &quot;====================================&quot;
-console&gt; &quot;******* FOUND PYTHON *******&quot;
 console&gt; &quot;-----&gt;  Zach Lamb&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
-console&gt; &quot;******* FOUND PYTHON *******&quot;
 console&gt; &quot;-----&gt;  John Cronk&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
-console&gt; &quot;******* FOUND PYTHON *******&quot;
 console&gt; &quot;-----&gt;  Denis Kazakov&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
@@ -586,27 +616,23 @@ console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
-console&gt; &quot;******* FOUND PYTHON *******&quot;
 console&gt; &quot;-----&gt;  Caleb Hsu&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
-console&gt; &quot;******* FOUND PYTHON *******&quot;
 console&gt; &quot;-----&gt;  Karen Blakemore&quot;
 console&gt; &quot;====================================&quot;
-console&gt; &quot;******* FOUND PYTHON *******&quot;
 console&gt; &quot;-----&gt;  Sanketh S Shetty&quot;
 console&gt; &quot;====================================&quot;
-console&gt; &quot;******* FOUND PYTHON *******&quot;
 console&gt; &quot;-----&gt;  Andrey Shprengel&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
 console&gt; &quot;====================================&quot;
 </pre></div></p>
-<p>Their names are [answer].</p>
+<p>Their names are  William Farmer, Heather Witte, Zach Lamb, John Cronk, Denis Kazakov, Caleb Hsu, Karen Blakemore, Sanketh S Shetty, Andrey Shprengel,.</p>
 <h2 id="are-there-more-javascript-lovers-or-java-lovers">Are there more Javascript lovers or Java lovers?</h2>
 <p><pre>
 <span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
