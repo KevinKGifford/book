@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.2.3" data-basepath="../.." data-revision="Wed Sep 02 2015 12:12:57 GMT-0600 (MDT)">
+    <div class="book" data-level="2.2.3" data-basepath="../.." data-revision="Thu Sep 03 2015 11:00:07 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -546,7 +546,6 @@ more challenges analyses.</p>
         }
         <span class="keyword">return</span> count
     }
-
     found_count = splitString(search_string, <span class="string">&apos; &apos;</span>)
     total_count += found_count
 }
@@ -559,23 +558,12 @@ more challenges analyses.</p>
 <span class="keyword">var</span> ndx = <span class="number">0</span>
 <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
     <span class="keyword">var</span> text = data.comments[i].body
-    <span class="comment">// console.log(text)</span>
-
     <span class="keyword">var</span> found_name
 
     <span class="keyword">function</span> splitString(stringToSplit, separator) {
         <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
         <span class="keyword">var</span> name = arrayOfStrings[<span class="number">0</span>]
         <span class="keyword">var</span> language = arrayOfStrings[<span class="number">2</span>]
-
-        <span class="comment">// console.log(&apos;The original string is: &quot;&apos; + stringToSplit + &apos;&quot;&apos;)</span>
-        <span class="comment">// console.log(&apos;The separator is: &quot;&apos; + separator + &apos;&quot;&apos;)</span>
-        <span class="comment">// console.log(&apos;The array has &apos; + arrayOfStrings.length + &apos; elements: &apos; + arrayOfStrings.join(&apos; / &apos;))</span>
-
-    <span class="comment">// console.log(name)</span>
-        <span class="comment">// console.log(_.last(name.split(&apos;Name:&apos;)))</span>
-    <span class="comment">// console.log(language)</span>
-        <span class="comment">// console.log(_.last(language.split(&apos;:&apos;)))</span>
 
         <span class="keyword">if</span> (_.last(language.split(<span class="string">&apos;:&apos;</span>)) == <span class="string">&quot; Python&quot;</span>) {
             <span class="comment">// console.log(&quot;******* FOUND PYTHON *******&quot;)</span>
@@ -589,60 +577,88 @@ more challenges analyses.</p>
     found_name = splitString(text, <span class="string">&apos;\r\n&apos;</span>)
 
     <span class="keyword">if</span> (found_name != <span class="string">&apos;false&apos;</span>) {
-        console.log(<span class="string">&apos;-----&gt; &apos;</span> + found_name)
     answer += (found_name + <span class="string">&apos;,&apos;</span>)
-    <span class="comment">// console.log(answer)</span>
     }
-    console.log(<span class="string">&quot;====================================&quot;</span>)
 }
 <span class="keyword">return</span> answer
-</pre><div class="console"><pre>console&gt; &quot;-----&gt;  William Farmer&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;-----&gt;  Heather Witte&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;-----&gt;  Zach Lamb&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;-----&gt;  John Cronk&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;-----&gt;  Denis Kazakov&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;-----&gt;  Caleb Hsu&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;-----&gt;  Karen Blakemore&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;-----&gt;  Sanketh S Shetty&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;-----&gt;  Andrey Shprengel&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-console&gt; &quot;====================================&quot;
-</pre></div></p>
+</pre></p>
 <p>Their names are  William Farmer, Heather Witte, Zach Lamb, John Cronk, Denis Kazakov, Caleb Hsu, Karen Blakemore, Sanketh S Shetty, Andrey Shprengel,.</p>
 <h2 id="are-there-more-javascript-lovers-or-java-lovers">Are there more Javascript lovers or Java lovers?</h2>
 <p><pre>
-<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
+<span class="keyword">var</span> java_count = <span class="number">0</span>
+<span class="keyword">var</span> javascript_count = <span class="number">0</span>
+
+<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
+    <span class="keyword">var</span> text = data.comments[i].body
+    <span class="keyword">var</span> found_language
+
+    <span class="keyword">function</span> splitString(stringToSplit, separator) {
+        <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
+        <span class="keyword">var</span> language = arrayOfStrings[<span class="number">2</span>]
+
+        found_language = _.last(language.split(<span class="string">&apos;:&apos;</span>))
+        <span class="keyword">if</span> (found_language == <span class="string">&quot; JAVA&quot;</span> || found_language == <span class="string">&apos; Java&apos;</span>) {
+            java_count++
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (found_language == <span class="string">&quot; Javascript&quot;</span> || found_language == <span class="string">&apos;javascript&apos;</span>) {
+            javascript_count++
+        }
+        <span class="keyword">else</span> {
+        <span class="keyword">return</span> <span class="string">&apos;false&apos;</span>
+        }
+    }
+    found_language = splitString(text, <span class="string">&apos;\r\n&apos;</span>)
+}
+
+<span class="keyword">if</span> (java_count &gt; javascript_count) {answer = <span class="string">&quot; there are more Java Lovers&quot;</span>}
+<span class="keyword">else</span> <span class="keyword">if</span> (javascript_count &gt; java_count) {answer = <span class="string">&quot; there are more Javascript Lover&quot;</span>}
+<span class="keyword">else</span> {answer = <span class="string">&quot; there are the same number of Java Lovers and Javascript Lovers...&quot;</span>}
+<span class="keyword">return</span> answer
 </pre></p>
-<p>The answer is [answer].</p>
-<h2 id="who-like-the-same-food-as-kjblakemore">Who like the same food as <code>kjblakemore</code>?</h2>
+<p>The answer is  there are more Java Lovers.</p>
+<h2 id="-1-who-like-the-same-food-as-kjblakemore">(1) Who like the same food as <code>kjblakemore</code>?</h2>
+<h2 id="-2-who-like-the-same-food-as-willzfarmer">(2) Who like the same food as <code>willzfarmer</code>?</h2>
 <p><pre>
-<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
+<span class="keyword">var</span> food_string = <span class="string">&quot;&quot;</span>
+<span class="keyword">var</span> search_name = <span class="string">&quot;kjblakemore&quot;</span>
+<span class="comment">// var search_name = &quot;willzfarmer&quot;</span>
+<span class="keyword">var</span> answer = <span class="string">&quot;&quot;</span>
+
+<span class="keyword">for</span> (<span class="keyword">var</span> n = <span class="number">0</span>; n &lt; _.size(data.comments); n++) {
+    <span class="keyword">var</span> text = data.comments[n].body
+    <span class="keyword">var</span> login = data.comments[n].user.login
+    <span class="keyword">var</span> food =  _.last(text.split(<span class="string">&apos;Food:&apos;</span>))
+
+    <span class="keyword">function</span> splitString(stringToSplit, separator) {
+        <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
+        <span class="keyword">var</span> j
+        <span class="keyword">var</span> count = <span class="number">0</span>
+
+        <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; arrayOfStrings.length; j++) {
+            <span class="keyword">if</span> (arrayOfStrings[j] == food) { count++ }
+        }
+        <span class="keyword">return</span> count
+    }
+
+    <span class="keyword">if</span> (login == search_name) {
+        food_string = food
+
+        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
+            <span class="keyword">var</span> new_text = data.comments[i].body
+            <span class="keyword">var</span> login = data.comments[i].user.login
+            <span class="keyword">if</span> (login != search_name) {
+                <span class="keyword">var</span> search_string =  _.last(new_text.split(<span class="string">&apos;Food:&apos;</span>))
+                <span class="keyword">if</span> (splitString(search_string, <span class="string">&quot; &quot;</span>) != <span class="number">0</span>) {
+                    answer += login + <span class="string">&apos;,&apos;</span>
+                }
+            }
+        }
+    }
+}
+<span class="keyword">if</span> (answer == <span class="string">&quot;&quot;</span>) {answer = <span class="string">&quot;none&quot;</span>}
+<span class="keyword">return</span> answer
 </pre></p>
-<p>Their names are [answer].</p>
+<p>(1) Their names are none.</p>
 
                     
                     </section>
