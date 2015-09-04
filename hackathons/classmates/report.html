@@ -46,7 +46,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.2.4" data-basepath="../.." data-revision="Fri Sep 04 2015 12:31:51 GMT-0600 (MDT)">
+    <div class="book" data-level="2.2.4" data-basepath="../.." data-revision="Fri Sep 04 2015 13:33:04 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -609,12 +609,36 @@ the following:</p>
 <p>The favorite CSCI-4830 programming languages are: Python:10 Javascript:2 C:6 Java:4 Haskell:1 C++:2 C#:1 .</p>
 <h1 id="how-many-students-commented-on-the-introduction-issue-before-the-first-class">How many students commented on the Introduction Issue before the first class?</h1>
 <p><pre>
-<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
+count = <span class="number">0</span>
+<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
+    <span class="keyword">var</span> class_start = <span class="string">&quot;2015-08-24T22:00:00&quot;</span>
+    <span class="keyword">var</span> create_string = _.trimRight(data.comments[i].created_at, <span class="string">&apos;Z&apos;</span>)
+    <span class="keyword">var</span> update_string = _.trimRight(data.comments[i].updated_at, <span class="string">&apos;Z&apos;</span>)
+    <span class="keyword">var</span> CreateTime = <span class="keyword">new</span> Date(create_string)
+    <span class="keyword">var</span> ClassTime = <span class="keyword">new</span> Date(class_start)
+
+    <span class="keyword">if</span>( ( CreateTime.getTime() - ClassTime.getTime() ) &gt; <span class="number">0</span> ) { }
+    <span class="keyword">else</span> { count++ }
+}
+<span class="keyword">return</span> count 
 </pre></p>
-<h1 id="how-many-students-have-updated-their-initial-introdcution-comments">How many students have updated their initial Introdcution comments?</h1>
+<p>The number of CSCI-4830 students that commented initially on the class list before class started is: 17</p>
+<h1 id="how-many-students-have-updated-their-initial-introduction-comments">How many students have updated their initial Introduction comments?</h1>
 <p><pre>
-<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
+count = <span class="number">0</span>
+<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
+    <span class="keyword">var</span> create_string = _.trimRight(data.comments[i].created_at, <span class="string">&apos;Z&apos;</span>)
+    <span class="keyword">var</span> update_string = _.trimRight(data.comments[i].updated_at, <span class="string">&apos;Z&apos;</span>)
+
+    <span class="keyword">var</span> CreateTime = <span class="keyword">new</span> Date(create_string)
+    <span class="keyword">var</span> UpdateTime = <span class="keyword">new</span> Date(update_string)
+
+    <span class="keyword">if</span>( ( UpdateTime.getTime() - CreateTime.getTime() ) &gt; <span class="number">0</span> ) { count++ }
+    <span class="keyword">else</span> { }
+}
+<span class="keyword">return</span> count 
 </pre></p>
+<p>The number of CSCI-4830 students that updated/edited their initial forum comment is: 2</p>
 
                     
                     </section>
