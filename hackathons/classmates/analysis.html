@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.2.3" data-basepath="../.." data-revision="Fri Sep 04 2015 11:18:00 GMT-0600 (MDT)">
+    <div class="book" data-level="2.2.3" data-basepath="../.." data-revision="Fri Sep 04 2015 12:31:51 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -564,12 +564,16 @@ more challenges analyses.</p>
         <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
         <span class="keyword">var</span> name = arrayOfStrings[<span class="number">0</span>]
         <span class="keyword">var</span> language = arrayOfStrings[<span class="number">2</span>]
+        <span class="keyword">var</span> strip = _.trimLeft(_.last(language.split(<span class="string">&apos;:&apos;</span>)))
 
-        <span class="keyword">if</span> (_.last(language.split(<span class="string">&apos;:&apos;</span>)) == <span class="string">&quot; Python&quot;</span>) {
-        <span class="keyword">return</span> (_.last(name.split(<span class="string">&apos;Name:&apos;</span>)))
+        <span class="keyword">var</span> <span class="keyword">array</span> = strip.split(<span class="string">&apos; &apos;</span>)
+        <span class="keyword">var</span> language = _.trimRight(_.first(<span class="keyword">array</span>), <span class="string">&apos;,&apos;</span>)
+
+        <span class="keyword">if</span> (language == <span class="string">&quot;Python&quot;</span>) {
+            <span class="keyword">return</span> (_.last(name.split(<span class="string">&apos;Name:&apos;</span>)))
         }
         <span class="keyword">else</span> {
-        <span class="keyword">return</span> <span class="string">&apos;false&apos;</span>
+            <span class="keyword">return</span> <span class="string">&apos;false&apos;</span>
         }
     }
 
@@ -581,7 +585,7 @@ more challenges analyses.</p>
 }
 <span class="keyword">return</span> answer
 </pre></p>
-<p>Their names are  William Farmer, Heather Witte, Zach Lamb, John Cronk, Denis Kazakov, Caleb Hsu, Karen Blakemore, Sanketh S Shetty, Andrey Shprengel,.</p>
+<p>Their names are  William Farmer, Heather Witte, Zach Lamb, Zhili Yang, John Cronk, Denis Kazakov, Caleb Hsu, Karen Blakemore, Sanketh S Shetty, Andrey Shprengel,.</p>
 <h2 id="are-there-more-javascript-lovers-or-java-lovers">Are there more Javascript lovers or Java lovers?</h2>
 <p><pre>
 <span class="keyword">var</span> java_count = <span class="number">0</span>
