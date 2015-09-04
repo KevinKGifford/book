@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.2.2" data-basepath="../.." data-revision="Thu Sep 03 2015 11:00:07 GMT-0600 (MDT)">
+    <div class="book" data-level="2.2.2" data-basepath="../.." data-revision="Fri Sep 04 2015 11:18:00 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -575,14 +575,8 @@
 
 <p>The code to retrieve the data about the favorite food is (hint: use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" target="_blank">split()</a>).</p>
 <p><pre>
-<span class="keyword">var</span> text = _.first(data.comments).body
-console.log(text)
-console.log(text.split(<span class="string">&apos;\n&apos;</span>))
-
-<span class="keyword">return</span> _.last(text.split(<span class="string">&apos;Food:&apos;</span>))
-</pre><div class="console"><pre>console&gt; &quot;Name: William Farmer\r\nMajor: Applied Math w/ Minor in Computer Science\r\nFavorite Programming Language: Python\r\nFavorite Food: Sushi&quot;
-console&gt; [&quot;Name: William Farmer\r&quot;,&quot;Major: Applied Math w/ Minor in Computer Science\r&quot;,&quot;Favorite Programming Language: Python\r&quot;,&quot;Favorite Food: Sushi&quot;]
-</pre></div></p>
+<span class="keyword">return</span> _.last(_.first(data.comments).body.split(<span class="string">&apos;Food:&apos;</span>))
+</pre></p>
 <p>So, willzfarmer&apos;s favorite food is  Sushi.</p>
 
                     

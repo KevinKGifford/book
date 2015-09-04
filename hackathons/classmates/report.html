@@ -46,7 +46,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.2.4" data-basepath="../.." data-revision="Thu Sep 03 2015 11:00:07 GMT-0600 (MDT)">
+    <div class="book" data-level="2.2.4" data-basepath="../.." data-revision="Fri Sep 04 2015 11:18:00 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -529,12 +529,84 @@ on the &quot;self-introduction&quot; data. Out of these questions, our team chos
 the following:</p>
 <h1 id="what-percentage-of-the-class-are-computer-science-students">What percentage of the class are Computer Science students?</h1>
 <p><pre>
-<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
+<span class="keyword">var</span> total_count = <span class="number">0</span>
+<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
+    <span class="keyword">var</span> text = data.comments[i].body
+    <span class="keyword">var</span> found_count = <span class="number">0</span>
+
+    <span class="keyword">function</span> splitString(stringToSplit, separator) {
+        <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
+        <span class="keyword">var</span> department = arrayOfStrings[<span class="number">1</span>]
+        <span class="keyword">var</span> count = <span class="number">0</span>
+
+        <span class="keyword">if</span> (_.last(department.split(<span class="string">&apos;:&apos;</span>)) == <span class="string">&quot; Computer Science&quot;</span>) {
+            count++
+        }
+        <span class="keyword">return</span> count
+    }
+
+    found_count = splitString(text, <span class="string">&apos;\r\n&apos;</span>)
+    total_count += found_count
+}
+<span class="keyword">return</span> _.round( ( (total_count/_.size(data.comments)) * <span class="number">100</span>), <span class="number">2</span>)
 </pre></p>
+<p>The percentage of CSCI-4830 students that are Computer Science majors is 38.46%</p>
 <h1 id="what-are-the-favorite-programming-languages-for-the-class-participants">What are the favorite programming languages for the class participants?</h1>
 <p><pre>
-<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
+<span class="keyword">var</span> language_string = <span class="string">&quot;&quot;</span>
+<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
+    <span class="keyword">var</span> text = data.comments[i].body
+    <span class="keyword">var</span> languages
+
+    <span class="keyword">function</span> splitString(stringToSplit, separator) {
+        <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
+        <span class="keyword">var</span> language_line = arrayOfStrings[<span class="number">2</span>]
+        <span class="keyword">var</span> line = language_line.split(<span class="string">&apos;:&apos;</span>)
+        <span class="keyword">var</span> favorite_language = line[<span class="number">1</span>]
+        <span class="keyword">var</span> splitline = favorite_language.split(<span class="string">&quot; &quot;</span>)
+
+        <span class="keyword">if</span> (favorite_language != <span class="string">&quot;&quot;</span>) {
+            <span class="keyword">return</span> (splitline[<span class="number">1</span>])
+        }
+        <span class="keyword">else</span> {
+            <span class="keyword">return</span> <span class="string">&apos;false&apos;</span>
+        }
+    }
+
+    languages = splitString(text, <span class="string">&apos;\r\n&apos;</span>)
+    <span class="keyword">if</span> (languages == <span class="string">&quot;JAVA&quot;</span>) {languages = <span class="string">&quot;Java&quot;</span>}
+    language_string += (_.capitalize(languages) + <span class="string">&apos;,&apos;</span>)
+}
+
+<span class="keyword">var</span> <span class="keyword">array</span> = language_string.split(<span class="string">&apos;,&apos;</span>)
+<span class="keyword">var</span> saved_array = language_string.split(<span class="string">&apos;,&apos;</span>)
+<span class="keyword">var</span> new_array = <span class="keyword">array</span>
+<span class="keyword">var</span> key = <span class="keyword">array</span>[<span class="number">0</span>].split()
+<span class="keyword">var</span> found_keys = key + <span class="string">&apos;,&apos;</span>
+
+<span class="keyword">while</span> (new_array.length &gt; <span class="number">1</span>) {
+    new_array = _.difference(<span class="keyword">array</span>, key)
+    <span class="keyword">array</span> = new_array
+    key = new_array[<span class="number">0</span>].split()
+    found_keys += (key + <span class="string">&apos;,&apos;</span>)
+}
+
+<span class="keyword">var</span> sort_keys = found_keys.split(<span class="string">&quot;,&quot;</span>)
+<span class="keyword">var</span> answer = <span class="string">&quot;&quot;</span>
+
+<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; sort_keys.length; i++) {
+    <span class="keyword">if</span> (sort_keys[i] != <span class="string">&quot;&quot;</span>) {
+    <span class="keyword">var</span> count = <span class="number">0</span>
+        <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; saved_array.length; j++) {
+            <span class="keyword">if</span>(saved_array[j] == sort_keys[i]) { count++ }
+        }
+        answer += (sort_keys[i] + <span class="string">&apos;:&apos;</span> + count + <span class="string">&apos; &apos;</span>)
+    }
+}
+
+<span class="keyword">return</span> answer
 </pre></p>
+<p>The favorite CSCI-4830 programming languages are: Python:10 Javascript:2 C:6 Java:4 Haskell:1 C++:2 C#:1 .</p>
 <h1 id="how-many-students-commented-on-the-introduction-issue-before-the-first-class">How many students commented on the Introduction Issue before the first class?</h1>
 <p><pre>
 <span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
