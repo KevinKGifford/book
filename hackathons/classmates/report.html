@@ -46,7 +46,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.2.4" data-basepath="../.." data-revision="Fri Sep 04 2015 13:33:04 GMT-0600 (MDT)">
+    <div class="book" data-level="2.2.4" data-basepath="../.." data-revision="Sat Sep 05 2015 17:09:20 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -536,11 +536,17 @@ the following:</p>
 
     <span class="keyword">function</span> splitString(stringToSplit, separator) {
         <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
-        <span class="keyword">var</span> department = arrayOfStrings[<span class="number">1</span>]
-        <span class="keyword">var</span> count = <span class="number">0</span>
+        <span class="keyword">var</span> department_line = arrayOfStrings[<span class="number">1</span>]
+        <span class="keyword">var</span> department = _.trimLeft(_.last(department_line.split(<span class="string">&apos;:&apos;</span>)))
+        <span class="keyword">var</span> <span class="keyword">array</span> = department.split(<span class="string">&quot; &quot;</span>)
 
-        <span class="keyword">if</span> (_.last(department.split(<span class="string">&apos;:&apos;</span>)) == <span class="string">&quot; Computer Science&quot;</span>) {
-            count++
+        <span class="keyword">var</span> count = <span class="number">0</span>
+        <span class="keyword">for</span> (n = <span class="number">0</span>; n &lt; <span class="keyword">array</span>.length; n++) {
+            <span class="keyword">var</span> major = _.trimRight(<span class="keyword">array</span>[n], <span class="string">&apos;,&apos;</span>)
+            <span class="keyword">if</span> (major == <span class="string">&quot;Computer&quot;</span> || major == <span class="string">&quot;CSCI&quot;</span> || major == <span class="string">&quot;CS&quot;</span> || major == <span class="string">&apos;cs&apos;</span>) {
+                <span class="keyword">if</span> (_.last(<span class="keyword">array</span>) == <span class="string">&quot;Engineering&quot;</span>) {}
+                <span class="keyword">else</span> { count++ }
+            }
         }
         <span class="keyword">return</span> count
     }
@@ -550,7 +556,7 @@ the following:</p>
 }
 <span class="keyword">return</span> _.round( ( (total_count/_.size(data.comments)) * <span class="number">100</span>), <span class="number">2</span>)
 </pre></p>
-<p>The percentage of CSCI-4830 students that are Computer Science majors is 38.46%</p>
+<p>The percentage of CSCI-4830 students that are Computer Science majors is 76.92%</p>
 <h1 id="what-are-the-favorite-programming-languages-for-the-class-participants">What are the favorite programming languages for the class participants?</h1>
 <p><pre>
 <span class="keyword">var</span> language_string = <span class="string">&quot;&quot;</span>
