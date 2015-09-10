@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.4.1" data-basepath="../.." data-revision="Wed Sep 09 2015 09:23:59 GMT-0600 (MDT)">
+    <div class="book" data-level="1.4.1" data-basepath="../.." data-revision="Wed Sep 09 2015 20:57:50 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -2265,7 +2265,7 @@ you want.</p>
   &quot;releases_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/book/releases{/id}&quot;,
   &quot;created_at&quot;: &quot;2015-08-21T16:24:10Z&quot;,
   &quot;updated_at&quot;: &quot;2015-08-24T02:46:53Z&quot;,
-  &quot;pushed_at&quot;: &quot;2015-09-08T23:31:56Z&quot;,
+  &quot;pushed_at&quot;: &quot;2015-09-09T19:35:50Z&quot;,
   &quot;git_url&quot;: &quot;git://github.com/bigdatahci2015/book.git&quot;,
   &quot;ssh_url&quot;: &quot;git@github.com:bigdatahci2015/book.git&quot;,
   &quot;clone_url&quot;: &quot;https://github.com/bigdatahci2015/book.git&quot;,
@@ -2395,6 +2395,7 @@ you want.</p>
 <span class="keyword">var</span> repo_names = _.pluck(data, <span class="string">&apos;name&apos;</span>)
 <span class="keyword">var</span> url = _.pluck(data, <span class="string">&apos;forks_url&apos;</span>)
 answer = <span class="string">&quot;&quot;</span>
+<span class="comment">// FIXME: Do without a for loop</span>
 <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; repo_names.length; i++) {
     <span class="keyword">var</span> fork_size = _.size(url[i])
     <span class="keyword">if</span> (i &lt; repo_names.length - <span class="number">1</span>) {answer += repo_names[i] + <span class="string">&apos; has &apos;</span> + fork_size + <span class="string">&apos; forks; &apos;</span>}
