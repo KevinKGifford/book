@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.4.1" data-basepath="../.." data-revision="Wed Sep 09 2015 20:57:50 GMT-0600 (MDT)">
+    <div class="book" data-level="1.4.1" data-basepath="../.." data-revision="Thu Sep 10 2015 09:38:46 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -1480,6 +1480,45 @@ you want.</p>
 <p>This issues data is saved in <code>data</code>. It looks like below.</p>
 <pre style="font-size:11px;line-height:1;max-height:300px;">[
  {
+  &quot;url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/12&quot;,
+  &quot;labels_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/12/labels{/name}&quot;,
+  &quot;comments_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/12/comments&quot;,
+  &quot;events_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/12/events&quot;,
+  &quot;html_url&quot;: &quot;https://github.com/bigdatahci2015/forum/issues/12&quot;,
+  &quot;id&quot;: 105830359,
+  &quot;number&quot;: 12,
+  &quot;title&quot;: &quot;This week&apos;s challenge and next week&apos;s hackathon&quot;,
+  &quot;user&quot;: {
+   &quot;login&quot;: &quot;doubleshow&quot;,
+   &quot;id&quot;: 129562,
+   &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/129562?v=3&quot;,
+   &quot;gravatar_id&quot;: &quot;&quot;,
+   &quot;url&quot;: &quot;https://api.github.com/users/doubleshow&quot;,
+   &quot;html_url&quot;: &quot;https://github.com/doubleshow&quot;,
+   &quot;followers_url&quot;: &quot;https://api.github.com/users/doubleshow/followers&quot;,
+   &quot;following_url&quot;: &quot;https://api.github.com/users/doubleshow/following{/other_user}&quot;,
+   &quot;gists_url&quot;: &quot;https://api.github.com/users/doubleshow/gists{/gist_id}&quot;,
+   &quot;starred_url&quot;: &quot;https://api.github.com/users/doubleshow/starred{/owner}{/repo}&quot;,
+   &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/doubleshow/subscriptions&quot;,
+   &quot;organizations_url&quot;: &quot;https://api.github.com/users/doubleshow/orgs&quot;,
+   &quot;repos_url&quot;: &quot;https://api.github.com/users/doubleshow/repos&quot;,
+   &quot;events_url&quot;: &quot;https://api.github.com/users/doubleshow/events{/privacy}&quot;,
+   &quot;received_events_url&quot;: &quot;https://api.github.com/users/doubleshow/received_events&quot;,
+   &quot;type&quot;: &quot;User&quot;,
+   &quot;site_admin&quot;: false
+  },
+  &quot;labels&quot;: [],
+  &quot;state&quot;: &quot;open&quot;,
+  &quot;locked&quot;: false,
+  &quot;assignee&quot;: null,
+  &quot;milestone&quot;: null,
+  &quot;comments&quot;: 0,
+  &quot;created_at&quot;: &quot;2015-09-10T15:10:57Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-09-10T15:11:10Z&quot;,
+  &quot;closed_at&quot;: null,
+  &quot;body&quot;: &quot;A friendly reminder that please get started early on this week&apos;s learning challenge. For some of you who are relatively new to Javascript, it&apos;s highly recommended that you start early before it&apos;s too late.\r\n\r\nTeam: Due Friday 11:59pm\r\nIndividual: Due Sunday 11:59pm.\r\n\r\nFor the hackathon next week, we will be looking at the [__FCQ data__](http://www.colorado.edu/fcq/). It is _very important_ for you to come prepared. Get really familiar with Lodash by studying and doing this week&apos;s learning challenge thoroughly!&quot;
+ },
+ {
   &quot;url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/11&quot;,
   &quot;labels_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/11/labels{/name}&quot;,
   &quot;comments_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/11/comments&quot;,
@@ -1913,12 +1952,12 @@ you want.</p>
 <p><pre>
 <span class="keyword">return</span> _.size(data)
 </pre></p>
-<p>There are 11 issues in the HCI Big Data Forum</p>
+<p>There are 12 issues in the HCI Big Data Forum</p>
 <h3 id="what-are-the-titles-of-these-issues">What are the titles of these issues?</h3>
 <p><pre>
 <span class="keyword">return</span> _.pluck(data, <span class="string">&apos;title&apos;</span>)
 </pre></p>
-<p>The issues of the HCI Big Data Forum are titled: Week 3 Learning Challenge Updated / Posted,Tableau,lodash variables,Week 2 Learning Challenge Updated / Posted,Week 2 Team Learning Clarification,Knowing Your Classmates Hackathon,Problems uploading book to github.io,Hackathons,First Learning Challenge (Update),Learning challenges,Introduction</p>
+<p>The issues of the HCI Big Data Forum are titled: This week&apos;s challenge and next week&apos;s hackathon,Week 3 Learning Challenge Updated / Posted,Tableau,lodash variables,Week 2 Learning Challenge Updated / Posted,Week 2 Team Learning Clarification,Knowing Your Classmates Hackathon,Problems uploading book to github.io,Hackathons,First Learning Challenge (Update),Learning challenges,Introduction</p>
 <h3 id="how-many-repository-have-been-created-to-date-for-our-class">How many repository have been created to date for our class?</h3>
 <p>Our class&apos;s Github organization is <a href="https://github.com/bigdatahci2015/" target="_blank">bigdatahci2015</a>.</p>
 <p><div class="githubapi">       <div class="message">Data is loaded from https://api.github.com/orgs/bigdatahci2015/repos</div></div></p>
@@ -2005,9 +2044,9 @@ you want.</p>
   &quot;has_pages&quot;: false,
   &quot;forks_count&quot;: 4,
   &quot;mirror_url&quot;: null,
-  &quot;open_issues_count&quot;: 11,
+  &quot;open_issues_count&quot;: 12,
   &quot;forks&quot;: 4,
-  &quot;open_issues&quot;: 11,
+  &quot;open_issues&quot;: 12,
   &quot;watchers&quot;: 0,
   &quot;default_branch&quot;: &quot;master&quot;,
   &quot;permissions&quot;: {
@@ -2081,7 +2120,7 @@ you want.</p>
   &quot;releases_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/course/releases{/id}&quot;,
   &quot;created_at&quot;: &quot;2015-08-20T11:34:47Z&quot;,
   &quot;updated_at&quot;: &quot;2015-08-20T19:28:07Z&quot;,
-  &quot;pushed_at&quot;: &quot;2015-08-31T17:03:31Z&quot;,
+  &quot;pushed_at&quot;: &quot;2015-09-10T15:38:10Z&quot;,
   &quot;git_url&quot;: &quot;git://github.com/bigdatahci2015/course.git&quot;,
   &quot;ssh_url&quot;: &quot;git@github.com:bigdatahci2015/course.git&quot;,
   &quot;clone_url&quot;: &quot;https://github.com/bigdatahci2015/course.git&quot;,
