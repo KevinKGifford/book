@@ -28,7 +28,7 @@ How many people?
 4
 
 {% solution %}
-
+// Here we just need to count the number of elements in the data araay
 return data.length
 
 {% endlodashexercise %}
@@ -49,8 +49,11 @@ What are the names?
 ['John', 'Mary','Joe','Ben']
 
 {% solution %}
-
-return _.map(data, function(d){
+// Here we operate on every element of the data array (so no filter is
+// necessary) and we return the property value of the name: field
+// NOTE - _.map returns an array of values for each element in Collection while
+//        _.filter returns an array of all elements for which predicate is true
+return _.map(data, function(d) {
     return d.name
 })
 
@@ -73,6 +76,9 @@ What names begin with the letter J?
 ['John','Joe']
 
 {% solution %}
+// Here we filter based on if the property value of name: field starts with the letter 'J'
+// Since filter returns the data array element that for which the test is true 
+// we pluck out the resulting value of the name: field from the returned array element
 return _.pluck(_.filter(data, function(d) {
     return _.startsWith(d.name, 'J')
 }), 'name')
@@ -95,6 +101,8 @@ How many Johns?
 3
 
 {% solution %}
+// Here we use filter with the shorthand _.matches notation to pick out which name: fields
+// are of the property value 'John' and use _.size to count number of returned array elements
 return _.size(_.filter(data, _.matches({'name': 'John'})))
 {% endlodashexercise %}
 
@@ -116,10 +124,12 @@ What are all the first names?
 ["John","Mary","Peter","Ben"]
 
 {% solution %}
+// Here we use map since operating on every data array element 
+// with a nested splitting the of name: field property value
+// and returning the first string (first name) of the value
 return _.map(data, function(d) {
     return _.first(d.name.split(' '))
 })
-
 {% endlodashexercise %}
 
 
@@ -143,6 +153,10 @@ What are the first names of Smith?
 ["John","Mary","Ben"]
 
 {% solution %}
+// Here we first filter the data to determine which array elements include
+// the string 'Smith', then we used the filtered array result as an input
+// to _.map which iterates over and pulls out (_.splits) the first name of 
+// returned filtered array
 var f_data = _.filter(data, function(d) {
     if (_.includes(d.name, "Smith")) {
         return 1
@@ -198,10 +212,8 @@ How many women?
 
 {% solution %}
 
-// return _.size(_.filter(data, function(d) {
-//     if (d.gender == 'f') { return 1 }
-// }))
-
+// Here we use the _.filter shorthand _.matches notation to find all data
+// array elements that have the gender: value of 'f' and count with _.size
 return _.size(_.filter(data, {gender: 'f'}))
 
 {% endlodashexercise %}
@@ -279,7 +291,13 @@ What is Peter Pan's gender?
 
 {% solution %}
 
-return _.pluck(_.filter(data, {name: 'Peter Pan'}), 'gender')
+// var f_data = _.filter(data, function(d) {
+//     if (d.name == 'Peter Pan') {return 1}
+// })
+// return _.map(f_data, function(f) {
+//     return f.gender
+// })
+return _.pluck(_.filter(data, {name: 'Peter Pan'}, 'gender'))
 
 {% endlodashexercise %}
 
