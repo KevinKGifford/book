@@ -78,8 +78,10 @@ What names begin with the letter J?
 
 {% solution %}
 // Here we filter based on if the property value of name: field starts with the letter 'J'
-// Since filter returns the data array element that for which the test is true 
-// we pluck out the resulting value of the name: field from the returned array element
+// Since filter returns the data array element that for which the test is true we
+// pluck out the resulting value of the name: field from each returned array element
+// from the _.filter() operation
+
 return _.pluck(_.filter(data, function(d) {
     return _.startsWith(d.name, 'J')
 }), 'name')
@@ -104,6 +106,7 @@ How many Johns?
 {% solution %}
 // Here we use filter with the shorthand _.matches notation to pick out which name: fields
 // are of the property value 'John' and use _.size to count number of returned array elements
+
 return _.size(_.filter(data, _.matches({'name': 'John'})))
 {% endlodashexercise %}
 
@@ -125,9 +128,9 @@ What are all the first names?
 ["John","Mary","Peter","Ben"]
 
 {% solution %}
-// Here we use map since operating on every data array element 
-// with a nested splitting the of name: field property value
-// and returning the first string (first name) of the value
+// Here we use map since operating on every data array element with a nested
+// splitting of the name: property value, returning the first string (first name) of value
+
 return _.map(data, function(d) {
     return _.first(d.name.split(' '))
 })
@@ -157,7 +160,8 @@ What are the first names of Smith?
 // Here we first filter the data to determine which array elements include
 // the string 'Smith', then we used the filtered array result as an input
 // to _.map which iterates over and pulls out (_.splits) the first name of 
-// returned filtered array
+// returned filtered array.  FIXME: This most likely can be improved
+
 var f_data = _.filter(data, function(d) {
     if (_.includes(d.name, "Smith")) {
         return 1
@@ -189,10 +193,17 @@ Change the format to lastname, firstname
 [{name: 'Smith, John'}, {name: 'Kay, Mary'}, {name: 'Pan, Peter'}]
 
 {% solution %}
-return _.map(data, function(d) {
-    // return _.last(d.name.split(' ')) + ', ' + _.first(d.name.split(' '))
-    return d.name = 'foo'
-})
+// _.map() and reverse the name field seperating via a comma
+//
+
+// return _.map(data, function(d) {
+    // console.log(_.last(d.name.split(' ')) + ', ' + _.first(d.name.split(' ')))
+    // return ( '{ ' + 'name: ' + _.last(d.name.split(' ')) + ', ' + _.first(d.name.split(' ')) + ' }' )
+// })
+
+var result = 'not done'
+return result
+
 {% endlodashexercise %}
 
 
@@ -215,6 +226,7 @@ How many women?
 
 // Here we use the _.filter shorthand _.matches notation to find all data
 // array elements that have the gender: value of 'f' and count with _.size
+
 return _.size(_.filter(data, {gender: 'f'}))
 
 {% endlodashexercise %}
@@ -241,7 +253,16 @@ How many men whose last name is Smith?
 
 {% solution %}
 
-return _.size(_.filter(data, {gender: 'm'}))
+// Filter to find males (gender: 'm'); Filter to find names: that include Smith
+// _map to iterate result and find last names of 'Smith'
+
+var males = _.filter(data, {gender: 'm'})
+var names = _.filter(males, function(d) {
+    if(_.includes(d.name, "Smith")) {return 1}
+})
+return _.size(_.map(names, function(f) {
+    return _.last(f.name.split(' '))
+}))
 
 {% endlodashexercise %}
 
@@ -292,12 +313,6 @@ What is Peter Pan's gender?
 
 {% solution %}
 
-// var f_data = _.filter(data, function(d) {
-//     if (d.name == 'Peter Pan') {return 1}
-// })
-// return _.map(f_data, function(f) {
-//     return f.gender
-// })
 return _.pluck(_.filter(data, {name: 'Peter Pan'}, 'gender'))
 
 {% endlodashexercise %}
@@ -321,7 +336,7 @@ What is the oldest age?
 54
 
 {% solution %}
-// This might be a candidate for _.reduce
+// This might be a candidate for _.reduce or more likely for _.max()
 var result = 'not done'
 return result
 
