@@ -53,6 +53,7 @@ What are the names?
 // necessary) and we return the property value of the name: field
 // NOTE - _.map returns an array of values for each element in Collection while
 //        _.filter returns an array of all elements for which predicate is true
+
 return _.map(data, function(d) {
     return d.name
 })

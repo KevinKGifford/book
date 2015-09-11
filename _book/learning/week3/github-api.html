@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.4.1" data-basepath="../.." data-revision="Thu Sep 10 2015 09:38:46 GMT-0600 (MDT)">
+    <div class="book" data-level="1.4.1" data-basepath="../.." data-revision="Thu Sep 10 2015 22:55:38 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -1480,6 +1480,45 @@ you want.</p>
 <p>This issues data is saved in <code>data</code>. It looks like below.</p>
 <pre style="font-size:11px;line-height:1;max-height:300px;">[
  {
+  &quot;url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/13&quot;,
+  &quot;labels_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/13/labels{/name}&quot;,
+  &quot;comments_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/13/comments&quot;,
+  &quot;events_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/13/events&quot;,
+  &quot;html_url&quot;: &quot;https://github.com/bigdatahci2015/forum/issues/13&quot;,
+  &quot;id&quot;: 105837072,
+  &quot;number&quot;: 13,
+  &quot;title&quot;: &quot;Everyone&apos;s book&quot;,
+  &quot;user&quot;: {
+   &quot;login&quot;: &quot;doubleshow&quot;,
+   &quot;id&quot;: 129562,
+   &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/129562?v=3&quot;,
+   &quot;gravatar_id&quot;: &quot;&quot;,
+   &quot;url&quot;: &quot;https://api.github.com/users/doubleshow&quot;,
+   &quot;html_url&quot;: &quot;https://github.com/doubleshow&quot;,
+   &quot;followers_url&quot;: &quot;https://api.github.com/users/doubleshow/followers&quot;,
+   &quot;following_url&quot;: &quot;https://api.github.com/users/doubleshow/following{/other_user}&quot;,
+   &quot;gists_url&quot;: &quot;https://api.github.com/users/doubleshow/gists{/gist_id}&quot;,
+   &quot;starred_url&quot;: &quot;https://api.github.com/users/doubleshow/starred{/owner}{/repo}&quot;,
+   &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/doubleshow/subscriptions&quot;,
+   &quot;organizations_url&quot;: &quot;https://api.github.com/users/doubleshow/orgs&quot;,
+   &quot;repos_url&quot;: &quot;https://api.github.com/users/doubleshow/repos&quot;,
+   &quot;events_url&quot;: &quot;https://api.github.com/users/doubleshow/events{/privacy}&quot;,
+   &quot;received_events_url&quot;: &quot;https://api.github.com/users/doubleshow/received_events&quot;,
+   &quot;type&quot;: &quot;User&quot;,
+   &quot;site_admin&quot;: false
+  },
+  &quot;labels&quot;: [],
+  &quot;state&quot;: &quot;open&quot;,
+  &quot;locked&quot;: false,
+  &quot;assignee&quot;: null,
+  &quot;milestone&quot;: null,
+  &quot;comments&quot;: 2,
+  &quot;created_at&quot;: &quot;2015-09-10T15:43:15Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-09-11T04:29:47Z&quot;,
+  &quot;closed_at&quot;: null,
+  &quot;body&quot;: &quot;We&apos;ve created a page that lists everyone&apos;s learning book.\r\n\r\nhttp://bigdatahci2015.github.io/course/learning/books/index.html\r\n\r\nPlease take a moment to ensure that your book is published properly, because the grader and myself will start looking at them soon. Click on your _week1_ and _week2_ links and make sure you do not get a _404 Page not found error_.\r\n\r\n&quot;
+ },
+ {
   &quot;url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/12&quot;,
   &quot;labels_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/12/labels{/name}&quot;,
   &quot;comments_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/12/comments&quot;,
@@ -1952,12 +1991,12 @@ you want.</p>
 <p><pre>
 <span class="keyword">return</span> _.size(data)
 </pre></p>
-<p>There are 12 issues in the HCI Big Data Forum</p>
+<p>There are 13 issues in the HCI Big Data Forum</p>
 <h3 id="what-are-the-titles-of-these-issues">What are the titles of these issues?</h3>
 <p><pre>
 <span class="keyword">return</span> _.pluck(data, <span class="string">&apos;title&apos;</span>)
 </pre></p>
-<p>The issues of the HCI Big Data Forum are titled: This week&apos;s challenge and next week&apos;s hackathon,Week 3 Learning Challenge Updated / Posted,Tableau,lodash variables,Week 2 Learning Challenge Updated / Posted,Week 2 Team Learning Clarification,Knowing Your Classmates Hackathon,Problems uploading book to github.io,Hackathons,First Learning Challenge (Update),Learning challenges,Introduction</p>
+<p>The issues of the HCI Big Data Forum are titled: Everyone&apos;s book,This week&apos;s challenge and next week&apos;s hackathon,Week 3 Learning Challenge Updated / Posted,Tableau,lodash variables,Week 2 Learning Challenge Updated / Posted,Week 2 Team Learning Clarification,Knowing Your Classmates Hackathon,Problems uploading book to github.io,Hackathons,First Learning Challenge (Update),Learning challenges,Introduction</p>
 <h3 id="how-many-repository-have-been-created-to-date-for-our-class">How many repository have been created to date for our class?</h3>
 <p>Our class&apos;s Github organization is <a href="https://github.com/bigdatahci2015/" target="_blank">bigdatahci2015</a>.</p>
 <p><div class="githubapi">       <div class="message">Data is loaded from https://api.github.com/orgs/bigdatahci2015/repos</div></div></p>
@@ -2044,9 +2083,9 @@ you want.</p>
   &quot;has_pages&quot;: false,
   &quot;forks_count&quot;: 4,
   &quot;mirror_url&quot;: null,
-  &quot;open_issues_count&quot;: 12,
+  &quot;open_issues_count&quot;: 13,
   &quot;forks&quot;: 4,
-  &quot;open_issues&quot;: 12,
+  &quot;open_issues&quot;: 13,
   &quot;watchers&quot;: 0,
   &quot;default_branch&quot;: &quot;master&quot;,
   &quot;permissions&quot;: {
@@ -2126,7 +2165,7 @@ you want.</p>
   &quot;clone_url&quot;: &quot;https://github.com/bigdatahci2015/course.git&quot;,
   &quot;svn_url&quot;: &quot;https://github.com/bigdatahci2015/course&quot;,
   &quot;homepage&quot;: null,
-  &quot;size&quot;: 1847,
+  &quot;size&quot;: 1862,
   &quot;stargazers_count&quot;: 0,
   &quot;watchers_count&quot;: 0,
   &quot;language&quot;: &quot;HTML&quot;,
@@ -2304,13 +2343,13 @@ you want.</p>
   &quot;releases_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/book/releases{/id}&quot;,
   &quot;created_at&quot;: &quot;2015-08-21T16:24:10Z&quot;,
   &quot;updated_at&quot;: &quot;2015-08-24T02:46:53Z&quot;,
-  &quot;pushed_at&quot;: &quot;2015-09-09T19:35:50Z&quot;,
+  &quot;pushed_at&quot;: &quot;2015-09-10T23:47:16Z&quot;,
   &quot;git_url&quot;: &quot;git://github.com/bigdatahci2015/book.git&quot;,
   &quot;ssh_url&quot;: &quot;git@github.com:bigdatahci2015/book.git&quot;,
   &quot;clone_url&quot;: &quot;https://github.com/bigdatahci2015/book.git&quot;,
   &quot;svn_url&quot;: &quot;https://github.com/bigdatahci2015/book&quot;,
   &quot;homepage&quot;: null,
-  &quot;size&quot;: 7877,
+  &quot;size&quot;: 14612,
   &quot;stargazers_count&quot;: 0,
   &quot;watchers_count&quot;: 0,
   &quot;language&quot;: &quot;HTML&quot;,
@@ -5068,6 +5107,138 @@ answer = <span class="string">&quot;&quot;</span>
 <p>The doubleshow gist data is saved in <code>data</code>. It looks like below.</p>
 <pre style="font-size:11px;line-height:1;max-height:300px;">[
  {
+  &quot;url&quot;: &quot;https://api.github.com/gists/4834914b9e423c4cbefa&quot;,
+  &quot;forks_url&quot;: &quot;https://api.github.com/gists/4834914b9e423c4cbefa/forks&quot;,
+  &quot;commits_url&quot;: &quot;https://api.github.com/gists/4834914b9e423c4cbefa/commits&quot;,
+  &quot;id&quot;: &quot;4834914b9e423c4cbefa&quot;,
+  &quot;git_pull_url&quot;: &quot;https://gist.github.com/4834914b9e423c4cbefa.git&quot;,
+  &quot;git_push_url&quot;: &quot;https://gist.github.com/4834914b9e423c4cbefa.git&quot;,
+  &quot;html_url&quot;: &quot;https://gist.github.com/4834914b9e423c4cbefa&quot;,
+  &quot;files&quot;: {
+   &quot;index.xml&quot;: {
+    &quot;filename&quot;: &quot;index.xml&quot;,
+    &quot;type&quot;: &quot;application/xml&quot;,
+    &quot;language&quot;: &quot;XML&quot;,
+    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/4834914b9e423c4cbefa/raw/91e194e33a5215714f7947daca794d3218e26b4e/index.xml&quot;,
+    &quot;size&quot;: 108
+   }
+  },
+  &quot;public&quot;: true,
+  &quot;created_at&quot;: &quot;2015-09-10T22:30:06Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-09-10T22:30:06Z&quot;,
+  &quot;description&quot;: &quot;craftml&quot;,
+  &quot;comments&quot;: 0,
+  &quot;user&quot;: null,
+  &quot;comments_url&quot;: &quot;https://api.github.com/gists/4834914b9e423c4cbefa/comments&quot;,
+  &quot;owner&quot;: {
+   &quot;login&quot;: &quot;doubleshow&quot;,
+   &quot;id&quot;: 129562,
+   &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/129562?v=3&quot;,
+   &quot;gravatar_id&quot;: &quot;&quot;,
+   &quot;url&quot;: &quot;https://api.github.com/users/doubleshow&quot;,
+   &quot;html_url&quot;: &quot;https://github.com/doubleshow&quot;,
+   &quot;followers_url&quot;: &quot;https://api.github.com/users/doubleshow/followers&quot;,
+   &quot;following_url&quot;: &quot;https://api.github.com/users/doubleshow/following{/other_user}&quot;,
+   &quot;gists_url&quot;: &quot;https://api.github.com/users/doubleshow/gists{/gist_id}&quot;,
+   &quot;starred_url&quot;: &quot;https://api.github.com/users/doubleshow/starred{/owner}{/repo}&quot;,
+   &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/doubleshow/subscriptions&quot;,
+   &quot;organizations_url&quot;: &quot;https://api.github.com/users/doubleshow/orgs&quot;,
+   &quot;repos_url&quot;: &quot;https://api.github.com/users/doubleshow/repos&quot;,
+   &quot;events_url&quot;: &quot;https://api.github.com/users/doubleshow/events{/privacy}&quot;,
+   &quot;received_events_url&quot;: &quot;https://api.github.com/users/doubleshow/received_events&quot;,
+   &quot;type&quot;: &quot;User&quot;,
+   &quot;site_admin&quot;: false
+  }
+ },
+ {
+  &quot;url&quot;: &quot;https://api.github.com/gists/2a750553acb7691b4f8c&quot;,
+  &quot;forks_url&quot;: &quot;https://api.github.com/gists/2a750553acb7691b4f8c/forks&quot;,
+  &quot;commits_url&quot;: &quot;https://api.github.com/gists/2a750553acb7691b4f8c/commits&quot;,
+  &quot;id&quot;: &quot;2a750553acb7691b4f8c&quot;,
+  &quot;git_pull_url&quot;: &quot;https://gist.github.com/2a750553acb7691b4f8c.git&quot;,
+  &quot;git_push_url&quot;: &quot;https://gist.github.com/2a750553acb7691b4f8c.git&quot;,
+  &quot;html_url&quot;: &quot;https://gist.github.com/2a750553acb7691b4f8c&quot;,
+  &quot;files&quot;: {
+   &quot;index.xml&quot;: {
+    &quot;filename&quot;: &quot;index.xml&quot;,
+    &quot;type&quot;: &quot;application/xml&quot;,
+    &quot;language&quot;: &quot;XML&quot;,
+    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/2a750553acb7691b4f8c/raw/91e194e33a5215714f7947daca794d3218e26b4e/index.xml&quot;,
+    &quot;size&quot;: 108
+   }
+  },
+  &quot;public&quot;: true,
+  &quot;created_at&quot;: &quot;2015-09-10T22:26:00Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-09-10T22:26:00Z&quot;,
+  &quot;description&quot;: &quot;craftml&quot;,
+  &quot;comments&quot;: 0,
+  &quot;user&quot;: null,
+  &quot;comments_url&quot;: &quot;https://api.github.com/gists/2a750553acb7691b4f8c/comments&quot;,
+  &quot;owner&quot;: {
+   &quot;login&quot;: &quot;doubleshow&quot;,
+   &quot;id&quot;: 129562,
+   &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/129562?v=3&quot;,
+   &quot;gravatar_id&quot;: &quot;&quot;,
+   &quot;url&quot;: &quot;https://api.github.com/users/doubleshow&quot;,
+   &quot;html_url&quot;: &quot;https://github.com/doubleshow&quot;,
+   &quot;followers_url&quot;: &quot;https://api.github.com/users/doubleshow/followers&quot;,
+   &quot;following_url&quot;: &quot;https://api.github.com/users/doubleshow/following{/other_user}&quot;,
+   &quot;gists_url&quot;: &quot;https://api.github.com/users/doubleshow/gists{/gist_id}&quot;,
+   &quot;starred_url&quot;: &quot;https://api.github.com/users/doubleshow/starred{/owner}{/repo}&quot;,
+   &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/doubleshow/subscriptions&quot;,
+   &quot;organizations_url&quot;: &quot;https://api.github.com/users/doubleshow/orgs&quot;,
+   &quot;repos_url&quot;: &quot;https://api.github.com/users/doubleshow/repos&quot;,
+   &quot;events_url&quot;: &quot;https://api.github.com/users/doubleshow/events{/privacy}&quot;,
+   &quot;received_events_url&quot;: &quot;https://api.github.com/users/doubleshow/received_events&quot;,
+   &quot;type&quot;: &quot;User&quot;,
+   &quot;site_admin&quot;: false
+  }
+ },
+ {
+  &quot;url&quot;: &quot;https://api.github.com/gists/f948f5d88d500f6627db&quot;,
+  &quot;forks_url&quot;: &quot;https://api.github.com/gists/f948f5d88d500f6627db/forks&quot;,
+  &quot;commits_url&quot;: &quot;https://api.github.com/gists/f948f5d88d500f6627db/commits&quot;,
+  &quot;id&quot;: &quot;f948f5d88d500f6627db&quot;,
+  &quot;git_pull_url&quot;: &quot;https://gist.github.com/f948f5d88d500f6627db.git&quot;,
+  &quot;git_push_url&quot;: &quot;https://gist.github.com/f948f5d88d500f6627db.git&quot;,
+  &quot;html_url&quot;: &quot;https://gist.github.com/f948f5d88d500f6627db&quot;,
+  &quot;files&quot;: {
+   &quot;index.xml&quot;: {
+    &quot;filename&quot;: &quot;index.xml&quot;,
+    &quot;type&quot;: &quot;application/xml&quot;,
+    &quot;language&quot;: &quot;XML&quot;,
+    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/f948f5d88d500f6627db/raw/210bfdadae4768724ca5a96a02022aac6633dea0/index.xml&quot;,
+    &quot;size&quot;: 683
+   }
+  },
+  &quot;public&quot;: true,
+  &quot;created_at&quot;: &quot;2015-09-10T22:25:45Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-09-10T22:25:49Z&quot;,
+  &quot;description&quot;: &quot;craftml&quot;,
+  &quot;comments&quot;: 0,
+  &quot;user&quot;: null,
+  &quot;comments_url&quot;: &quot;https://api.github.com/gists/f948f5d88d500f6627db/comments&quot;,
+  &quot;owner&quot;: {
+   &quot;login&quot;: &quot;doubleshow&quot;,
+   &quot;id&quot;: 129562,
+   &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/129562?v=3&quot;,
+   &quot;gravatar_id&quot;: &quot;&quot;,
+   &quot;url&quot;: &quot;https://api.github.com/users/doubleshow&quot;,
+   &quot;html_url&quot;: &quot;https://github.com/doubleshow&quot;,
+   &quot;followers_url&quot;: &quot;https://api.github.com/users/doubleshow/followers&quot;,
+   &quot;following_url&quot;: &quot;https://api.github.com/users/doubleshow/following{/other_user}&quot;,
+   &quot;gists_url&quot;: &quot;https://api.github.com/users/doubleshow/gists{/gist_id}&quot;,
+   &quot;starred_url&quot;: &quot;https://api.github.com/users/doubleshow/starred{/owner}{/repo}&quot;,
+   &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/doubleshow/subscriptions&quot;,
+   &quot;organizations_url&quot;: &quot;https://api.github.com/users/doubleshow/orgs&quot;,
+   &quot;repos_url&quot;: &quot;https://api.github.com/users/doubleshow/repos&quot;,
+   &quot;events_url&quot;: &quot;https://api.github.com/users/doubleshow/events{/privacy}&quot;,
+   &quot;received_events_url&quot;: &quot;https://api.github.com/users/doubleshow/received_events&quot;,
+   &quot;type&quot;: &quot;User&quot;,
+   &quot;site_admin&quot;: false
+  }
+ },
+ {
   &quot;url&quot;: &quot;https://api.github.com/gists/99ab93c029a116a0ab4d&quot;,
   &quot;forks_url&quot;: &quot;https://api.github.com/gists/99ab93c029a116a0ab4d/forks&quot;,
   &quot;commits_url&quot;: &quot;https://api.github.com/gists/99ab93c029a116a0ab4d/commits&quot;,
@@ -6235,138 +6406,6 @@ answer = <span class="string">&quot;&quot;</span>
   &quot;comments&quot;: 0,
   &quot;user&quot;: null,
   &quot;comments_url&quot;: &quot;https://api.github.com/gists/79a403ca7973ad52485f/comments&quot;,
-  &quot;owner&quot;: {
-   &quot;login&quot;: &quot;doubleshow&quot;,
-   &quot;id&quot;: 129562,
-   &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/129562?v=3&quot;,
-   &quot;gravatar_id&quot;: &quot;&quot;,
-   &quot;url&quot;: &quot;https://api.github.com/users/doubleshow&quot;,
-   &quot;html_url&quot;: &quot;https://github.com/doubleshow&quot;,
-   &quot;followers_url&quot;: &quot;https://api.github.com/users/doubleshow/followers&quot;,
-   &quot;following_url&quot;: &quot;https://api.github.com/users/doubleshow/following{/other_user}&quot;,
-   &quot;gists_url&quot;: &quot;https://api.github.com/users/doubleshow/gists{/gist_id}&quot;,
-   &quot;starred_url&quot;: &quot;https://api.github.com/users/doubleshow/starred{/owner}{/repo}&quot;,
-   &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/doubleshow/subscriptions&quot;,
-   &quot;organizations_url&quot;: &quot;https://api.github.com/users/doubleshow/orgs&quot;,
-   &quot;repos_url&quot;: &quot;https://api.github.com/users/doubleshow/repos&quot;,
-   &quot;events_url&quot;: &quot;https://api.github.com/users/doubleshow/events{/privacy}&quot;,
-   &quot;received_events_url&quot;: &quot;https://api.github.com/users/doubleshow/received_events&quot;,
-   &quot;type&quot;: &quot;User&quot;,
-   &quot;site_admin&quot;: false
-  }
- },
- {
-  &quot;url&quot;: &quot;https://api.github.com/gists/2164cb62afd40ea21dd8&quot;,
-  &quot;forks_url&quot;: &quot;https://api.github.com/gists/2164cb62afd40ea21dd8/forks&quot;,
-  &quot;commits_url&quot;: &quot;https://api.github.com/gists/2164cb62afd40ea21dd8/commits&quot;,
-  &quot;id&quot;: &quot;2164cb62afd40ea21dd8&quot;,
-  &quot;git_pull_url&quot;: &quot;https://gist.github.com/2164cb62afd40ea21dd8.git&quot;,
-  &quot;git_push_url&quot;: &quot;https://gist.github.com/2164cb62afd40ea21dd8.git&quot;,
-  &quot;html_url&quot;: &quot;https://gist.github.com/2164cb62afd40ea21dd8&quot;,
-  &quot;files&quot;: {
-   &quot;index.xml&quot;: {
-    &quot;filename&quot;: &quot;index.xml&quot;,
-    &quot;type&quot;: &quot;application/xml&quot;,
-    &quot;language&quot;: &quot;XML&quot;,
-    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/2164cb62afd40ea21dd8/raw/1ce692b2aa15ab3abf381bdc57774456140241c1/index.xml&quot;,
-    &quot;size&quot;: 383
-   }
-  },
-  &quot;public&quot;: true,
-  &quot;created_at&quot;: &quot;2015-09-04T11:16:23Z&quot;,
-  &quot;updated_at&quot;: &quot;2015-09-04T11:17:24Z&quot;,
-  &quot;description&quot;: &quot;craftml&quot;,
-  &quot;comments&quot;: 0,
-  &quot;user&quot;: null,
-  &quot;comments_url&quot;: &quot;https://api.github.com/gists/2164cb62afd40ea21dd8/comments&quot;,
-  &quot;owner&quot;: {
-   &quot;login&quot;: &quot;doubleshow&quot;,
-   &quot;id&quot;: 129562,
-   &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/129562?v=3&quot;,
-   &quot;gravatar_id&quot;: &quot;&quot;,
-   &quot;url&quot;: &quot;https://api.github.com/users/doubleshow&quot;,
-   &quot;html_url&quot;: &quot;https://github.com/doubleshow&quot;,
-   &quot;followers_url&quot;: &quot;https://api.github.com/users/doubleshow/followers&quot;,
-   &quot;following_url&quot;: &quot;https://api.github.com/users/doubleshow/following{/other_user}&quot;,
-   &quot;gists_url&quot;: &quot;https://api.github.com/users/doubleshow/gists{/gist_id}&quot;,
-   &quot;starred_url&quot;: &quot;https://api.github.com/users/doubleshow/starred{/owner}{/repo}&quot;,
-   &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/doubleshow/subscriptions&quot;,
-   &quot;organizations_url&quot;: &quot;https://api.github.com/users/doubleshow/orgs&quot;,
-   &quot;repos_url&quot;: &quot;https://api.github.com/users/doubleshow/repos&quot;,
-   &quot;events_url&quot;: &quot;https://api.github.com/users/doubleshow/events{/privacy}&quot;,
-   &quot;received_events_url&quot;: &quot;https://api.github.com/users/doubleshow/received_events&quot;,
-   &quot;type&quot;: &quot;User&quot;,
-   &quot;site_admin&quot;: false
-  }
- },
- {
-  &quot;url&quot;: &quot;https://api.github.com/gists/cd34fed2ea4efea6a2d3&quot;,
-  &quot;forks_url&quot;: &quot;https://api.github.com/gists/cd34fed2ea4efea6a2d3/forks&quot;,
-  &quot;commits_url&quot;: &quot;https://api.github.com/gists/cd34fed2ea4efea6a2d3/commits&quot;,
-  &quot;id&quot;: &quot;cd34fed2ea4efea6a2d3&quot;,
-  &quot;git_pull_url&quot;: &quot;https://gist.github.com/cd34fed2ea4efea6a2d3.git&quot;,
-  &quot;git_push_url&quot;: &quot;https://gist.github.com/cd34fed2ea4efea6a2d3.git&quot;,
-  &quot;html_url&quot;: &quot;https://gist.github.com/cd34fed2ea4efea6a2d3&quot;,
-  &quot;files&quot;: {
-   &quot;index.xml&quot;: {
-    &quot;filename&quot;: &quot;index.xml&quot;,
-    &quot;type&quot;: &quot;application/xml&quot;,
-    &quot;language&quot;: &quot;XML&quot;,
-    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/cd34fed2ea4efea6a2d3/raw/91e194e33a5215714f7947daca794d3218e26b4e/index.xml&quot;,
-    &quot;size&quot;: 108
-   }
-  },
-  &quot;public&quot;: true,
-  &quot;created_at&quot;: &quot;2015-09-04T00:08:24Z&quot;,
-  &quot;updated_at&quot;: &quot;2015-09-04T00:08:24Z&quot;,
-  &quot;description&quot;: &quot;craftml&quot;,
-  &quot;comments&quot;: 0,
-  &quot;user&quot;: null,
-  &quot;comments_url&quot;: &quot;https://api.github.com/gists/cd34fed2ea4efea6a2d3/comments&quot;,
-  &quot;owner&quot;: {
-   &quot;login&quot;: &quot;doubleshow&quot;,
-   &quot;id&quot;: 129562,
-   &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/129562?v=3&quot;,
-   &quot;gravatar_id&quot;: &quot;&quot;,
-   &quot;url&quot;: &quot;https://api.github.com/users/doubleshow&quot;,
-   &quot;html_url&quot;: &quot;https://github.com/doubleshow&quot;,
-   &quot;followers_url&quot;: &quot;https://api.github.com/users/doubleshow/followers&quot;,
-   &quot;following_url&quot;: &quot;https://api.github.com/users/doubleshow/following{/other_user}&quot;,
-   &quot;gists_url&quot;: &quot;https://api.github.com/users/doubleshow/gists{/gist_id}&quot;,
-   &quot;starred_url&quot;: &quot;https://api.github.com/users/doubleshow/starred{/owner}{/repo}&quot;,
-   &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/doubleshow/subscriptions&quot;,
-   &quot;organizations_url&quot;: &quot;https://api.github.com/users/doubleshow/orgs&quot;,
-   &quot;repos_url&quot;: &quot;https://api.github.com/users/doubleshow/repos&quot;,
-   &quot;events_url&quot;: &quot;https://api.github.com/users/doubleshow/events{/privacy}&quot;,
-   &quot;received_events_url&quot;: &quot;https://api.github.com/users/doubleshow/received_events&quot;,
-   &quot;type&quot;: &quot;User&quot;,
-   &quot;site_admin&quot;: false
-  }
- },
- {
-  &quot;url&quot;: &quot;https://api.github.com/gists/692539a1bfc9c6cbfcc0&quot;,
-  &quot;forks_url&quot;: &quot;https://api.github.com/gists/692539a1bfc9c6cbfcc0/forks&quot;,
-  &quot;commits_url&quot;: &quot;https://api.github.com/gists/692539a1bfc9c6cbfcc0/commits&quot;,
-  &quot;id&quot;: &quot;692539a1bfc9c6cbfcc0&quot;,
-  &quot;git_pull_url&quot;: &quot;https://gist.github.com/692539a1bfc9c6cbfcc0.git&quot;,
-  &quot;git_push_url&quot;: &quot;https://gist.github.com/692539a1bfc9c6cbfcc0.git&quot;,
-  &quot;html_url&quot;: &quot;https://gist.github.com/692539a1bfc9c6cbfcc0&quot;,
-  &quot;files&quot;: {
-   &quot;index.xml&quot;: {
-    &quot;filename&quot;: &quot;index.xml&quot;,
-    &quot;type&quot;: &quot;application/xml&quot;,
-    &quot;language&quot;: &quot;XML&quot;,
-    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/692539a1bfc9c6cbfcc0/raw/52c102087f1c095355ef9cf013f360073c537e06/index.xml&quot;,
-    &quot;size&quot;: 1563
-   }
-  },
-  &quot;public&quot;: true,
-  &quot;created_at&quot;: &quot;2015-09-03T16:33:51Z&quot;,
-  &quot;updated_at&quot;: &quot;2015-09-04T12:51:28Z&quot;,
-  &quot;description&quot;: &quot;craftml&quot;,
-  &quot;comments&quot;: 0,
-  &quot;user&quot;: null,
-  &quot;comments_url&quot;: &quot;https://api.github.com/gists/692539a1bfc9c6cbfcc0/comments&quot;,
   &quot;owner&quot;: {
    &quot;login&quot;: &quot;doubleshow&quot;,
    &quot;id&quot;: 129562,
