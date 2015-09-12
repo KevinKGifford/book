@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.4.2" data-basepath="../.." data-revision="Sat Sep 12 2015 16:22:30 GMT-0600 (MDT)">
+    <div class="book" data-level="1.4.2" data-basepath="../.." data-revision="Sat Sep 12 2015 16:57:52 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -678,7 +678,7 @@ programmer but also will pave the way for you to learn MapReduce and MongoDB.</p
 <span class="keyword">return</span> _.map(f_data, <span class="keyword">function</span>(f) {
     <span class="keyword">return</span> _.first(f.name.split(<span class="string">&apos; &apos;</span>))
 })</pre></div><p></p>
-<p></p><h2>Change the format to lastname, firstname</h2><div class="lodashexercise">   <div class="result"></div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;}, {name: &apos;Mary Kay&apos;}, {name: &apos;Peter Pan&apos;}]</pre><div class="output"><div class="left"><div class="section-title">Expected Output<pre>[
+<p></p><h2>Change the format to lastname, firstname</h2><div class="lodashexercise">   <div class="result"></div><div class="ok">Done</div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;}, {name: &apos;Mary Kay&apos;}, {name: &apos;Peter Pan&apos;}]</pre><div class="output"><div class="left"><div class="section-title">Expected Output<pre>[
   {
     &quot;name&quot;: &quot;Smith, John&quot;
   },
@@ -688,16 +688,19 @@ programmer but also will pave the way for you to learn MapReduce and MongoDB.</p
   {
     &quot;name&quot;: &quot;Pan, Peter&quot;
   }
-]</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>&quot;not done&quot;</pre></div></div></div><div class="section-title">Solution</div><pre><span class="comment">// _.map() and reverse the name field seperating via a comma</span>
-<span class="comment">//</span>
-
-<span class="comment">// return _.map(data, function(d) {</span>
-    <span class="comment">// console.log(_.last(d.name.split(&apos; &apos;)) + &apos;, &apos; + _.first(d.name.split(&apos; &apos;)))</span>
-    <span class="comment">// return ( &apos;{ &apos; + &apos;name: &apos; + _.last(d.name.split(&apos; &apos;)) + &apos;, &apos; + _.first(d.name.split(&apos; &apos;)) + &apos; }&apos; )</span>
-<span class="comment">// })</span>
-
-<span class="keyword">var</span> result = <span class="string">&apos;not done&apos;</span>
-<span class="keyword">return</span> result</pre></div><p></p>
+]</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>[
+  {
+    &quot;name&quot;: &quot;Smith, John&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Kay, Mary&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Pan, Peter&quot;
+  }
+]</pre></div></div></div><div class="section-title">Solution</div><pre><span class="keyword">return</span> _.map(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> {<span class="string">&apos;name&apos;</span>: _.last(d.name.split(<span class="string">&apos; &apos;</span>)) + <span class="string">&apos;, &apos;</span> + _.first(d.name.split(<span class="string">&apos; &apos;</span>))}
+})</pre></div><p></p>
 <p></p><h2>How many women?</h2><div class="lodashexercise">   <div class="result"></div><div class="ok">Done</div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, gender: &apos;m&apos;}, {name: &apos;Mary Smith&apos;, gender: &apos;f&apos;}, {name: &apos;Peter Pan&apos;, gender: &apos;m&apos;}, {name: &apos;Ben Smith&apos;, gender: &apos;m&apos;}]</pre><div class="output"><div class="left"><div class="section-title">Expected Output<pre>1</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>1</pre></div></div></div><div class="section-title">Solution</div><pre><span class="comment">// Here we use the _.filter shorthand _.matches notation to find all data</span>
 <span class="comment">// array elements that have the gender: value of &apos;f&apos; and count with _.size</span>
 
@@ -739,9 +742,7 @@ programmer but also will pave the way for you to learn MapReduce and MongoDB.</p
 <span class="comment">// element of favorites sub-array and count</span>
 
 <span class="keyword">return</span> _.size(_.filter(data, <span class="keyword">function</span>(n) {
-    <span class="comment">// console.log(n.favorites)</span>
     <span class="keyword">return</span> _.some(n.favorites, <span class="keyword">function</span> (d) {
-        <span class="comment">// console.log(d)</span>
         <span class="keyword">return</span> d == <span class="string">&apos;food&apos;</span>
     })
 }))</pre></div><p></p>
@@ -756,9 +757,7 @@ programmer but also will pave the way for you to learn MapReduce and MongoDB.</p
   &quot;Mary Smith&quot;,
   &quot;Joe Johnson&quot;
 ]</pre></div></div></div><div class="section-title">Solution</div><pre><span class="keyword">return</span> _.pluck(_.filter(data, <span class="keyword">function</span>(n) {
-    <span class="comment">// console.log(n.name + &apos; : &apos; + n.favorites + &apos; age = &apos; + n.age)</span>
     <span class="keyword">return</span> _.some(n.favorites, <span class="keyword">function</span>(d) {
-        <span class="comment">// console.log(d)</span>
         <span class="keyword">return</span> d == <span class="string">&apos;travel&apos;</span>
     })
     <span class="keyword">return</span> n.age &gt; <span class="number">40</span>
@@ -771,16 +770,10 @@ programmer but also will pave the way for you to learn MapReduce and MongoDB.</p
 <span class="comment">// from the _.filter/_.some nested loop</span>
 
 <span class="keyword">var</span> m_data =  _.max(_.filter(data, <span class="keyword">function</span>(f) {
-    <span class="comment">// console.log(f.name)</span>
-    <span class="comment">// console.log(f.favorites)</span>
     <span class="keyword">return</span> _.some(f.favorites, <span class="keyword">function</span>(d) {
-        <span class="comment">// console.log(d)</span>
         <span class="keyword">return</span> d == <span class="string">&apos;food&apos;</span>
     })
 }), <span class="string">&apos;age&apos;</span>)
-<span class="comment">// console.log(m_data)</span>
-<span class="comment">// console.log(&apos;m_data size = &apos; + _.size(m_data))</span>
-<span class="comment">// console.log(&apos;m_data.name = &apos; + m_data.name)</span>
 <span class="keyword">return</span> m_data.name</pre></div><p></p>
 <p></p><h2>What are all the unique favorites?</h2><div class="lodashexercise">   <div class="result"></div><div class="ok">Done</div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, age: 54, favorites: [&apos;food&apos;, &apos;movies&apos;]},
  {name: &apos;Mary Smith&apos;, age: 42, favorites: [&apos;food&apos;, &apos;travel&apos;]},

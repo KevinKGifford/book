@@ -197,16 +197,9 @@ Change the format to lastname, firstname
 
 {% solution %}
 
-// _.map() and reverse the name field seperating via a comma
-//
-
-// return _.map(data, function(d) {
-    // console.log(_.last(d.name.split(' ')) + ', ' + _.first(d.name.split(' ')))
-    // return ( '{ ' + 'name: ' + _.last(d.name.split(' ')) + ', ' + _.first(d.name.split(' ')) + ' }' )
-// })
-
-var result = 'not done'
-return result
+return _.map(data, function(d) {
+    return {'name': _.last(d.name.split(' ')) + ', ' + _.first(d.name.split(' '))}
+})
 
 {% endlodashexercise %}
 
@@ -434,9 +427,7 @@ How many people whose favorites include food?
 // element of favorites sub-array and count
 
 return _.size(_.filter(data, function(n) {
-    // console.log(n.favorites)
     return _.some(n.favorites, function (d) {
-        // console.log(d)
         return d == 'food'
     })
 }))
@@ -468,9 +459,7 @@ Who are over 40 and love travel?
 {% solution %}
 
 return _.pluck(_.filter(data, function(n) {
-    // console.log(n.name + ' : ' + n.favorites + ' age = ' + n.age)
     return _.some(n.favorites, function(d) {
-        // console.log(d)
         return d == 'travel'
     })
     return n.age > 40
@@ -504,16 +493,10 @@ Who is the oldest person loving food?
 // from the _.filter/_.some nested loop
 
 var m_data =  _.max(_.filter(data, function(f) {
-    // console.log(f.name)
-    // console.log(f.favorites)
     return _.some(f.favorites, function(d) {
-        // console.log(d)
         return d == 'food'
     })
 }), 'age')
-// console.log(m_data)
-// console.log('m_data size = ' + _.size(m_data))
-// console.log('m_data.name = ' + m_data.name)
 return m_data.name
 
 {% endlodashexercise %}
