@@ -80,11 +80,11 @@ What names begin with the letter J?
 // Here we filter based on if the property value of name: field starts with the letter 'J'
 // Since filter returns the data array element that for which the test is true we
 // pluck out the resulting value of the name: field from each returned array element
-// from the _.filter() operation
 
 return _.pluck(_.filter(data, function(d) {
     return _.startsWith(d.name, 'J')
 }), 'name')
+
 {% endlodashexercise %}
 
 
@@ -108,6 +108,7 @@ How many Johns?
 // are of the property value 'John' and use _.size to count number of returned array elements
 
 return _.size(_.filter(data, _.matches({'name': 'John'})))
+
 {% endlodashexercise %}
 
 
@@ -134,6 +135,7 @@ What are all the first names?
 return _.map(data, function(d) {
     return _.first(d.name.split(' '))
 })
+
 {% endlodashexercise %}
 
 
@@ -170,6 +172,7 @@ var f_data = _.filter(data, function(d) {
 return _.map(f_data, function(f) {
     return _.first(f.name.split(' '))
 })
+
 {% endlodashexercise %}
 
 
@@ -193,6 +196,7 @@ Change the format to lastname, firstname
 [{name: 'Smith, John'}, {name: 'Kay, Mary'}, {name: 'Pan, Peter'}]
 
 {% solution %}
+
 // _.map() and reverse the name field seperating via a comma
 //
 
@@ -274,6 +278,8 @@ return _.size(_.map(names, function(f) {
 
 {% lodashexercise %}
 
+{% title %}
+
 Are there more men than women?
 
 {% data %}
@@ -286,7 +292,8 @@ true
 
 {% solution %}
 
-var result = 'not done'
+var result = false
+if (_.size(_.filter(data, {gender: 'm'})) > _.size(_.filter(data, {gender: 'f'}))) {result = true}
 return result
 
 {% endlodashexercise %}
@@ -312,10 +319,13 @@ What is Peter Pan's gender?
 'm'
 
 {% solution %}
+// Filter input data array to find {name: 'Peter Pan'}, then _.pluck to get 'gender' field
+// Since _.pluck returns array, then use _.first to get first element of the array
 
-return _.pluck(_.filter(data, {name: 'Peter Pan'}, 'gender'))
+return _.first(_.pluck(_.filter(data, {name: 'Peter Pan'}), 'gender'))
 
 {% endlodashexercise %}
+
 
 
 
@@ -336,9 +346,9 @@ What is the oldest age?
 54
 
 {% solution %}
-// This might be a candidate for _.reduce or more likely for _.max()
-var result = 'not done'
-return result
+// _.pluck to look at all 'age' fields and then get _.max
+
+return _.max(_.pluck(data, 'age'))
 
 {% endlodashexercise %}
 
@@ -364,8 +374,10 @@ true
 {% solution %}
 
 // use _.all
-var result = 'not done'
-return result
+
+return _.all(data, function(n) {
+    return n.age < 60
+})
 
 {% endlodashexercise %}
 
@@ -389,8 +401,10 @@ true
 {% solution %}
 
 // use _.some
-var result = 'not done'
-return result
+
+return _.some(data, function(n) {
+    return n.age < 18
+})
 
 {% endlodashexercise %}
 
@@ -416,8 +430,14 @@ How many people whose favorites include food?
 
 {% solution %}
 
-var result = 'not done'
-return result
+// Need to process all entries to determine for each entry 'food' is a favorite
+// and count
+
+return _.size(_.filter(data, function(n) {
+    console.log(n.favorites)
+    // return _.some(n.favorites, _.includes('food')) 
+    return 
+}))
 
 {% endlodashexercise %}
 
