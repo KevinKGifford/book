@@ -430,13 +430,15 @@ How many people whose favorites include food?
 
 {% solution %}
 
-// Need to process all entries to determine for each entry 'food' is a favorite
-// and count
+// Need to process all entries to determine for each entry if (_.filter) 'food' is an
+// element of favorites sub-array and count
 
 return _.size(_.filter(data, function(n) {
-    console.log(n.favorites)
-    // return _.some(n.favorites, _.includes('food')) 
-    return 
+    // console.log(n.favorites)
+    return _.some(n.favorites, function (d) {
+        // console.log(d)
+        return d == 'food'
+    })
 }))
 
 {% endlodashexercise %}
@@ -465,8 +467,14 @@ Who are over 40 and love travel?
 
 {% solution %}
 
-var result = 'not done'
-return result
+return _.pluck(_.filter(data, function(n) {
+    // console.log(n.name + ' : ' + n.favorites + ' age = ' + n.age)
+    return _.some(n.favorites, function(d) {
+        // console.log(d)
+        return d == 'travel'
+    })
+    return n.age > 40
+}), 'name')
 
 {% endlodashexercise %}
 
@@ -492,9 +500,21 @@ Who is the oldest person loving food?
 'John Smith'
 
 {% solution %}
+// FIXME: I don't understand why I can't simply _.pluck out the name: value 
+// from the _.filter/_.some nested loop
 
-var result = 'not done'
-return result
+var m_data =  _.max(_.filter(data, function(f) {
+    // console.log(f.name)
+    // console.log(f.favorites)
+    return _.some(f.favorites, function(d) {
+        // console.log(d)
+        return d == 'food'
+    })
+}), 'age')
+// console.log(m_data)
+// console.log('m_data size = ' + _.size(m_data))
+// console.log('m_data.name = ' + m_data.name)
+return m_data.name
 
 {% endlodashexercise %}
 
@@ -528,9 +548,11 @@ What are all the unique favorites?
 {% solution %}
 
 // hint: use _.pluck, _.uniq, _.flatten in some order
+// Didn't need _.pluck in this exercise...
 
-var result = 'not done'
-return result
+return _.uniq(_.flatten(_.map(data, function(d) {
+     return d.favorites
+})))
 
 {% endlodashexercise %}
 
@@ -560,7 +582,8 @@ What are all the unique last names?
 
 {% solution %}
 
-var result = 'not done'
-return result
+return _.uniq(_.map(data, function(d) {
+    return _.last(d.name.split(' '))
+}))
 
 {% endlodashexercise %}
