@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.4.3" data-basepath="../.." data-revision="Sat Sep 12 2015 16:57:52 GMT-0600 (MDT)">
+    <div class="book" data-level="1.4.3" data-basepath="../.." data-revision="Sat Sep 12 2015 18:42:07 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -733,7 +733,7 @@ aggregate analysis.</p>
     })
 <span class="keyword">return</span> result</pre></div><p></p>
 <h2 id="exercises">Exercises</h2>
-<p></p><h2>Who is the first person in each age group?</h2><div class="lodashexercise">   <div class="result"></div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, age: 54},
+<p></p><h2>Who is the first person in each age group?</h2><div class="lodashexercise">   <div class="result"></div><div class="ok">Done</div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, age: 54},
  {name: &apos;Mary Smith&apos;, age: 42},
  {name: &apos;Peter Pan&apos;, age: 15},
  {name: &apos;Kelly Fan&apos;, age: 35},
@@ -744,9 +744,22 @@ aggregate analysis.</p>
   &quot;3&quot;: &quot;Kelly Fan&quot;,
   &quot;4&quot;: &quot;Mary Smith&quot;,
   &quot;5&quot;: &quot;John Smith&quot;
-}</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>&quot;not done&quot;</pre></div></div></div><div class="section-title">Solution</div><pre><span class="keyword">var</span> result = <span class="string">&apos;not done&apos;</span>
+}</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>{
+  &quot;1&quot;: &quot;Peter Pan&quot;,
+  &quot;3&quot;: &quot;Kelly Fan&quot;,
+  &quot;4&quot;: &quot;Mary Smith&quot;,
+  &quot;5&quot;: &quot;John Smith&quot;
+}</pre></div></div></div><div class="section-title">Solution</div><pre><span class="keyword">var</span> groups = _.groupBy(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> Math.floor(d.age / <span class="number">10</span>)    
+})
+<span class="keyword">var</span> first_entry = _.mapValues(groups, <span class="keyword">function</span>(value){
+    <span class="keyword">return</span> _.first(value)
+})
+result = _.mapValues(first_entry, <span class="keyword">function</span>(n) {
+    <span class="keyword">return</span> n.name
+})
 <span class="keyword">return</span> result</pre></div><p></p>
-<p></p><h2>Group people by their last name</h2><div class="lodashexercise">   <div class="result"></div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, age: 54},
+<p></p><h2>Group people by their last name</h2><div class="lodashexercise">   <div class="result"></div><div class="ok">Done</div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, age: 54},
  {name: &apos;Mary Smith&apos;, age: 42},
  {name: &apos;Peter Pan&apos;, age: 15},
  {name: &apos;Kelly Fan&apos;, age: 35},
@@ -791,9 +804,49 @@ aggregate analysis.</p>
       &quot;age&quot;: 46
     }
   ]
-}</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>&quot;not done&quot;</pre></div></div></div><div class="section-title">Solution</div><pre><span class="keyword">var</span> result = <span class="string">&apos;not done&apos;</span>
-<span class="keyword">return</span> result</pre></div><p></p>
-<p></p><h2>How many people are in each last-name group?</h2><div class="lodashexercise">   <div class="result"></div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, age: 54},
+}</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>{
+  &quot;Smith&quot;: [
+    {
+      &quot;name&quot;: &quot;John Smith&quot;,
+      &quot;age&quot;: 54
+    },
+    {
+      &quot;name&quot;: &quot;Mary Smith&quot;,
+      &quot;age&quot;: 42
+    },
+    {
+      &quot;name&quot;: &quot;Ben Smith&quot;,
+      &quot;age&quot;: 35
+    }
+  ],
+  &quot;Pan&quot;: [
+    {
+      &quot;name&quot;: &quot;Peter Pan&quot;,
+      &quot;age&quot;: 15
+    }
+  ],
+  &quot;Fan&quot;: [
+    {
+      &quot;name&quot;: &quot;Kelly Fan&quot;,
+      &quot;age&quot;: 35
+    }
+  ],
+  &quot;Potts&quot;: [
+    {
+      &quot;name&quot;: &quot;Adam Potts&quot;,
+      &quot;age&quot;: 42
+    }
+  ],
+  &quot;Johnson&quot;: [
+    {
+      &quot;name&quot;: &quot;Joe Johnson&quot;,
+      &quot;age&quot;: 46
+    }
+  ]
+}</pre></div></div></div><div class="section-title">Solution</div><pre><span class="keyword">return</span> _.groupBy(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> _.last(d.name.split(<span class="string">&apos; &apos;</span>))    
+})</pre></div><p></p>
+<p></p><h2>How many people are in each last-name group?</h2><div class="lodashexercise">   <div class="result"></div><div class="ok">Done</div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, age: 54},
  {name: &apos;Mary Smith&apos;, age: 42},
  {name: &apos;Peter Pan&apos;, age: 15},
  {name: &apos;Kelly Fan&apos;, age: 35},
@@ -805,9 +858,19 @@ aggregate analysis.</p>
   &quot;Fan&quot;: 1,
   &quot;Potts&quot;: 1,
   &quot;Johnson&quot;: 1
-}</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>&quot;not done&quot;</pre></div></div></div><div class="section-title">Solution</div><pre><span class="keyword">var</span> result = <span class="string">&apos;not done&apos;</span>
-<span class="keyword">return</span> result</pre></div><p></p>
-<p></p><h2>Who is the first person in each last-name group?</h2><div class="lodashexercise">   <div class="result"></div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, age: 54},
+}</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>{
+  &quot;Smith&quot;: 3,
+  &quot;Pan&quot;: 1,
+  &quot;Fan&quot;: 1,
+  &quot;Potts&quot;: 1,
+  &quot;Johnson&quot;: 1
+}</pre></div></div></div><div class="section-title">Solution</div><pre><span class="keyword">var</span> groups =  _.groupBy(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> _.last(d.name.split(<span class="string">&apos; &apos;</span>))    
+})
+<span class="keyword">return</span> _.mapValues(groups, <span class="keyword">function</span>(value) {
+    <span class="keyword">return</span> value.length
+})</pre></div><p></p>
+<p></p><h2>Who is the first person in each last-name group?</h2><div class="lodashexercise">   <div class="result"></div><div class="ok">Done</div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, age: 54},
  {name: &apos;Mary Smith&apos;, age: 42},
  {name: &apos;Peter Pan&apos;, age: 15},
  {name: &apos;Kelly Fan&apos;, age: 35},
@@ -819,8 +882,21 @@ aggregate analysis.</p>
   &quot;Fan&quot;: &quot;Kelly Fan&quot;,
   &quot;Potts&quot;: &quot;Adam Potts&quot;,
   &quot;Johnson&quot;: &quot;Joe Johnson&quot;
-}</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>&quot;not done&quot;</pre></div></div></div><div class="section-title">Solution</div><pre><span class="keyword">var</span> result = <span class="string">&apos;not done&apos;</span>
-<span class="keyword">return</span> result</pre></div><p></p>
+}</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>{
+  &quot;Smith&quot;: &quot;John Smith&quot;,
+  &quot;Pan&quot;: &quot;Peter Pan&quot;,
+  &quot;Fan&quot;: &quot;Kelly Fan&quot;,
+  &quot;Potts&quot;: &quot;Adam Potts&quot;,
+  &quot;Johnson&quot;: &quot;Joe Johnson&quot;
+}</pre></div></div></div><div class="section-title">Solution</div><pre><span class="keyword">var</span> groups =  _.groupBy(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> _.last(d.name.split(<span class="string">&apos; &apos;</span>))    
+})
+<span class="keyword">var</span> first_entry = _.mapValues(groups, <span class="keyword">function</span>(value){
+    <span class="keyword">return</span> _.first(value)
+})
+<span class="keyword">return</span> _.mapValues(first_entry, <span class="keyword">function</span>(n) {
+    <span class="keyword">return</span> n.name
+})</pre></div><p></p>
 <p></p><h2>What are all person-favorite pairs?</h2><div class="lodashexercise">   <div class="result"></div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, age: 54, favorites: [&apos;food&apos;, &apos;travel&apos;]},
  {name: &apos;Mary Smith&apos;, age: 42, favorites: [&apos;sports&apos;, &apos;travel&apos;]},
  {name: &apos;Peter Pan&apos;, age: 15, favorites: [&apos;movies&apos;, &apos;tv&apos;, &apos;gardening&apos;]},
@@ -900,10 +976,81 @@ aggregate analysis.</p>
     &quot;name&quot;: &quot;Ben Smith&quot;,
     &quot;favorite&quot;: &quot;programming&quot;
   }
-]</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>&quot;not done&quot;</pre></div></div></div><div class="section-title">Solution</div><pre><span class="comment">// hint: use nested _.map, then  _.flatten</span>
+]</pre></div></div><div class="right"><div class="section-title">Actual Output<pre>[
+  [
+    &quot;food&quot;,
+    &quot;travel&quot;
+  ],
+  [
+    &quot;sports&quot;,
+    &quot;travel&quot;
+  ],
+  [
+    &quot;movies&quot;,
+    &quot;tv&quot;,
+    &quot;gardening&quot;
+  ],
+  [
+    &quot;movies&quot;,
+    &quot;travel&quot;,
+    &quot;programming&quot;
+  ],
+  [
+    &quot;sports&quot;,
+    &quot;food&quot;
+  ],
+  [
+    &quot;tv&quot;,
+    &quot;sports&quot;,
+    &quot;music&quot;
+  ],
+  [
+    &quot;movies&quot;,
+    &quot;tv&quot;,
+    &quot;programming&quot;
+  ]
+]</pre></div></div></div><div class="section-title">Solution</div><pre><span class="comment">// hint: use nested _.map, then  _.flatten</span>
 
-<span class="keyword">var</span> result = <span class="string">&apos;not done&apos;</span>
-<span class="keyword">return</span> result</pre></div><p></p>
+<span class="keyword">return</span> _.map(data, <span class="keyword">function</span>(d) {
+    console.log(d.name)
+    console.log(d.favorites)
+    <span class="keyword">return</span> _.map(d.favorites, <span class="keyword">function</span>(n) {
+        console.log(n)
+        <span class="keyword">return</span> n
+    })
+})</pre><div class="console">           console&gt; &quot;John Smith&quot;
+console&gt; [&quot;food&quot;,&quot;travel&quot;]
+console&gt; &quot;food&quot;
+console&gt; &quot;travel&quot;
+console&gt; &quot;Mary Smith&quot;
+console&gt; [&quot;sports&quot;,&quot;travel&quot;]
+console&gt; &quot;sports&quot;
+console&gt; &quot;travel&quot;
+console&gt; &quot;Peter Pan&quot;
+console&gt; [&quot;movies&quot;,&quot;tv&quot;,&quot;gardening&quot;]
+console&gt; &quot;movies&quot;
+console&gt; &quot;tv&quot;
+console&gt; &quot;gardening&quot;
+console&gt; &quot;Kelly Fan&quot;
+console&gt; [&quot;movies&quot;,&quot;travel&quot;,&quot;programming&quot;]
+console&gt; &quot;movies&quot;
+console&gt; &quot;travel&quot;
+console&gt; &quot;programming&quot;
+console&gt; &quot;Adam Potts&quot;
+console&gt; [&quot;sports&quot;,&quot;food&quot;]
+console&gt; &quot;sports&quot;
+console&gt; &quot;food&quot;
+console&gt; &quot;Joe Johnson&quot;
+console&gt; [&quot;tv&quot;,&quot;sports&quot;,&quot;music&quot;]
+console&gt; &quot;tv&quot;
+console&gt; &quot;sports&quot;
+console&gt; &quot;music&quot;
+console&gt; &quot;Ben Smith&quot;
+console&gt; [&quot;movies&quot;,&quot;tv&quot;,&quot;programming&quot;]
+console&gt; &quot;movies&quot;
+console&gt; &quot;tv&quot;
+console&gt; &quot;programming&quot;
+</div></div><p></p>
 <p></p><h2>What are all age-favorite pairs (in ascending order)?</h2><div class="lodashexercise">   <div class="result"></div><div class="section-title">Data</div><pre>[{name: &apos;John Smith&apos;, age: 54, favorites: [&apos;food&apos;, &apos;travel&apos;]},
  {name: &apos;Mary Smith&apos;, age: 42, favorites: [&apos;sports&apos;, &apos;travel&apos;]},
  {name: &apos;Peter Pan&apos;, age: 15, favorites: [&apos;movies&apos;, &apos;tv&apos;, &apos;gardening&apos;]},
