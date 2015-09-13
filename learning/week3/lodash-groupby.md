@@ -141,7 +141,15 @@ Who is the first person in each age group?
 
 {% solution %}
 
-var result = 'not done'
+var groups = _.groupBy(data, function(d) {
+    return Math.floor(d.age / 10)    
+})
+var first_entry = _.mapValues(groups, function(value){
+    return _.first(value)
+})
+result = _.mapValues(first_entry, function(n) {
+    return n.name
+})
 return result
 
 {% endlodashexercise %}
@@ -212,8 +220,9 @@ Group people by their last name
 
 {% solution %}
 
-var result = 'not done'
-return result
+return _.groupBy(data, function(d) {
+    return _.last(d.name.split(' '))    
+})
 
 {% endlodashexercise %}
 
@@ -248,8 +257,12 @@ How many people are in each last-name group?
 
 {% solution %}
 
-var result = 'not done'
-return result
+var groups =  _.groupBy(data, function(d) {
+    return _.last(d.name.split(' '))    
+})
+return _.mapValues(groups, function(value) {
+    return value.length
+})
 
 {% endlodashexercise %}
 
@@ -286,8 +299,15 @@ Who is the first person in each last-name group?
 
 {% solution %}
 
-var result = 'not done'
-return result
+var groups =  _.groupBy(data, function(d) {
+    return _.last(d.name.split(' '))    
+})
+var first_entry = _.mapValues(groups, function(value){
+    return _.first(value)
+})
+return _.mapValues(first_entry, function(n) {
+    return n.name
+})
 
 {% endlodashexercise %}
 
@@ -392,8 +412,14 @@ What are all person-favorite pairs?
 
 // hint: use nested _.map, then  _.flatten
 
-var result = 'not done'
-return result
+return _.map(data, function(d) {
+    console.log(d.name)
+    console.log(d.favorites)
+    return _.map(d.favorites, function(n) {
+        console.log(n)
+        return n
+    })
+})
 
 {% endlodashexercise %}
 
