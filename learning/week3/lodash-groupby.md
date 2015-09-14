@@ -150,7 +150,6 @@ var first_entry = _.mapValues(groups, function(value){
 result = _.mapValues(first_entry, function(n) {
     return n.name
 })
-
 return result
 
 {% endlodashexercise %}
@@ -731,11 +730,9 @@ var name_favorites = _.flatten(_.map(data, function(d) {
 var groups =  _.groupBy(name_favorites, function(d) {
     return d.favorite
 })
-
 var entries = _.mapValues(groups, function(value){
-    return _.every(value)
+    return _.first(value)
 })
-
 result = _.mapValues(entries, function(n) {
     return n.name
 }) 
@@ -786,8 +783,8 @@ var name_favorites = _.flatten(_.map(data, function(d) {
 var groups =  _.groupBy(name_favorites, function(d) {
     return d.favorite
 })
-
-result = _.mapValues(entries, function(n) {
+// FIXME: entries not defined here
+result = _.mapValues(groups, function(n) {
     return n.length
 }) 
 
@@ -968,19 +965,19 @@ What is the oldest age in each city?
 }
 
 {% solution %}
-
+// FIXME: Not Done
 var cities = _.groupBy(data, function(d) {
     console.log(d.name)
     console.log(d.city)
     return d.city
 })
-return cities
 
-// return _.mapValues(cities, function(n) {
-//     console.log(n.name)
-//     console.log(n.age)
-//     return _.max(n.age)
-// })
+var ages = _.mapValues(cities, function(n) {
+    console.log(n.city)
+    return n.city
+})
+
+return cities
 
 {% endlodashexercise %}
 
