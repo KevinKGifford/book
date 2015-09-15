@@ -42,9 +42,11 @@ Draw negative numbers in red and positive numbers in green.  <span style="color:
 {% set numbers = [43,21,-13,32,20,5,-8,29,9] %}
 {% for number in numbers %}
     {% if number < 0 %}
-        <negative>{{number}}</negative>
+        <span style="color:red">{{number}}</span>
+        // <negative>{{number}}</negative>
     {% else %}
-        <positive>{{number}}</positive>
+        <span style="color:green">{{number}}</span>
+        // <positive>{{number}}</positive>
     {% endif %}
 {% endfor %}
 
