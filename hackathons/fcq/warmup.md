@@ -101,34 +101,16 @@ return _.pick(_.mapValues(groups, function(d) {
 ## What are the course numbers of the courses Tom (PEI HSIU) Yeh taught?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return ['4830','4830']
+// NOTE: 'YEH, PEI HSUI' can teach for any college
+// any department -> so no need to groupBy
+
+return _.pluck(_.filter(data, function(d) {
+    var instructor_name = _.pluck(d.Instructors, 'name')
+    return instructor_name == 'YEH, PEI HSIU'
+}), 'Course')
+
 {% endlodash %}
 
 They are {{result}}.
 
 
-
-## Prototyping for "What are the course numbers of the courses Tom (PEI HSIU) Yeh taught?"
-
-# How many computer science (CSCI) courses?
-
-{% lodash %}
-
-var groups = _.groupBy(data, 'Subject')
-return _.pluck(_.filter(groups, function(d) {
-    return _.mapValues(d.Instructors, _.matches({'name': 'YEH, PEI HSIU'}))
-}), 'Course')
-
-// return _.size(_.filter(data, function(d) {
-//     if(_.pluck(d.Instructors, 'name') == 'YEH, PEI HSIU') {
-//         console.log('------************---------')
-//         console.log(d.Instructors)
-//         console.log(d.Course)
-//     }
-//     return d.CrsPBADept == 'CSCI'
-// }))
-
-{% endlodash %}
-
-They are {{ result }} computer science courses.

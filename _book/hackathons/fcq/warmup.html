@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.3.1" data-basepath="../.." data-revision="Tue Sep 15 2015 11:19:48 GMT-0600 (MDT)">
+    <div class="book" data-level="2.3.1" data-basepath="../.." data-revision="Tue Sep 15 2015 15:53:57 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -1394,30 +1394,16 @@
 
 <h2 id="what-are-the-course-numbers-of-the-courses-tom-pei-hsiu-yeh-taught">What are the course numbers of the courses Tom (PEI HSIU) Yeh taught?</h2>
 <p><pre>
-<span class="comment">// TODO: replace with code that computes the actual result</span>
-<span class="keyword">return</span> [<span class="string">&apos;4830&apos;</span>,<span class="string">&apos;4830&apos;</span>]
-</pre></p>
-<p>They are 4830,4830.</p>
-<h2 id="prototyping-for-what-are-the-course-numbers-of-the-courses-tom-pei-hsiu-yeh-taught">Prototyping for &quot;What are the course numbers of the courses Tom (PEI HSIU) Yeh taught?&quot;</h2>
-<h1 id="how-many-computer-science-csci-courses">How many computer science (CSCI) courses?</h1>
-<p><pre>
+<span class="comment">// NOTE: &apos;YEH, PEI HSUI&apos; can teach for any college</span>
+<span class="comment">// any department -&gt; so no need to groupBy</span>
 
-<span class="keyword">var</span> groups = _.groupBy(data, <span class="string">&apos;Subject&apos;</span>)
-<span class="keyword">return</span> _.pluck(_.filter(groups, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> _.mapValues(d.Instructors, _.matches({<span class="string">&apos;name&apos;</span>: <span class="string">&apos;YEH, PEI HSIU&apos;</span>}))
+<span class="keyword">return</span> _.pluck(_.filter(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">var</span> instructor_name = _.pluck(d.Instructors, <span class="string">&apos;name&apos;</span>)
+    <span class="keyword">return</span> instructor_name == <span class="string">&apos;YEH, PEI HSIU&apos;</span>
 }), <span class="string">&apos;Course&apos;</span>)
 
-<span class="comment">// return _.size(_.filter(data, function(d) {</span>
-<span class="comment">//     if(_.pluck(d.Instructors, &apos;name&apos;) == &apos;YEH, PEI HSIU&apos;) {</span>
-<span class="comment">//         console.log(&apos;------************---------&apos;)</span>
-<span class="comment">//         console.log(d.Instructors)</span>
-<span class="comment">//         console.log(d.Course)</span>
-<span class="comment">//     }</span>
-<span class="comment">//     return d.CrsPBADept == &apos;CSCI&apos;</span>
-<span class="comment">// }))</span>
-
 </pre></p>
-<p>They are ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, computer science courses.</p>
+<p>They are 4830,4830.</p>
 
                     
                     </section>
