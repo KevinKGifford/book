@@ -46,7 +46,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.3.2" data-basepath="../.." data-revision="Tue Sep 15 2015 15:53:57 GMT-0600 (MDT)">
+    <div class="book" data-level="2.3.2" data-basepath="../.." data-revision="Tue Sep 15 2015 20:49:45 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -649,10 +649,267 @@ the following questions. Each member on our team is reponsible for one question.
 <p><pre>
 <span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
 </pre></p>
-<h1 id="-question-2-by-name">(Question 2) by (Name)</h1>
+<h1 id="question-2-kevinkgifford-what-is-the-ranking-of-departments-within-the-college-of-engineering-applied-sciences-based-on-averaged-course-rating-and-average-instructor-rating">Question 2 [KevinKGifford]:  What is the ranking of Departments within the College of Engineering &amp; Applied Sciences based on averaged course rating and average instructor rating?</h1>
 <p><pre>
-<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
+<span class="comment">// Get the subset of College of Engineering data records</span>
+<span class="keyword">var</span> en_data = (_.filter(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d.CrsPBAColl == <span class="string">&apos;EN&apos;</span>
+}))
+<span class="keyword">return</span> _.size(en_data)
 </pre></p>
+<p>The number of courses in the College of Engineering is 573.</p>
+<p><pre>
+<span class="comment">// Determine distribution of courses across the College of Engineering Departments</span>
+<span class="keyword">var</span> en_data = (_.filter(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d.CrsPBAColl == <span class="string">&apos;EN&apos;</span>
+}))
+<span class="keyword">var</span> en_depts = _.groupBy(en_data, <span class="string">&apos;CrsPBADept&apos;</span>)
+<span class="keyword">return</span> _.mapValues(en_depts, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d.length
+})
+</pre></p>
+<p>Table 2-1: The breakdown of courses by department in the College of Engineering</p>
+<table>
+
+    <tr>
+        <td>ASEN</td>
+        <td>48</td>
+    </tr>
+
+    <tr>
+        <td>CHEN</td>
+        <td>49</td>
+    </tr>
+
+    <tr>
+        <td>CSCI</td>
+        <td>63</td>
+    </tr>
+
+    <tr>
+        <td>CVEN</td>
+        <td>100</td>
+    </tr>
+
+    <tr>
+        <td>ECEN</td>
+        <td>67</td>
+    </tr>
+
+    <tr>
+        <td>EMEN</td>
+        <td>23</td>
+    </tr>
+
+    <tr>
+        <td>ENGR</td>
+        <td>70</td>
+    </tr>
+
+    <tr>
+        <td>EVEN</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>HUEN</td>
+        <td>37</td>
+    </tr>
+
+    <tr>
+        <td>MCEN</td>
+        <td>90</td>
+    </tr>
+
+    <tr>
+        <td>TLEN</td>
+        <td>24</td>
+    </tr>
+
+</table>
+
+
+<p><pre>
+<span class="comment">// Determine the average course rating for all courses in each Engineering Department</span>
+<span class="keyword">var</span> en_data = (_.filter(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d.CrsPBAColl == <span class="string">&apos;EN&apos;</span>
+}))
+<span class="keyword">var</span> en_depts = _.groupBy(en_data, <span class="string">&apos;CrsPBADept&apos;</span>)
+<span class="keyword">var</span> results = _.mapValues(en_depts, <span class="keyword">function</span>(d) {
+    <span class="keyword">var</span> value = _.pluck(d, <span class="string">&apos;AvgCourse&apos;</span>)
+    <span class="keyword">var</span> filtered_value = _.filter(value, <span class="keyword">function</span>(d) {
+        <span class="keyword">return</span> d != <span class="keyword">null</span>
+    })
+    <span class="keyword">var</span> filtered_average = _.round(_.sum(filtered_value)/filtered_value.length, <span class="number">2</span>)
+    <span class="keyword">return</span> filtered_average
+    <span class="comment">// return { average: filtered_average }</span>
+})
+console.log(results)
+sorted_results = _.sortBy(results)
+<span class="keyword">return</span> sorted_results
+</pre><div class="console">console&gt; {
+ &quot;ASEN&quot;: 4.9,
+ &quot;CHEN&quot;: 4.42,
+ &quot;CSCI&quot;: 4.55,
+ &quot;CVEN&quot;: 4.87,
+ &quot;ECEN&quot;: 4.57,
+ &quot;EMEN&quot;: 4.97,
+ &quot;ENGR&quot;: 4.74,
+ &quot;EVEN&quot;: 4.69,
+ &quot;HUEN&quot;: 5.37,
+ &quot;MCEN&quot;: 4.48,
+ &quot;TLEN&quot;: 4.82
+}
+</div></p>
+<p>Table 2-2: The average course rating by department in the College of Engineering</p>
+<table>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+
+
+<p><pre>
+<span class="comment">// Determine the average instructor rating for all courses in each Engineering Department</span>
+<span class="keyword">var</span> en_data = (_.filter(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d.CrsPBAColl == <span class="string">&apos;EN&apos;</span>
+}))
+<span class="keyword">var</span> en_depts = _.groupBy(en_data, <span class="string">&apos;CrsPBADept&apos;</span>)
+<span class="comment">// return _.mapValues(en_depts, function(d) {</span>
+<span class="keyword">return</span> _.mapValues(en_depts, <span class="keyword">function</span>(d) {
+    <span class="keyword">var</span> value = _.pluck(d, <span class="string">&apos;AvgInstructor&apos;</span>)
+    <span class="keyword">var</span> filtered_value = _.filter(value, <span class="keyword">function</span>(d) {
+        <span class="keyword">return</span> d != <span class="keyword">null</span>
+    })
+    <span class="keyword">var</span> filtered_average = _.round(_.sum(filtered_value)/filtered_value.length, <span class="number">2</span>)
+    <span class="keyword">return</span> filtered_average
+})
+</pre></p>
+<p>Table 2-3: The average instructor rating by department in the College of Engineering</p>
+<table>
+
+    <tr>
+        <td>ASEN</td>
+        <td>5.16</td>
+    </tr>
+
+    <tr>
+        <td>CHEN</td>
+        <td>4.9</td>
+    </tr>
+
+    <tr>
+        <td>CSCI</td>
+        <td>4.75</td>
+    </tr>
+
+    <tr>
+        <td>CVEN</td>
+        <td>5.19</td>
+    </tr>
+
+    <tr>
+        <td>ECEN</td>
+        <td>4.83</td>
+    </tr>
+
+    <tr>
+        <td>EMEN</td>
+        <td>5.24</td>
+    </tr>
+
+    <tr>
+        <td>ENGR</td>
+        <td>5.21</td>
+    </tr>
+
+    <tr>
+        <td>EVEN</td>
+        <td>5.13</td>
+    </tr>
+
+    <tr>
+        <td>HUEN</td>
+        <td>5.74</td>
+    </tr>
+
+    <tr>
+        <td>MCEN</td>
+        <td>4.82</td>
+    </tr>
+
+    <tr>
+        <td>TLEN</td>
+        <td>5.09</td>
+    </tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h1 id="-question-3-by-name">(Question 3) by (Name)</h1>
 <p><pre>
 <span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
