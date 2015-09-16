@@ -7,11 +7,13 @@ As a class, we brainstormed and came up with a long list of further questions we
 can ask based on the FCQ data. Out of these questions, our team chose to tackle on
 the following questions. Each member on our team is reponsible for one question.
 
-# (Question 1) by (Name)
+# Question 1 [Zachary Lamb]: How does retention compare across departments?
 
 {% lodash %}
 return "[answer]"
 {% endlodash %}
+
+
 
 
 # Question 2 [KevinKGifford]:  What is the ranking of Departments within the College of Engineering & Applied Sciences based on averaged course rating and average instructor rating?
@@ -64,9 +66,11 @@ var results = _.mapValues(en_depts, function(d) {
     return filtered_average
     // return { average: filtered_average }
 })
-console.log(results)
-sorted_results = _.sortBy(results)
-return sorted_results
+
+// FIXME: Sort the results for display purposes via 
+// _.pairs() or possibly Javascript sort method
+
+return results
 {% endlodash %}
 
 Table 2-2: The average course rating by department in the College of Engineering
@@ -95,6 +99,10 @@ return _.mapValues(en_depts, function(d) {
     var filtered_average = _.round(_.sum(filtered_value)/filtered_value.length, 2)
     return filtered_average
 })
+
+// FIXME: Sort the results for display purposes via 
+// _.pairs() or possibly Javascript sort method
+
 {% endlodash %}
 
 Table 2-3: The average instructor rating by department in the College of Engineering
@@ -119,19 +127,25 @@ Table 2-3: The average instructor rating by department in the College of Enginee
 
 
 
-# (Question 3) by (Name)
+# Question 3 [Karen Blakemore]: What is the distribution of instructor type (e.g., Lecturer, Assistant Professor, Instructor) across departments? 
 
 {% lodash %}
 return "[answer]"
 {% endlodash %}
 
-# (Question 4) by (Name)
+
+
+
+# Question 4 [John Murphy]: Which class has the highest rating with the least amount of time spent each week?
 
 {% lodash %}
 return "[answer]"
 {% endlodash %}
 
-# (Question 5) by (Name)
+
+
+
+# Question 5 [Andrew Linenfelser]: Which course level has the lowest retention?
 
 {% lodash %}
 return "[answer]"

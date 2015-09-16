@@ -46,7 +46,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.3.2" data-basepath="../.." data-revision="Tue Sep 15 2015 20:49:45 GMT-0600 (MDT)">
+    <div class="book" data-level="2.3.2" data-basepath="../.." data-revision="Wed Sep 16 2015 16:21:00 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -645,7 +645,7 @@
 <p>As a class, we brainstormed and came up with a long list of further questions we
 can ask based on the FCQ data. Out of these questions, our team chose to tackle on
 the following questions. Each member on our team is reponsible for one question.</p>
-<h1 id="-question-1-by-name">(Question 1) by (Name)</h1>
+<h1 id="question-1-zachary-lamb-how-does-retention-compare-across-departments">Question 1 [Zachary Lamb]: How does retention compare across departments?</h1>
 <p><pre>
 <span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
 </pre></p>
@@ -744,79 +744,68 @@ the following questions. Each member on our team is reponsible for one question.
     <span class="keyword">return</span> filtered_average
     <span class="comment">// return { average: filtered_average }</span>
 })
-console.log(results)
-sorted_results = _.sortBy(results)
-<span class="keyword">return</span> sorted_results
-</pre><div class="console">console&gt; {
- &quot;ASEN&quot;: 4.9,
- &quot;CHEN&quot;: 4.42,
- &quot;CSCI&quot;: 4.55,
- &quot;CVEN&quot;: 4.87,
- &quot;ECEN&quot;: 4.57,
- &quot;EMEN&quot;: 4.97,
- &quot;ENGR&quot;: 4.74,
- &quot;EVEN&quot;: 4.69,
- &quot;HUEN&quot;: 5.37,
- &quot;MCEN&quot;: 4.48,
- &quot;TLEN&quot;: 4.82
-}
-</div></p>
+
+<span class="comment">// FIXME: Sort the results for display purposes via </span>
+<span class="comment">// _.pairs() or possibly Javascript sort method</span>
+
+<span class="keyword">return</span> results
+</pre></p>
 <p>Table 2-2: The average course rating by department in the College of Engineering</p>
 <table>
 
     <tr>
-        <td></td>
-        <td></td>
+        <td>ASEN</td>
+        <td>4.9</td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
+        <td>CHEN</td>
+        <td>4.42</td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
+        <td>CSCI</td>
+        <td>4.55</td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
+        <td>CVEN</td>
+        <td>4.87</td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
+        <td>ECEN</td>
+        <td>4.57</td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
+        <td>EMEN</td>
+        <td>4.97</td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
+        <td>ENGR</td>
+        <td>4.74</td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
+        <td>EVEN</td>
+        <td>4.69</td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
+        <td>HUEN</td>
+        <td>5.37</td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
+        <td>MCEN</td>
+        <td>4.48</td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
+        <td>TLEN</td>
+        <td>4.82</td>
     </tr>
 
 </table>
@@ -837,6 +826,10 @@ sorted_results = _.sortBy(results)
     <span class="keyword">var</span> filtered_average = _.round(_.sum(filtered_value)/filtered_value.length, <span class="number">2</span>)
     <span class="keyword">return</span> filtered_average
 })
+
+<span class="comment">// FIXME: Sort the results for display purposes via </span>
+<span class="comment">// _.pairs() or possibly Javascript sort method</span>
+
 </pre></p>
 <p>Table 2-3: The average instructor rating by department in the College of Engineering</p>
 <table>
@@ -910,15 +903,15 @@ sorted_results = _.sortBy(results)
 
 
 
-<h1 id="-question-3-by-name">(Question 3) by (Name)</h1>
+<h1 id="question-3-karen-blakemore-what-is-the-distribution-of-instructor-type-e-g-lecturer-assistant-professor-instructor-across-departments">Question 3 [Karen Blakemore]: What is the distribution of instructor type (e.g., Lecturer, Assistant Professor, Instructor) across departments?</h1>
 <p><pre>
 <span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
 </pre></p>
-<h1 id="-question-4-by-name">(Question 4) by (Name)</h1>
+<h1 id="question-4-john-murphy-which-class-has-the-highest-rating-with-the-least-amount-of-time-spent-each-week">Question 4 [John Murphy]: Which class has the highest rating with the least amount of time spent each week?</h1>
 <p><pre>
 <span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
 </pre></p>
-<h1 id="-question-5-by-name">(Question 5) by (Name)</h1>
+<h1 id="question-5-andrew-linenfelser-which-course-level-has-the-lowest-retention">Question 5 [Andrew Linenfelser]: Which course level has the lowest retention?</h1>
 <p><pre>
 <span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
 </pre></p>
