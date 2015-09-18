@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Lodash | book</title>
+        <title>FCQ Report | book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../../learning/week2/index.html" />
+    <link rel="next" href="../../learning/week4/viz.html" />
     
     
-    <link rel="prev" href="../../learning/week1/svg-template.html" />
+    <link rel="prev" href="../../learning/week4/index.html" />
     
 
         <!-- head:end -->
@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.2.2" data-basepath="../.." data-revision="Thu Sep 17 2015 22:50:41 GMT-0600 (MDT)">
+    <div class="book" data-level="1.5.1" data-basepath="../.." data-revision="Thu Sep 17 2015 22:50:41 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -191,7 +191,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="learning/week1/lodash.html">
+        <li class="chapter " data-level="1.2.2" data-path="learning/week1/lodash.html">
             
                 
                     <a href="../../learning/week1/lodash.html">
@@ -344,7 +344,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="learning/week4/report.html">
+        <li class="chapter active" data-level="1.5.1" data-path="learning/week4/report.html">
             
                 
                     <a href="../../learning/week4/report.html">
@@ -693,90 +693,38 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="lodash-101">Lodash 101</h1>
-<p><a href="https://lodash.com/docs" target="_blank">Lodash</a> is one of the most popular utility-belt library.
-It can make you very productive and effective in writing Javascript programs.</p>
-<p>Read Lodash&apos;s page on npm <a href="https://www.npmjs.com/package/lodash" target="_blank">here</a>. How many times
-was it downloaded just last week alone?</p>
-<p><strong>Answer:</strong> Lodash was downloaded <strong>741959</strong> times in the last day (accessed 28-August-2015)</p>
-<h2 id="examples">Examples</h2>
-<h3 id="array-of-numbers">Array of numbers</h3>
-<p>Let&apos;s create a data array with the contents: 1,2,3,4,5. This array has 5 items.</p>
-<p>To get the first item, we can use lodash&apos;s <a href="https://lodash.com/docs#first" target="_blank">_.first</a>.</p>
+                        <p></p>
+<h1 id="report">Report</h1>
+<p>As a team, answer all the questions the team&apos;s members submitted on our
+<a href="https://github.com/bigdatahci2015/forum/issues/14" target="_blank">course forum</a>. Each
+team member is responsible for one question. But everyone should work together
+to come up with a good solution. Your answer should consist of Lodash code
+and a brief writeup. Utilize <code>_.map</code>, <code>_.filter</code>, <code>_.group</code> ...etc. Do not
+use any for loop.</p>
+<p>It is important for everyone to understand all the solutions and make sure you
+will be able to independently reproduce these solutions when asked to do so.
+Coming up, we will incorporate variations of these questions into a future hackathon
+ and you are expected to be capable of reproducing and adapting your solutions.</p>
+<h1 id="-question-1-by-name">(Question 1) by (Name)</h1>
 <p><pre>
-<span class="keyword">return</span> _.first(data)
+<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
 </pre></p>
-<p>The result is 1.</p>
-<p>To get the first 3 elements, we can use lodash&apos;s <a href="https://lodash.com/docs#take" target="_blank">_.take</a></p>
+<h1 id="-question-2-by-name">(Question 2) by (Name)</h1>
 <p><pre>
-<span class="keyword">return</span> _.take(data, <span class="number">3</span>)
+<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
 </pre></p>
-<p>The result is 1,2,3.</p>
-<h3 id="array-of-objects">Array of objects</h3>
-<p>Let&apos;s create a data array consisting of objects.</p>
-<p>We can dump the content using the <code>dump</code> filter.</p>
-<p>[{&quot;name&quot;:&quot;John&quot;,&quot;age&quot;:45},{&quot;name&quot;:&quot;Mary&quot;,&quot;age&quot;:32},{&quot;name&quot;:&quot;Peter&quot;,&quot;age&quot;:54}]</p>
-<p>To retrieve the name field from each object in this array, lodash&apos;s
-<a href="https://lodash.com/docs#pluck" target="_blank">_.pluck</a> is very handy.</p>
+<h1 id="-question-3-by-name">(Question 3) by (Name)</h1>
 <p><pre>
-<span class="keyword">return</span> _.pluck(data, <span class="string">&apos;name&apos;</span>)
+<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
 </pre></p>
-<p>The result is John,Mary,Peter.</p>
-<p>We can even display the result nicely as a bullet list</p>
-<ul>
-
-<li>
-    John
-</li>
-
-<li>
-    Mary
-</li>
-
-<li>
-    Peter
-</li>
-
-</ul>
-
-<p>Using <a href="https://lodash.com/docs#find" target="_blank">_.find</a>, we can look up an object by its field.</p>
-<p>Let&apos;s try to find out how old Mary is.</p>
+<h1 id="-question-4-by-name">(Question 4) by (Name)</h1>
 <p><pre>
-<span class="keyword">return</span> _.find(data, {name: <span class="string">&apos;Mary&apos;</span>})
+<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
 </pre></p>
-<p>Mary is 32 years-old.</p>
-<h2 id="challenges">Challenges</h2>
-<p>Now it&apos;s your turn to take the following learning challenges.</p>
-<h3 id="data">Data</h3>
-<p>The data is</p>
-<p>[{&quot;name&quot;:&quot;John&quot;,&quot;age&quot;:45},{&quot;name&quot;:&quot;Mary&quot;,&quot;age&quot;:32},{&quot;name&quot;:&quot;Peter&quot;,&quot;age&quot;:54},{&quot;name&quot;:&quot;Jane&quot;,&quot;age&quot;:12}]</p>
-<h3 id="q-what-are-the-ages-of-these-people">Q: What are the ages of these people?</h3>
+<h1 id="-question-5-by-name">(Question 5) by (Name)</h1>
 <p><pre>
-<span class="keyword">return</span> _.pluck(data, <span class="string">&apos;age&apos;</span>)
+<span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
 </pre></p>
-<p>The ages are 45,32,54,12</p>
-<h3 id="q-what-is-the-youngest-age">Q. What is the youngest age?</h3>
-<p><pre>
-<span class="comment">// replace this code with your solution that uses lodash</span>
-<span class="comment">// hint: use _.pluck and _.min</span>
-<span class="keyword">return</span> _.min(_.pluck(data, <span class="string">&apos;age&apos;</span>))
-</pre></p>
-<p>The youngest age is 12.</p>
-<h3 id="q-what-is-the-oldest-age">Q. What is the oldest age?</h3>
-<p><pre>
-<span class="keyword">return</span> _.max(_.pluck(data, <span class="string">&apos;age&apos;</span>))
-</pre></p>
-<p>The oldest age is 54.</p>
-<h3 id="q-who-is-the-youngest-person">Q. Who is the youngest person?</h3>
-<p><pre>
-<span class="comment">// replace this code with your solution that uses lodash</span>
-<span class="comment">// hint: use your previous solution with _.find</span>
-<span class="comment">// return _.find(data, {name: &apos;Mary&apos;})</span>
-<span class="comment">// Mary is  years-old.</span>
-<span class="comment">//</span>
-<span class="keyword">return</span> _.find( data, {age: _.min(_.pluck(data, <span class="string">&apos;age&apos;</span>))} )
-</pre></p>
-<p>The youngest person is Jane.</p>
 
                     
                     </section>
@@ -787,10 +735,10 @@ was it downloaded just last week alone?</p>
         </div>
 
         
-        <a href="../../learning/week1/svg-template.html" class="navigation navigation-prev " aria-label="Previous page: Template Engine"><i class="fa fa-angle-left"></i></a>
+        <a href="../../learning/week4/index.html" class="navigation navigation-prev " aria-label="Previous page: Week 4"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../learning/week2/index.html" class="navigation navigation-next " aria-label="Next page: Week 2"><i class="fa fa-angle-right"></i></a>
+        <a href="../../learning/week4/viz.html" class="navigation navigation-next " aria-label="Next page: FCQ Viz"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

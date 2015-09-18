@@ -46,7 +46,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.3.2" data-basepath="../.." data-revision="Wed Sep 16 2015 16:21:00 GMT-0600 (MDT)">
+    <div class="book" data-level="2.3.2" data-basepath="../.." data-revision="Thu Sep 17 2015 22:50:41 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -316,6 +316,57 @@
                             <b>1.4.3.</b>
                         
                         Lodash GroupBy
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="learning/week4/index.html">
+            
+                
+                    <a href="../../learning/week4/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Week 4
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="learning/week4/report.html">
+            
+                
+                    <a href="../../learning/week4/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.1.</b>
+                        
+                        FCQ Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="learning/week4/viz.html">
+            
+                
+                    <a href="../../learning/week4/viz.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.2.</b>
+                        
+                        FCQ Viz
                     </a>
             
             
@@ -649,7 +700,7 @@ the following questions. Each member on our team is reponsible for one question.
 <p><pre>
 <span class="keyword">return</span> <span class="string">&quot;[answer]&quot;</span>
 </pre></p>
-<h1 id="question-2-kevinkgifford-what-is-the-ranking-of-departments-within-the-college-of-engineering-applied-sciences-based-on-averaged-course-rating-and-average-instructor-rating">Question 2 [KevinKGifford]:  What is the ranking of Departments within the College of Engineering &amp; Applied Sciences based on averaged course rating and average instructor rating?</h1>
+<h1 id="question-2-kevin-gifford-what-is-the-ranking-of-departments-within-the-college-of-engineering-applied-sciences-based-on-averaged-course-rating-and-average-instructor-rating">Question 2 [Kevin Gifford]:  What is the ranking of Departments within the College of Engineering &amp; Applied Sciences based on averaged course rating and average instructor rating?</h1>
 <p><pre>
 <span class="comment">// Get the subset of College of Engineering data records</span>
 <span class="keyword">var</span> en_data = (_.filter(data, <span class="keyword">function</span>(d) {
@@ -742,60 +793,18 @@ the following questions. Each member on our team is reponsible for one question.
     })
     <span class="keyword">var</span> filtered_average = _.round(_.sum(filtered_value)/filtered_value.length, <span class="number">2</span>)
     <span class="keyword">return</span> filtered_average
-    <span class="comment">// return { average: filtered_average }</span>
 })
-
-<span class="comment">// FIXME: Sort the results for display purposes via </span>
-<span class="comment">// _.pairs() or possibly Javascript sort method</span>
-
-<span class="keyword">return</span> results
+<span class="keyword">var</span> sorted_output = _.sortBy(_.pairs(results), <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d[<span class="number">1</span>]
+})
+<span class="keyword">return</span> sorted_output
 </pre></p>
 <p>Table 2-2: The average course rating by department in the College of Engineering</p>
 <table>
 
     <tr>
-        <td>ASEN</td>
-        <td>4.9</td>
-    </tr>
-
-    <tr>
         <td>CHEN</td>
         <td>4.42</td>
-    </tr>
-
-    <tr>
-        <td>CSCI</td>
-        <td>4.55</td>
-    </tr>
-
-    <tr>
-        <td>CVEN</td>
-        <td>4.87</td>
-    </tr>
-
-    <tr>
-        <td>ECEN</td>
-        <td>4.57</td>
-    </tr>
-
-    <tr>
-        <td>EMEN</td>
-        <td>4.97</td>
-    </tr>
-
-    <tr>
-        <td>ENGR</td>
-        <td>4.74</td>
-    </tr>
-
-    <tr>
-        <td>EVEN</td>
-        <td>4.69</td>
-    </tr>
-
-    <tr>
-        <td>HUEN</td>
-        <td>5.37</td>
     </tr>
 
     <tr>
@@ -804,21 +813,63 @@ the following questions. Each member on our team is reponsible for one question.
     </tr>
 
     <tr>
+        <td>CSCI</td>
+        <td>4.55</td>
+    </tr>
+
+    <tr>
+        <td>ECEN</td>
+        <td>4.57</td>
+    </tr>
+
+    <tr>
+        <td>EVEN</td>
+        <td>4.69</td>
+    </tr>
+
+    <tr>
+        <td>ENGR</td>
+        <td>4.74</td>
+    </tr>
+
+    <tr>
         <td>TLEN</td>
         <td>4.82</td>
+    </tr>
+
+    <tr>
+        <td>CVEN</td>
+        <td>4.87</td>
+    </tr>
+
+    <tr>
+        <td>ASEN</td>
+        <td>4.9</td>
+    </tr>
+
+    <tr>
+        <td>EMEN</td>
+        <td>4.97</td>
+    </tr>
+
+    <tr>
+        <td>HUEN</td>
+        <td>5.37</td>
     </tr>
 
 </table>
 
 
+
 <p><pre>
 <span class="comment">// Determine the average instructor rating for all courses in each Engineering Department</span>
-<span class="keyword">var</span> en_data = (_.filter(data, <span class="keyword">function</span>(d) {
+<span class="keyword">var</span> en_data = _.filter(data, <span class="keyword">function</span>(d) {
     <span class="keyword">return</span> d.CrsPBAColl == <span class="string">&apos;EN&apos;</span>
-}))
+})
+
 <span class="keyword">var</span> en_depts = _.groupBy(en_data, <span class="string">&apos;CrsPBADept&apos;</span>)
-<span class="comment">// return _.mapValues(en_depts, function(d) {</span>
-<span class="keyword">return</span> _.mapValues(en_depts, <span class="keyword">function</span>(d) {
+
+<span class="keyword">var</span> results = _.mapValues(en_depts, <span class="keyword">function</span>(d) {
     <span class="keyword">var</span> value = _.pluck(d, <span class="string">&apos;AvgInstructor&apos;</span>)
     <span class="keyword">var</span> filtered_value = _.filter(value, <span class="keyword">function</span>(d) {
         <span class="keyword">return</span> d != <span class="keyword">null</span>
@@ -827,56 +878,18 @@ the following questions. Each member on our team is reponsible for one question.
     <span class="keyword">return</span> filtered_average
 })
 
-<span class="comment">// FIXME: Sort the results for display purposes via </span>
-<span class="comment">// _.pairs() or possibly Javascript sort method</span>
+<span class="keyword">var</span> sorted_output = _.sortBy(_.pairs(results), <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d[<span class="number">1</span>]
+})
+<span class="keyword">return</span> sorted_output
 
 </pre></p>
 <p>Table 2-3: The average instructor rating by department in the College of Engineering</p>
 <table>
 
     <tr>
-        <td>ASEN</td>
-        <td>5.16</td>
-    </tr>
-
-    <tr>
-        <td>CHEN</td>
-        <td>4.9</td>
-    </tr>
-
-    <tr>
         <td>CSCI</td>
         <td>4.75</td>
-    </tr>
-
-    <tr>
-        <td>CVEN</td>
-        <td>5.19</td>
-    </tr>
-
-    <tr>
-        <td>ECEN</td>
-        <td>4.83</td>
-    </tr>
-
-    <tr>
-        <td>EMEN</td>
-        <td>5.24</td>
-    </tr>
-
-    <tr>
-        <td>ENGR</td>
-        <td>5.21</td>
-    </tr>
-
-    <tr>
-        <td>EVEN</td>
-        <td>5.13</td>
-    </tr>
-
-    <tr>
-        <td>HUEN</td>
-        <td>5.74</td>
     </tr>
 
     <tr>
@@ -885,19 +898,290 @@ the following questions. Each member on our team is reponsible for one question.
     </tr>
 
     <tr>
+        <td>ECEN</td>
+        <td>4.83</td>
+    </tr>
+
+    <tr>
+        <td>CHEN</td>
+        <td>4.9</td>
+    </tr>
+
+    <tr>
         <td>TLEN</td>
         <td>5.09</td>
+    </tr>
+
+    <tr>
+        <td>EVEN</td>
+        <td>5.13</td>
+    </tr>
+
+    <tr>
+        <td>ASEN</td>
+        <td>5.16</td>
+    </tr>
+
+    <tr>
+        <td>CVEN</td>
+        <td>5.19</td>
+    </tr>
+
+    <tr>
+        <td>ENGR</td>
+        <td>5.21</td>
+    </tr>
+
+    <tr>
+        <td>EMEN</td>
+        <td>5.24</td>
+    </tr>
+
+    <tr>
+        <td>HUEN</td>
+        <td>5.74</td>
     </tr>
 
 </table>
 
 
 
+<p><pre>
+<span class="comment">// For the ASEN department create a sorted list of [key, value] = [AvgCourse, Instructors]</span>
+
+<span class="keyword">var</span> asen_data = _.filter(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d.CrsPBADept == <span class="string">&apos;ASEN&apos;</span>
+})
+<span class="keyword">var</span> below_average = _.filter(asen_data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d.AvgCourse &lt; <span class="number">4.90</span>
+})
+<span class="keyword">var</span> groups = _.groupBy(below_average, <span class="string">&apos;AvgCourse&apos;</span>)
+
+<span class="keyword">var</span> courses = _.mapValues(groups, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> _.pluck(_.flatten(_.pluck(d, <span class="string">&apos;Instructors&apos;</span>)), <span class="string">&apos;name&apos;</span>)
+})
+<span class="keyword">var</span> sorted_output = _.sortBy(_.pairs(courses), <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d[<span class="number">0</span>]
+})
+<span class="keyword">return</span> sorted_output
+
+</pre></p>
+<p>Table 2-4: Instructors with below average (ave = 4.90) course-rating in ASEN</p>
+<table>
+
+    <tr>
+        <td>3.02</td>
+        <td>JACKSON, JELLIFFE KEVIN</td>
+    </tr>
+
+    <tr>
+        <td>3.61</td>
+        <td>FREW, ERIC W</td>
+    </tr>
+
+    <tr>
+        <td>3.81</td>
+        <td>BIRINGEN, SEDAT,EMERY, WILLIAM J</td>
+    </tr>
+
+    <tr>
+        <td>4.11</td>
+        <td>HUSSEIN, MAHMOUD ISMAIL</td>
+    </tr>
+
+    <tr>
+        <td>4.12</td>
+        <td>LARSON, KRISTINE M</td>
+    </tr>
+
+    <tr>
+        <td>4.18</td>
+        <td>KANTHA, LAKSHMI H</td>
+    </tr>
+
+    <tr>
+        <td>4.25</td>
+        <td>STARKEY, RYAN P.</td>
+    </tr>
+
+    <tr>
+        <td>4.3</td>
+        <td>LAWRENCE, DALE A</td>
+    </tr>
+
+    <tr>
+        <td>4.32</td>
+        <td>LAWRENCE, DALE A,AKOS, DENNIS M</td>
+    </tr>
+
+    <tr>
+        <td>4.35</td>
+        <td>LAWRENCE, DALE A,SCHEERES, DANIEL J.</td>
+    </tr>
+
+    <tr>
+        <td>4.47</td>
+        <td>ARGROW, BRIAN M</td>
+    </tr>
+
+    <tr>
+        <td>4.48</td>
+        <td>KNIPP, DELORES JANE</td>
+    </tr>
+
+    <tr>
+        <td>4.53</td>
+        <td>SCHEERES, DANIEL J.</td>
+    </tr>
+
+    <tr>
+        <td>4.62</td>
+        <td>JACKSON, JELLIFFE KEVIN</td>
+    </tr>
+
+    <tr>
+        <td>4.63</td>
+        <td>AXELRAD, PENINA,LARSON, KRISTINE M</td>
+    </tr>
+
+    <tr>
+        <td>4.64</td>
+        <td>BIRINGEN, SEDAT</td>
+    </tr>
+
+    <tr>
+        <td>4.73</td>
+        <td>JACKSON, JELLIFFE KEVIN,THAYER, JEFFREY P</td>
+    </tr>
+
+    <tr>
+        <td>4.82</td>
+        <td>FELIPPA, CARLOS A</td>
+    </tr>
+
+    <tr>
+        <td>4.86</td>
+        <td>JANSEN, KENNETH E</td>
+    </tr>
+
+    <tr>
+        <td>4.87</td>
+        <td>MCMAHON, JAY W</td>
+    </tr>
+
+</table>
 
 
 
+<p><pre>
+<span class="comment">// For the ASEN department create a sorted list of [key, value] = [AvgInstructor, Instructors]</span>
 
+<span class="keyword">var</span> asen_data = _.filter(data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d.CrsPBADept == <span class="string">&apos;ASEN&apos;</span>
+})
+<span class="keyword">var</span> below_average = _.filter(asen_data, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d.AvgInstructor &lt; <span class="number">5.16</span>
+})
+<span class="keyword">var</span> groups = _.groupBy(below_average, <span class="string">&apos;AvgInstructor&apos;</span>)
 
+<span class="keyword">var</span> courses = _.mapValues(groups, <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> _.pluck(_.flatten(_.pluck(d, <span class="string">&apos;Instructors&apos;</span>)), <span class="string">&apos;name&apos;</span>)
+})
+<span class="keyword">var</span> sorted_output = _.sortBy(_.pairs(courses), <span class="keyword">function</span>(d) {
+    <span class="keyword">return</span> d[<span class="number">0</span>]
+})
+<span class="keyword">return</span> sorted_output
+
+</pre></p>
+<p>Table 2-5: Instructors with below average (ave = 5.16) course-rating in ASEN</p>
+<table>
+
+    <tr>
+        <td>3.5</td>
+        <td>LAWRENCE, DALE A</td>
+    </tr>
+
+    <tr>
+        <td>3.58</td>
+        <td>BIRINGEN, SEDAT,EMERY, WILLIAM J</td>
+    </tr>
+
+    <tr>
+        <td>3.88</td>
+        <td>LAWRENCE, DALE A</td>
+    </tr>
+
+    <tr>
+        <td>3.92</td>
+        <td>FREW, ERIC W</td>
+    </tr>
+
+    <tr>
+        <td>4.18</td>
+        <td>KANTHA, LAKSHMI H</td>
+    </tr>
+
+    <tr>
+        <td>4.23</td>
+        <td>LARSON, KRISTINE M</td>
+    </tr>
+
+    <tr>
+        <td>4.26</td>
+        <td>JACKSON, JELLIFFE KEVIN</td>
+    </tr>
+
+    <tr>
+        <td>4.33</td>
+        <td>HUSSEIN, MAHMOUD ISMAIL</td>
+    </tr>
+
+    <tr>
+        <td>4.45</td>
+        <td>LAWRENCE, DALE A,SCHEERES, DANIEL J.</td>
+    </tr>
+
+    <tr>
+        <td>4.54</td>
+        <td>BIRINGEN, SEDAT</td>
+    </tr>
+
+    <tr>
+        <td>4.67</td>
+        <td>AXELRAD, PENINA,LARSON, KRISTINE M</td>
+    </tr>
+
+    <tr>
+        <td>4.7</td>
+        <td>KNIPP, DELORES JANE</td>
+    </tr>
+
+    <tr>
+        <td>4.72</td>
+        <td>SCHAUB, HANSPETER</td>
+    </tr>
+
+    <tr>
+        <td>4.88</td>
+        <td>AKOS, DENNIS M</td>
+    </tr>
+
+    <tr>
+        <td>4.97</td>
+        <td>JACKSON, JELLIFFE KEVIN,THAYER, JEFFREY P</td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>SCHEERES, DANIEL J.,PARKER, JEFFREY S.,DAVIS, KATHRYN E,MCMAHON, JAY W</td>
+    </tr>
+
+    <tr>
+        <td>5.14</td>
+        <td>FELIPPA, CARLOS A</td>
+    </tr>
+
+</table>
 
 
 
