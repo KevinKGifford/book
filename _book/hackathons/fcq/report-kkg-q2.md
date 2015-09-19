@@ -10,27 +10,9 @@ the following questions. Each member on our team is reponsible for one question.
 # Question 1 [Zachary Lamb]: How does retention compare across departments?
 
 {% lodash %}
-/* Group by department, then calculate the average withdrawel rate */
-var grps = _.groupBy(data, 'CrsPBADept')
-var result =_.mapValues(grps, function(d){
-    return _.sum(_.pluck(d, 'PCT.WDRAW'))/d.length
-})
-
-/* Convert object to array and sort by withdrawal rate */
-result = _.sortByOrder(_.pairs(result),function(d){return d[1]},'desc')
-return result
-
+return "[answer]"
 {% endlodash %}
 
-Table 1-1: How does retention compare across departmentsing
-<table>
-{% for key, value in result %}
-    <tr>
-        <td>{{key}}</td>
-        <td>{{value}}</td>
-    </tr>
-{% endfor %}
-</table>
 
 
 
@@ -210,57 +192,17 @@ Table 2-5: Instructors with below average (ave = 5.16) course-rating in ASEN
 # Question 3 [Karen Blakemore]: What is the distribution of instructor type (e.g., Lecturer, Assistant Professor, Instructor) across departments? 
 
 {% lodash %}
-/* First group by department */
-var departments = _.groupBy(data, 'CrsPBADept')
-
-/* Then collect titles for all classes in each department */
-var titles = _.mapValues(departments, function(d) {
-	return _.pluck(_.flatten(_.pluck(d, 'Instructors')), 'title')
-})
-
-/* Finally, compute length for each title */
-var grps = _.mapValues(titles, function(d) {
-	return _.mapValues(_.groupBy(d, function(title) {return title}), 'length')
-})
-
-return grps
-
+return "[answer]"
 {% endlodash %}
 
-{% for dept, titles in result %}
-<p><b>{{dept}}</b></p>	
-<table>
-	{% for title, count in titles %}
-    <tr>
-        <td>{{title}}</td>
-        <td>{{count}}</td>
-    </tr>
-	{% endfor %}
-</table>
-{% endfor %}
 
 
 
 # Question 4 [John Murphy]: Which class has the highest rating with the least amount of time spent each week?
 
 {% lodash %}
-/* First, extract all courses with the easiest work load */
-var courses = _.groupBy(data, 'Workload.Hrs_Wk')['0-3']
-
-/* Then, find those which have a 4.0 grade, remove duplicates and sort. */
-return easy_As = _.unique(_.pluck(_.filter(courses, {'AVG_GRD': 4.0}), 'CourseTitle')).sort()
+return "[answer]"
 {% endlodash %}
-
-Table 4-1: Which class has the highest rating with the least amount of time spent each week?
-
-<p><b>Easy A Courses</b></p>
-<table>
-{% for course in result %}
-    <tr>
-        <td>{{course}}</td>
-    </tr>
-{% endfor %}
-</table>
 
 
 
@@ -268,26 +210,5 @@ Table 4-1: Which class has the highest rating with the least amount of time spen
 # Question 5 [Andrew Linenfelser]: Which course level has the lowest retention?
 
 {% lodash %}
-/* Group by level, then calculate average course withdrawal rate for each level */
-var grps = _.groupBy(data, 'Level')
-var result =_.mapValues(grps, function(d){
-    return _.sum(_.pluck(d, 'PCT.WDRAW'))/d.length
-})
-
-/* Convert object to array and sort by withdrawal rate */
-result = _.sortByOrder(_.pairs(result),function(d){return d[1]},'desc')
-return result
+return "[answer]"
 {% endlodash %}
-
-
-Table 5-1: Which course level has the lowest retention?
-<table>
-{% for key, value in result %}
-    <tr>
-        <td>{{key}}</td>
-        <td>{{value}}</td>
-    </tr>
-{% endfor %}
-</table>
-
-
