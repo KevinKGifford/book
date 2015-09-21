@@ -31,13 +31,13 @@ MATH and APPM both have larger than average withdrawal rates... interesting
 
 # Question 2 [Kevin Gifford]:  What is the ranking of Departments within the College of Engineering & Applied Sciences based on averaged course rating and average instructor rating?
 
-![screenshot](Report-Q2-1.png)
-Figure 2-1: Total number of courses in each College of Engineering Department.
+![screenshot](CrsPBAColl-AvgCourse.png)
+Figure 2-1: Average Course Rating for the various CU-Boulder colleges.
 
-![screenshot](Report-Q2-2.png)
+![screenshot](CrsPBADept-AvgCourse.png)
 Figure 2-2: Average *Course* Rating each College of Engineering Department.
 
-![screenshot](Report-Q2-3.png)
+![screenshot](CrsPBADept-AvgInstructor.png)
 Figure 2-3: Average *Instructor* Rating each College of Engineering Department.
 
 ![screenshot](Report-Q2-4.png)
