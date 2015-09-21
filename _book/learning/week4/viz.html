@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.5.2" data-basepath="../.." data-revision="Fri Sep 18 2015 22:10:58 GMT-0600 (MDT)">
+    <div class="book" data-level="1.5.2" data-basepath="../.." data-revision="Sun Sep 20 2015 19:04:52 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -707,24 +707,46 @@ including the controls, widgets ...etc.</p>
 how to transform this JSON file into a format that can be fed into Tableau. As
 a junior and senior, you are expected to be able to look around the Internet
 to problem solve.</p>
-<h1 id="-question-1">(Question 1)</h1>
-<p><img src="screenshot.png" alt="screenshot"></p>
-<p>(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)</p>
-<h1 id="-question-2">(Question 2)</h1>
-<p><img src="screenshot.png" alt="screenshot"></p>
-<p>(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)</p>
-<h1 id="-question-3">(Question 3)</h1>
-<p><img src="screenshot.png" alt="screenshot"></p>
-<p>(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)</p>
-<h1 id="-question-4">(Question 4)</h1>
-<p><img src="screenshot.png" alt="screenshot"></p>
-<p>(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)</p>
-<h1 id="-question-5">(Question 5)</h1>
-<p><img src="screenshot.png" alt="screenshot"></p>
+<h1 id="question-1-zachary-lamb-how-does-retention-compare-across-departments">Question 1 [Zachary Lamb]: How does retention compare across departments?</h1>
+<p><img src="Report-Q1.png" alt="screenshot">
+Figure 1-1: Academic <em>Departmental</em>  withdrawal rate comparison</p>
+<p>MATH and APPM both have larger than average withdrawal rates... interesting</p>
+<h1 id="question-2-kevin-gifford-what-is-the-ranking-of-departments-within-the-college-of-engineering-applied-sciences-based-on-averaged-course-rating-and-average-instructor-rating">Question 2 [Kevin Gifford]:  What is the ranking of Departments within the College of Engineering &amp; Applied Sciences based on averaged course rating and average instructor rating?</h1>
+<p><img src="Report-Q2-1.png" alt="screenshot">
+Figure 2-1: Total number of courses in each College of Engineering Department.</p>
+<p><img src="Report-Q2-2.png" alt="screenshot">
+Figure 2-2: Average <em>Course</em> Rating each College of Engineering Department.</p>
+<p><img src="Report-Q2-3.png" alt="screenshot">
+Figure 2-3: Average <em>Instructor</em> Rating each College of Engineering Department.</p>
+<p><img src="Report-Q2-4.png" alt="screenshot">
+Figure 2-4: ASEN Instructors with below average <em>Course</em> (average = 4.90)</p>
+<p><img src="Report-Q2-5.png" alt="screenshot">
+Figure 2-5: ASEN Instructors with below average <em>Instructor</em> (average = 5.16)</p>
+<h1 id="question-3-karen-blakemore-what-is-the-distribution-of-instructor-type-e-g-lecturer-assistant-professor-instructor-across-departments">Question 3 [Karen Blakemore]: What is the distribution of instructor type (e.g., Lecturer, Assistant Professor, Instructor) across departments?</h1>
+<p><img src="Report-Q3-1.png" alt="screenshot">
+Figure 3-1: Distribution of <em>Academic Title</em> in the ASEN Department</p>
+<p><img src="Report-Q3-2.png" alt="screenshot">
+Figure 3-2: Distribution of <em>Academic Title</em> in the CHEN Department</p>
+<p><img src="Report-Q3-3.png" alt="screenshot">
+Figure 3-3: Distribution of <em>Academic Title</em> in the CSCI Department</p>
+<h1 id="question-4-john-murphy-which-class-has-the-highest-rating-with-the-least-amount-of-time-spent-each-week">Question 4 [John Murphy]: Which class has the highest rating with the least amount of time spent each week?</h1>
+<p><pre>
+<span class="comment">/* First, extract all courses with the easiest work load */</span>
+<span class="keyword">var</span> courses = _.groupBy(data, <span class="string">&apos;Workload.Hrs_Wk&apos;</span>)[<span class="string">&apos;0-3&apos;</span>]
+
+<span class="comment">/* Then, find those which have a 4.0 grade, remove duplicates and sort. */</span>
+<span class="keyword">return</span> easy_As = _.unique(_.pluck(_.filter(courses, {<span class="string">&apos;AVG_GRD&apos;</span>: <span class="number">4.0</span>}), <span class="string">&apos;CourseTitle&apos;</span>)).sort()
+</pre></p>
+<p>Table 4-1: Which class has the highest rating with the least amount of time spent each week?</p>
+<p></p><p><b>Easy A Courses</b></p><p></p>
+<table>
+
+</table>
+
+<p>Table 4-1: Courses that are easy to get an &quot;A&quot; grade</p>
+<h1 id="question-5-andrew-linenfelser-which-course-level-has-the-lowest-retention">Question 5 [Andrew Linenfelser]: Which course level has the lowest retention?</h1>
+<p><img src="Report-Q5.png" alt="screenshot">
+Figure 5-1: Academic division withdrawal rate comparison</p>
 <p>(write your explanation for the reader as to where to look at this chart in order
     to see the answer)    </p>
 

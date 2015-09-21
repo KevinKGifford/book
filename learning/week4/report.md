@@ -231,18 +231,18 @@ return grps
 
 {% endlodash %}
 
-{% for dept, titles in result %}
-<p><b>{{dept}}</b></p>	
-<table>
-	{% for title, count in titles %}
-    <tr>
-        <td>{{title}}</td>
-        <td>{{count}}</td>
-    </tr>
-	{% endfor %}
-</table>
-{% endfor %}
 
+<table>
+    {% for dept, titles in result %}
+    {% for title, count in titles %}
+   <tr>
+       <td>{{dept}}</td>
+       <td>{{title}}</td>
+       <td>{{count}}</td>
+   </tr>
+    {% endfor %}
+    {% endfor %}
+</table>
 
 
 # Question 4 [John Murphy]: Which class has the highest rating with the least amount of time spent each week?

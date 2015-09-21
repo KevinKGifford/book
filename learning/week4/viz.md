@@ -19,37 +19,78 @@ how to transform this JSON file into a format that can be fed into Tableau. As
 a junior and senior, you are expected to be able to look around the Internet
 to problem solve.
 
-# (Question 1)
+# Question 1 [Zachary Lamb]: How does retention compare across departments?
 
-![screenshot](screenshot.png)
+![screenshot](Report-Q1.png)
+Figure 1-1: Academic *Departmental*  withdrawal rate comparison
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+MATH and APPM both have larger than average withdrawal rates... interesting
 
-# (Question 2)
 
-![screenshot](screenshot.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
 
-# (Question 3)
+# Question 2 [Kevin Gifford]:  What is the ranking of Departments within the College of Engineering & Applied Sciences based on averaged course rating and average instructor rating?
 
-![screenshot](screenshot.png)
+![screenshot](Report-Q2-1.png)
+Figure 2-1: Total number of courses in each College of Engineering Department.
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](Report-Q2-2.png)
+Figure 2-2: Average *Course* Rating each College of Engineering Department.
 
-# (Question 4)
+![screenshot](Report-Q2-3.png)
+Figure 2-3: Average *Instructor* Rating each College of Engineering Department.
 
-![screenshot](screenshot.png)
+![screenshot](Report-Q2-4.png)
+Figure 2-4: ASEN Instructors with below average *Course* (average = 4.90)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](Report-Q2-5.png)
+Figure 2-5: ASEN Instructors with below average *Instructor* (average = 5.16)
 
-# (Question 5)
 
-![screenshot](screenshot.png)
+
+
+# Question 3 [Karen Blakemore]: What is the distribution of instructor type (e.g., Lecturer, Assistant Professor, Instructor) across departments?
+
+![screenshot](Report-Q3-1.png)
+Figure 3-1: Distribution of *Academic Title* in the ASEN Department
+
+![screenshot](Report-Q3-2.png)
+Figure 3-2: Distribution of *Academic Title* in the CHEN Department
+
+![screenshot](Report-Q3-3.png)
+Figure 3-3: Distribution of *Academic Title* in the CSCI Department
+
+
+
+
+# Question 4 [John Murphy]: Which class has the highest rating with the least amount of time spent each week?
+
+{% lodash %}
+/* First, extract all courses with the easiest work load */
+var courses = _.groupBy(data, 'Workload.Hrs_Wk')['0-3']
+
+/* Then, find those which have a 4.0 grade, remove duplicates and sort. */
+return easy_As = _.unique(_.pluck(_.filter(courses, {'AVG_GRD': 4.0}), 'CourseTitle')).sort()
+{% endlodash %}
+
+Table 4-1: Which class has the highest rating with the least amount of time spent each week?
+
+<p><b>Easy A Courses</b></p>
+<table>
+{% for course in result %}
+    <tr>
+        <td>{{course}}</td>
+    </tr>
+{% endfor %}
+</table>
+
+Table 4-1: Courses that are easy to get an "A" grade
+
+
+# Question 5 [Andrew Linenfelser]: Which course level has the lowest retention?
+
+![screenshot](Report-Q5.png)
+Figure 5-1: Academic division withdrawal rate comparison
 
 (write your explanation for the reader as to where to look at this chart in order
     to see the answer)    
