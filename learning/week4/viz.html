@@ -29,6 +29,10 @@
         
     
         
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+        
+    
+        
         <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
         
     
@@ -37,7 +41,7 @@
         
     
     
-    <link rel="next" href="../../hackathons/index.html" />
+    <link rel="next" href="../../learning/week5/index.html" />
     
     
     <link rel="prev" href="../../learning/week4/report.html" />
@@ -48,7 +52,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.5.2" data-basepath="../.." data-revision="Mon Sep 21 2015 11:10:32 GMT-0600 (MDT)">
+    <div class="book" data-level="1.5.2" data-basepath="../.." data-revision="Tue Sep 22 2015 18:13:02 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -379,6 +383,72 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6" data-path="learning/week5/index.html">
+            
+                
+                    <a href="../../learning/week5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        Week 5
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="learning/week5/birdstrike-report.html">
+            
+                
+                    <a href="../../learning/week5/birdstrike-report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.1.</b>
+                        
+                        Birdstrike Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="learning/week5/viz-steps.html">
+            
+                
+                    <a href="../../learning/week5/viz-steps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.2.</b>
+                        
+                        Viz Intro
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="learning/week5/viz-drills.html">
+            
+                
+                    <a href="../../learning/week5/viz-drills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.3.</b>
+                        
+                        Viz Drills
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -583,6 +653,42 @@
             
         </li>
     
+        <li class="chapter " data-level="2.4" data-path="hackathons/birdstrikes/index.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Birdstrikes
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="hackathons/birdstrikes/report.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.1.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -730,13 +836,11 @@ Figure 3-2: Distribution of <em>Academic Title</em> in the CHEN Department</p>
 <p><img src="Report-Q3-3.png" alt="screenshot">
 Figure 3-3: Distribution of <em>Academic Title</em> in the CSCI Department</p>
 <h1 id="question-4-john-murphy-which-class-has-the-highest-rating-with-the-least-amount-of-time-spent-each-week">Question 4 [John Murphy]: Which class has the highest rating with the least amount of time spent each week?</h1>
-<p><pre>
-<span class="comment">/* First, extract all courses with the easiest work load */</span>
-<span class="keyword">var</span> courses = _.groupBy(data, <span class="string">&apos;Workload.Hrs_Wk&apos;</span>)[<span class="string">&apos;0-3&apos;</span>]
+<p><pre><code>/* First, extract all courses with the easiest work load */
+var courses = _.groupBy(data, &apos;Workload.Hrs_Wk&apos;)[&apos;0-3&apos;]
 
-<span class="comment">/* Then, find those which have a 4.0 grade, remove duplicates and sort. */</span>
-<span class="keyword">return</span> easy_As = _.unique(_.pluck(_.filter(courses, {<span class="string">&apos;AVG_GRD&apos;</span>: <span class="number">4.0</span>}), <span class="string">&apos;CourseTitle&apos;</span>)).sort()
-</pre></p>
+/* Then, find those which have a 4.0 grade, remove duplicates and sort. */
+return easy_As = _.unique(_.pluck(_.filter(courses, {&apos;AVG_GRD&apos;: 4.0}), &apos;CourseTitle&apos;)).sort()</code></pre></p>
 <p>Table 4-1: Which class has the highest rating with the least amount of time spent each week?</p>
 <p></p><p><b>Easy A Courses</b></p><p></p>
 <table>
@@ -762,13 +866,21 @@ Figure 5-1: Academic division withdrawal rate comparison</p>
         <a href="../../learning/week4/report.html" class="navigation navigation-prev " aria-label="Previous page: FCQ Report"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../hackathons/index.html" class="navigation navigation-next " aria-label="Next page: Hackathons"><i class="fa fa-angle-right"></i></a>
+        <a href="../../learning/week5/index.html" class="navigation navigation-next " aria-label="Next page: Week 5"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
 <script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-bigdata/bigdata.js"></script>
+    
+
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    
 
     
     <script src="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>

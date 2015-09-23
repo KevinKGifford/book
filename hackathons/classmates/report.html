@@ -29,6 +29,10 @@
         
     
         
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+        
+    
+        
         <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
         
     
@@ -48,7 +52,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.2.4" data-basepath="../.." data-revision="Mon Sep 21 2015 11:10:32 GMT-0600 (MDT)">
+    <div class="book" data-level="2.2.4" data-basepath="../.." data-revision="Tue Sep 22 2015 18:13:02 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -379,6 +383,72 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6" data-path="learning/week5/index.html">
+            
+                
+                    <a href="../../learning/week5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        Week 5
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="learning/week5/birdstrike-report.html">
+            
+                
+                    <a href="../../learning/week5/birdstrike-report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.1.</b>
+                        
+                        Birdstrike Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="learning/week5/viz-steps.html">
+            
+                
+                    <a href="../../learning/week5/viz-steps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.2.</b>
+                        
+                        Viz Intro
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="learning/week5/viz-drills.html">
+            
+                
+                    <a href="../../learning/week5/viz-drills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.3.</b>
+                        
+                        Viz Drills
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -583,6 +653,42 @@
             
         </li>
     
+        <li class="chapter " data-level="2.4" data-path="hackathons/birdstrikes/index.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Birdstrikes
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="hackathons/birdstrikes/report.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.1.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -698,122 +804,114 @@
 on the &quot;self-introduction&quot; data. Out of these questions, our team chose to tackle on
 the following:</p>
 <h1 id="what-percentage-of-the-class-are-computer-science-students">What percentage of the class are Computer Science students?</h1>
-<p><pre>
-<span class="keyword">var</span> total_count = <span class="number">0</span>
-<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
-    <span class="keyword">var</span> text = data.comments[i].body
-    <span class="keyword">var</span> found_count = <span class="number">0</span>
+<p><pre><code>var total_count = 0
+for (i = 0; i &lt; _.size(data.comments); i++) {
+    var text = data.comments[i].body
+    var found_count = 0
 
-    <span class="keyword">function</span> splitString(stringToSplit, separator) {
-        <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
-        <span class="keyword">var</span> department_line = arrayOfStrings[<span class="number">1</span>]
-        <span class="keyword">var</span> department = _.trimLeft(_.last(department_line.split(<span class="string">&apos;:&apos;</span>)))
-        <span class="keyword">var</span> <span class="keyword">array</span> = department.split(<span class="string">&quot; &quot;</span>)
+    function splitString(stringToSplit, separator) {
+        var arrayOfStrings = stringToSplit.split(separator)
+        var department_line = arrayOfStrings[1]
+        var department = _.trimLeft(_.last(department_line.split(&apos;:&apos;)))
+        var array = department.split(&quot; &quot;)
 
-        <span class="keyword">var</span> count = <span class="number">0</span>
-        <span class="keyword">for</span> (n = <span class="number">0</span>; n &lt; <span class="keyword">array</span>.length; n++) {
-            <span class="keyword">var</span> major = _.trimRight(<span class="keyword">array</span>[n], <span class="string">&apos;,&apos;</span>)
-            <span class="keyword">if</span> (major == <span class="string">&quot;Computer&quot;</span> || major == <span class="string">&quot;CSCI&quot;</span> || major == <span class="string">&quot;CS&quot;</span> || major == <span class="string">&apos;cs&apos;</span>) {
-                <span class="keyword">if</span> (_.last(<span class="keyword">array</span>) == <span class="string">&quot;Engineering&quot;</span>) {}
-                <span class="keyword">else</span> { count++ }
+        var count = 0
+        for (n = 0; n &lt; array.length; n++) {
+            var major = _.trimRight(array[n], &apos;,&apos;)
+            if (major == &quot;Computer&quot; || major == &quot;CSCI&quot; || major == &quot;CS&quot; || major == &apos;cs&apos;) {
+                if (_.last(array) == &quot;Engineering&quot;) {}
+                else { count++ }
             }
         }
-        <span class="keyword">return</span> count
+        return count
     }
 
-    found_count = splitString(text, <span class="string">&apos;\r\n&apos;</span>)
+    found_count = splitString(text, &apos;\r\n&apos;)
     total_count += found_count
 }
-<span class="keyword">return</span> _.round( ( (total_count/_.size(data.comments)) * <span class="number">100</span>), <span class="number">2</span>)
-</pre></p>
+return _.round( ( (total_count/_.size(data.comments)) * 100), 2)</code></pre></p>
 <p>The percentage of CSCI-4830 students that are Computer Science majors is 76.92%</p>
 <h1 id="what-are-the-favorite-programming-languages-for-the-class-participants">What are the favorite programming languages for the class participants?</h1>
-<p><pre>
-<span class="keyword">var</span> language_string = <span class="string">&quot;&quot;</span>
-<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
-    <span class="keyword">var</span> text = data.comments[i].body
-    <span class="keyword">var</span> languages
+<p><pre><code>var language_string = &quot;&quot;
+for (i = 0; i &lt; _.size(data.comments); i++) {
+    var text = data.comments[i].body
+    var languages
 
-    <span class="keyword">function</span> splitString(stringToSplit, separator) {
-        <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
-        <span class="keyword">var</span> language_line = arrayOfStrings[<span class="number">2</span>]
-        <span class="keyword">var</span> line = language_line.split(<span class="string">&apos;:&apos;</span>)
-        <span class="keyword">var</span> favorite_language = line[<span class="number">1</span>]
-        <span class="keyword">var</span> splitline = favorite_language.split(<span class="string">&quot; &quot;</span>)
+    function splitString(stringToSplit, separator) {
+        var arrayOfStrings = stringToSplit.split(separator)
+        var language_line = arrayOfStrings[2]
+        var line = language_line.split(&apos;:&apos;)
+        var favorite_language = line[1]
+        var splitline = favorite_language.split(&quot; &quot;)
 
-        <span class="keyword">if</span> (favorite_language != <span class="string">&quot;&quot;</span>) {
-            <span class="keyword">return</span> (splitline[<span class="number">1</span>])
+        if (favorite_language != &quot;&quot;) {
+            return (splitline[1])
         }
-        <span class="keyword">else</span> {
-            <span class="keyword">return</span> <span class="string">&apos;false&apos;</span>
+        else {
+            return &apos;false&apos;
         }
     }
 
-    languages = splitString(text, <span class="string">&apos;\r\n&apos;</span>)
-    <span class="keyword">if</span> (languages == <span class="string">&quot;JAVA&quot;</span>) {languages = <span class="string">&quot;Java&quot;</span>}
-    language_string += (_.capitalize(languages) + <span class="string">&apos;,&apos;</span>)
+    languages = splitString(text, &apos;\r\n&apos;)
+    if (languages == &quot;JAVA&quot;) {languages = &quot;Java&quot;}
+    language_string += (_.capitalize(languages) + &apos;,&apos;)
 }
 
-<span class="keyword">var</span> <span class="keyword">array</span> = language_string.split(<span class="string">&apos;,&apos;</span>)
-<span class="keyword">var</span> saved_array = language_string.split(<span class="string">&apos;,&apos;</span>)
-<span class="keyword">var</span> new_array = <span class="keyword">array</span>
-<span class="keyword">var</span> key = <span class="keyword">array</span>[<span class="number">0</span>].split()
-<span class="keyword">var</span> found_keys = key + <span class="string">&apos;,&apos;</span>
+var array = language_string.split(&apos;,&apos;)
+var saved_array = language_string.split(&apos;,&apos;)
+var new_array = array
+var key = array[0].split()
+var found_keys = key + &apos;,&apos;
 
-<span class="keyword">while</span> (new_array.length &gt; <span class="number">1</span>) {
-    new_array = _.difference(<span class="keyword">array</span>, key)
-    <span class="keyword">array</span> = new_array
-    key = new_array[<span class="number">0</span>].split()
-    found_keys += (key + <span class="string">&apos;,&apos;</span>)
+while (new_array.length &gt; 1) {
+    new_array = _.difference(array, key)
+    array = new_array
+    key = new_array[0].split()
+    found_keys += (key + &apos;,&apos;)
 }
 
-<span class="keyword">var</span> sort_keys = found_keys.split(<span class="string">&quot;,&quot;</span>)
-<span class="keyword">var</span> answer = <span class="string">&quot;&quot;</span>
+var sort_keys = found_keys.split(&quot;,&quot;)
+var answer = &quot;&quot;
 
-<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; sort_keys.length; i++) {
-    <span class="keyword">if</span> (sort_keys[i] != <span class="string">&quot;&quot;</span>) {
-    <span class="keyword">var</span> count = <span class="number">0</span>
-        <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; saved_array.length; j++) {
-            <span class="keyword">if</span>(saved_array[j] == sort_keys[i]) { count++ }
+for (var i = 0; i &lt; sort_keys.length; i++) {
+    if (sort_keys[i] != &quot;&quot;) {
+    var count = 0
+        for (var j = 0; j &lt; saved_array.length; j++) {
+            if(saved_array[j] == sort_keys[i]) { count++ }
         }
-        answer += (sort_keys[i] + <span class="string">&apos;:&apos;</span> + count + <span class="string">&apos; &apos;</span>)
+        answer += (sort_keys[i] + &apos;:&apos; + count + &apos; &apos;)
     }
 }
 
-<span class="keyword">return</span> answer
-</pre></p>
+return answer</code></pre></p>
 <p>The favorite CSCI-4830 programming languages are: Python:10 Javascript:2 C:6 Java:4 Haskell:1 C++:2 C#:1 .</p>
 <h1 id="how-many-students-commented-on-the-introduction-issue-before-the-first-class">How many students commented on the Introduction Issue before the first class?</h1>
-<p><pre>
-count = <span class="number">0</span>
-<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
-    <span class="keyword">var</span> class_start = <span class="string">&quot;2015-08-24T22:00:00&quot;</span>
-    <span class="keyword">var</span> create_string = _.trimRight(data.comments[i].created_at, <span class="string">&apos;Z&apos;</span>)
-    <span class="keyword">var</span> update_string = _.trimRight(data.comments[i].updated_at, <span class="string">&apos;Z&apos;</span>)
-    <span class="keyword">var</span> CreateTime = <span class="keyword">new</span> Date(create_string)
-    <span class="keyword">var</span> ClassTime = <span class="keyword">new</span> Date(class_start)
+<p><pre><code>count = 0
+for (i = 0; i &lt; _.size(data.comments); i++) {
+    var class_start = &quot;2015-08-24T22:00:00&quot;
+    var create_string = _.trimRight(data.comments[i].created_at, &apos;Z&apos;)
+    var update_string = _.trimRight(data.comments[i].updated_at, &apos;Z&apos;)
+    var CreateTime = new Date(create_string)
+    var ClassTime = new Date(class_start)
 
-    <span class="keyword">if</span>( ( CreateTime.getTime() - ClassTime.getTime() ) &gt; <span class="number">0</span> ) { }
-    <span class="keyword">else</span> { count++ }
+    if( ( CreateTime.getTime() - ClassTime.getTime() ) &gt; 0 ) { }
+    else { count++ }
 }
-<span class="keyword">return</span> count 
-</pre></p>
+return count</code></pre></p>
 <p>The number of CSCI-4830 students that commented initially on the class list before class started is: 17</p>
 <h1 id="how-many-students-have-updated-their-initial-introduction-comments">How many students have updated their initial Introduction comments?</h1>
-<p><pre>
-count = <span class="number">0</span>
-<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
-    <span class="keyword">var</span> create_string = _.trimRight(data.comments[i].created_at, <span class="string">&apos;Z&apos;</span>)
-    <span class="keyword">var</span> update_string = _.trimRight(data.comments[i].updated_at, <span class="string">&apos;Z&apos;</span>)
+<p><pre><code>count = 0
+for (i = 0; i &lt; _.size(data.comments); i++) {
+    var create_string = _.trimRight(data.comments[i].created_at, &apos;Z&apos;)
+    var update_string = _.trimRight(data.comments[i].updated_at, &apos;Z&apos;)
 
-    <span class="keyword">var</span> CreateTime = <span class="keyword">new</span> Date(create_string)
-    <span class="keyword">var</span> UpdateTime = <span class="keyword">new</span> Date(update_string)
+    var CreateTime = new Date(create_string)
+    var UpdateTime = new Date(update_string)
 
-    <span class="keyword">if</span>( ( UpdateTime.getTime() - CreateTime.getTime() ) &gt; <span class="number">0</span> ) { count++ }
-    <span class="keyword">else</span> { }
+    if( ( UpdateTime.getTime() - CreateTime.getTime() ) &gt; 0 ) { count++ }
+    else { }
 }
-<span class="keyword">return</span> count 
-</pre></p>
+return count</code></pre></p>
 <p>The number of CSCI-4830 students that updated/edited their initial forum comment is: 2</p>
 
                     
@@ -835,6 +933,14 @@ count = <span class="number">0</span>
 
         
 <script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-bigdata/bigdata.js"></script>
+    
+
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    
 
     
     <script src="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>

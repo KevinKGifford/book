@@ -29,6 +29,10 @@
         
     
         
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+        
+    
+        
         <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
         
     
@@ -36,6 +40,8 @@
 
         
     
+    
+    <link rel="next" href="../../hackathons/birdstrikes/index.html" />
     
     
     <link rel="prev" href="../../hackathons/fcq/warmup.html" />
@@ -46,7 +52,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.3.2" data-basepath="../.." data-revision="Mon Sep 21 2015 11:10:32 GMT-0600 (MDT)">
+    <div class="book" data-level="2.3.2" data-basepath="../.." data-revision="Tue Sep 22 2015 18:13:02 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -377,6 +383,72 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6" data-path="learning/week5/index.html">
+            
+                
+                    <a href="../../learning/week5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        Week 5
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="learning/week5/birdstrike-report.html">
+            
+                
+                    <a href="../../learning/week5/birdstrike-report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.1.</b>
+                        
+                        Birdstrike Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="learning/week5/viz-steps.html">
+            
+                
+                    <a href="../../learning/week5/viz-steps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.2.</b>
+                        
+                        Viz Intro
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="learning/week5/viz-drills.html">
+            
+                
+                    <a href="../../learning/week5/viz-drills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.3.</b>
+                        
+                        Viz Drills
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -581,6 +653,42 @@
             
         </li>
     
+        <li class="chapter " data-level="2.4" data-path="hackathons/birdstrikes/index.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Birdstrikes
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="hackathons/birdstrikes/report.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.1.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -697,18 +805,15 @@
 can ask based on the FCQ data. Out of these questions, our team chose to tackle on
 the following questions. Each member on our team is reponsible for one question.</p>
 <h1 id="question-1-zachary-lamb-how-does-retention-compare-across-departments">Question 1 [Zachary Lamb]: How does retention compare across departments?</h1>
-<p><pre>
-<span class="comment">/* Group by department, then calculate the average withdrawel rate */</span>
-<span class="keyword">var</span> grps = _.groupBy(data, <span class="string">&apos;CrsPBADept&apos;</span>)
-<span class="keyword">var</span> result =_.mapValues(grps, <span class="keyword">function</span>(d){
-    <span class="keyword">return</span> _.sum(_.pluck(d, <span class="string">&apos;PCT.WDRAW&apos;</span>))/d.length
+<p><pre><code>/* Group by department, then calculate the average withdrawel rate */
+var grps = _.groupBy(data, &apos;CrsPBADept&apos;)
+var result =_.mapValues(grps, function(d){
+    return _.sum(_.pluck(d, &apos;PCT.WDRAW&apos;))/d.length
 })
 
-<span class="comment">/* Convert object to array and sort by withdrawal rate */</span>
-result = _.sortByOrder(_.pairs(result),<span class="keyword">function</span>(d){<span class="keyword">return</span> d[<span class="number">1</span>]},<span class="string">&apos;desc&apos;</span>)
-<span class="keyword">return</span> result
-
-</pre></p>
+/* Convert object to array and sort by withdrawal rate */
+result = _.sortByOrder(_.pairs(result),function(d){return d[1]},&apos;desc&apos;)
+return result</code></pre></p>
 <p>Table 1-1: How does retention compare across departmentsing</p>
 <table>
 
@@ -1037,24 +1142,20 @@ result = _.sortByOrder(_.pairs(result),<span class="keyword">function</span>(d){
 
 
 <h1 id="question-2-kevin-gifford-what-is-the-ranking-of-departments-within-the-college-of-engineering-applied-sciences-based-on-averaged-course-rating-and-average-instructor-rating">Question 2 [Kevin Gifford]:  What is the ranking of Departments within the College of Engineering &amp; Applied Sciences based on averaged course rating and average instructor rating?</h1>
-<p><pre>
-<span class="comment">// Get the subset of College of Engineering data records</span>
-<span class="keyword">var</span> en_data = (_.filter(data, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d.CrsPBAColl == <span class="string">&apos;EN&apos;</span>
+<p><pre><code>// Get the subset of College of Engineering data records
+var en_data = (_.filter(data, function(d) {
+    return d.CrsPBAColl == &apos;EN&apos;
 }))
-<span class="keyword">return</span> _.size(en_data)
-</pre></p>
+return _.size(en_data)</code></pre></p>
 <p>The number of courses in the College of Engineering is 573.</p>
-<p><pre>
-<span class="comment">// Determine distribution of courses across the College of Engineering Departments</span>
-<span class="keyword">var</span> en_data = (_.filter(data, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d.CrsPBAColl == <span class="string">&apos;EN&apos;</span>
+<p><pre><code>// Determine distribution of courses across the College of Engineering Departments
+var en_data = (_.filter(data, function(d) {
+    return d.CrsPBAColl == &apos;EN&apos;
 }))
-<span class="keyword">var</span> en_depts = _.groupBy(en_data, <span class="string">&apos;CrsPBADept&apos;</span>)
-<span class="keyword">return</span> _.mapValues(en_depts, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d.length
-})
-</pre></p>
+var en_depts = _.groupBy(en_data, &apos;CrsPBADept&apos;)
+return _.mapValues(en_depts, function(d) {
+    return d.length
+})</code></pre></p>
 <p>Table 2-1: The breakdown of courses by department in the College of Engineering</p>
 <table>
 
@@ -1116,25 +1217,23 @@ result = _.sortByOrder(_.pairs(result),<span class="keyword">function</span>(d){
 </table>
 
 
-<p><pre>
-<span class="comment">// Determine the average course rating for all courses in each Engineering Department</span>
-<span class="keyword">var</span> en_data = (_.filter(data, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d.CrsPBAColl == <span class="string">&apos;EN&apos;</span>
+<p><pre><code>// Determine the average course rating for all courses in each Engineering Department
+var en_data = (_.filter(data, function(d) {
+    return d.CrsPBAColl == &apos;EN&apos;
 }))
-<span class="keyword">var</span> en_depts = _.groupBy(en_data, <span class="string">&apos;CrsPBADept&apos;</span>)
-<span class="keyword">var</span> results = _.mapValues(en_depts, <span class="keyword">function</span>(d) {
-    <span class="keyword">var</span> value = _.pluck(d, <span class="string">&apos;AvgCourse&apos;</span>)
-    <span class="keyword">var</span> filtered_value = _.filter(value, <span class="keyword">function</span>(d) {
-        <span class="keyword">return</span> d != <span class="keyword">null</span>
+var en_depts = _.groupBy(en_data, &apos;CrsPBADept&apos;)
+var results = _.mapValues(en_depts, function(d) {
+    var value = _.pluck(d, &apos;AvgCourse&apos;)
+    var filtered_value = _.filter(value, function(d) {
+        return d != null
     })
-    <span class="keyword">var</span> filtered_average = _.round(_.sum(filtered_value)/filtered_value.length, <span class="number">2</span>)
-    <span class="keyword">return</span> filtered_average
+    var filtered_average = _.round(_.sum(filtered_value)/filtered_value.length, 2)
+    return filtered_average
 })
-<span class="keyword">var</span> sorted_output = _.sortBy(_.pairs(results), <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d[<span class="number">1</span>]
+var sorted_output = _.sortBy(_.pairs(results), function(d) {
+    return d[1]
 })
-<span class="keyword">return</span> sorted_output
-</pre></p>
+return sorted_output</code></pre></p>
 <p>Table 2-2: The average course rating by department in the College of Engineering</p>
 <table>
 
@@ -1197,29 +1296,26 @@ result = _.sortByOrder(_.pairs(result),<span class="keyword">function</span>(d){
 
 
 
-<p><pre>
-<span class="comment">// Determine the average instructor rating for all courses in each Engineering Department</span>
-<span class="keyword">var</span> en_data = _.filter(data, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d.CrsPBAColl == <span class="string">&apos;EN&apos;</span>
+<p><pre><code>// Determine the average instructor rating for all courses in each Engineering Department
+var en_data = _.filter(data, function(d) {
+    return d.CrsPBAColl == &apos;EN&apos;
 })
 
-<span class="keyword">var</span> en_depts = _.groupBy(en_data, <span class="string">&apos;CrsPBADept&apos;</span>)
+var en_depts = _.groupBy(en_data, &apos;CrsPBADept&apos;)
 
-<span class="keyword">var</span> results = _.mapValues(en_depts, <span class="keyword">function</span>(d) {
-    <span class="keyword">var</span> value = _.pluck(d, <span class="string">&apos;AvgInstructor&apos;</span>)
-    <span class="keyword">var</span> filtered_value = _.filter(value, <span class="keyword">function</span>(d) {
-        <span class="keyword">return</span> d != <span class="keyword">null</span>
+var results = _.mapValues(en_depts, function(d) {
+    var value = _.pluck(d, &apos;AvgInstructor&apos;)
+    var filtered_value = _.filter(value, function(d) {
+        return d != null
     })
-    <span class="keyword">var</span> filtered_average = _.round(_.sum(filtered_value)/filtered_value.length, <span class="number">2</span>)
-    <span class="keyword">return</span> filtered_average
+    var filtered_average = _.round(_.sum(filtered_value)/filtered_value.length, 2)
+    return filtered_average
 })
 
-<span class="keyword">var</span> sorted_output = _.sortBy(_.pairs(results), <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d[<span class="number">1</span>]
+var sorted_output = _.sortBy(_.pairs(results), function(d) {
+    return d[1]
 })
-<span class="keyword">return</span> sorted_output
-
-</pre></p>
+return sorted_output</code></pre></p>
 <p>Table 2-3: The average instructor rating by department in the College of Engineering</p>
 <table>
 
@@ -1282,26 +1378,23 @@ result = _.sortByOrder(_.pairs(result),<span class="keyword">function</span>(d){
 
 
 
-<p><pre>
-<span class="comment">// For the ASEN department create a sorted list of [key, value] = [AvgCourse, Instructors]</span>
+<p><pre><code>// For the ASEN department create a sorted list of [key, value] = [AvgCourse, Instructors]
 
-<span class="keyword">var</span> asen_data = _.filter(data, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d.CrsPBADept == <span class="string">&apos;ASEN&apos;</span>
+var asen_data = _.filter(data, function(d) {
+    return d.CrsPBADept == &apos;ASEN&apos;
 })
-<span class="keyword">var</span> below_average = _.filter(asen_data, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d.AvgCourse &lt; <span class="number">4.90</span>
+var below_average = _.filter(asen_data, function(d) {
+    return d.AvgCourse &lt; 4.90
 })
-<span class="keyword">var</span> groups = _.groupBy(below_average, <span class="string">&apos;AvgCourse&apos;</span>)
+var groups = _.groupBy(below_average, &apos;AvgCourse&apos;)
 
-<span class="keyword">var</span> courses = _.mapValues(groups, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> _.pluck(_.flatten(_.pluck(d, <span class="string">&apos;Instructors&apos;</span>)), <span class="string">&apos;name&apos;</span>)
+var courses = _.mapValues(groups, function(d) {
+    return _.pluck(_.flatten(_.pluck(d, &apos;Instructors&apos;)), &apos;name&apos;)
 })
-<span class="keyword">var</span> sorted_output = _.sortBy(_.pairs(courses), <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d[<span class="number">0</span>]
+var sorted_output = _.sortBy(_.pairs(courses), function(d) {
+    return d[0]
 })
-<span class="keyword">return</span> sorted_output
-
-</pre></p>
+return sorted_output</code></pre></p>
 <p>Table 2-4: Instructors with below average (ave = 4.90) course-rating in ASEN</p>
 <table>
 
@@ -1409,26 +1502,23 @@ result = _.sortByOrder(_.pairs(result),<span class="keyword">function</span>(d){
 
 
 
-<p><pre>
-<span class="comment">// For the ASEN department create a sorted list of [key, value] = [AvgInstructor, Instructors]</span>
+<p><pre><code>// For the ASEN department create a sorted list of [key, value] = [AvgInstructor, Instructors]
 
-<span class="keyword">var</span> asen_data = _.filter(data, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d.CrsPBADept == <span class="string">&apos;ASEN&apos;</span>
+var asen_data = _.filter(data, function(d) {
+    return d.CrsPBADept == &apos;ASEN&apos;
 })
-<span class="keyword">var</span> below_average = _.filter(asen_data, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d.AvgInstructor &lt; <span class="number">5.16</span>
+var below_average = _.filter(asen_data, function(d) {
+    return d.AvgInstructor &lt; 5.16
 })
-<span class="keyword">var</span> groups = _.groupBy(below_average, <span class="string">&apos;AvgInstructor&apos;</span>)
+var groups = _.groupBy(below_average, &apos;AvgInstructor&apos;)
 
-<span class="keyword">var</span> courses = _.mapValues(groups, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> _.pluck(_.flatten(_.pluck(d, <span class="string">&apos;Instructors&apos;</span>)), <span class="string">&apos;name&apos;</span>)
+var courses = _.mapValues(groups, function(d) {
+    return _.pluck(_.flatten(_.pluck(d, &apos;Instructors&apos;)), &apos;name&apos;)
 })
-<span class="keyword">var</span> sorted_output = _.sortBy(_.pairs(courses), <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> d[<span class="number">0</span>]
+var sorted_output = _.sortBy(_.pairs(courses), function(d) {
+    return d[0]
 })
-<span class="keyword">return</span> sorted_output
-
-</pre></p>
+return sorted_output</code></pre></p>
 <p>Table 2-5: Instructors with below average (ave = 5.16) course-rating in ASEN</p>
 <table>
 
@@ -1524,23 +1614,20 @@ result = _.sortByOrder(_.pairs(result),<span class="keyword">function</span>(d){
 
 
 <h1 id="question-3-karen-blakemore-what-is-the-distribution-of-instructor-type-e-g-lecturer-assistant-professor-instructor-across-departments">Question 3 [Karen Blakemore]: What is the distribution of instructor type (e.g., Lecturer, Assistant Professor, Instructor) across departments?</h1>
-<p><pre>
-<span class="comment">/* First group by department */</span>
-<span class="keyword">var</span> departments = _.groupBy(data, <span class="string">&apos;CrsPBADept&apos;</span>)
+<p><pre><code>/* First group by department */
+var departments = _.groupBy(data, &apos;CrsPBADept&apos;)
 
-<span class="comment">/* Then collect titles for all classes in each department */</span>
-<span class="keyword">var</span> titles = _.mapValues(departments, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> _.pluck(_.flatten(_.pluck(d, <span class="string">&apos;Instructors&apos;</span>)), <span class="string">&apos;title&apos;</span>)
+/* Then collect titles for all classes in each department */
+var titles = _.mapValues(departments, function(d) {
+	return _.pluck(_.flatten(_.pluck(d, &apos;Instructors&apos;)), &apos;title&apos;)
 })
 
-<span class="comment">/* Finally, compute length for each title */</span>
-<span class="keyword">var</span> grps = _.mapValues(titles, <span class="keyword">function</span>(d) {
-    <span class="keyword">return</span> _.mapValues(_.groupBy(d, <span class="keyword">function</span>(title) {<span class="keyword">return</span> title}), <span class="string">&apos;length&apos;</span>)
+/* Finally, compute length for each title */
+var grps = _.mapValues(titles, function(d) {
+	return _.mapValues(_.groupBy(d, function(title) {return title}), &apos;length&apos;)
 })
 
-<span class="keyword">return</span> grps
-
-</pre></p>
+return grps</code></pre></p>
 <p></p><p><b>HIST</b></p>    <p></p>
 <table>
 
@@ -4510,13 +4597,11 @@ result = _.sortByOrder(_.pairs(result),<span class="keyword">function</span>(d){
 
 
 <h1 id="question-4-john-murphy-which-class-has-the-highest-rating-with-the-least-amount-of-time-spent-each-week">Question 4 [John Murphy]: Which class has the highest rating with the least amount of time spent each week?</h1>
-<p><pre>
-<span class="comment">/* First, extract all courses with the easiest work load */</span>
-<span class="keyword">var</span> courses = _.groupBy(data, <span class="string">&apos;Workload.Hrs_Wk&apos;</span>)[<span class="string">&apos;0-3&apos;</span>]
+<p><pre><code>/* First, extract all courses with the easiest work load */
+var courses = _.groupBy(data, &apos;Workload.Hrs_Wk&apos;)[&apos;0-3&apos;]
 
-<span class="comment">/* Then, find those which have a 4.0 grade, remove duplicates and sort. */</span>
-<span class="keyword">return</span> easy_As = _.unique(_.pluck(_.filter(courses, {<span class="string">&apos;AVG_GRD&apos;</span>: <span class="number">4.0</span>}), <span class="string">&apos;CourseTitle&apos;</span>)).sort()
-</pre></p>
+/* Then, find those which have a 4.0 grade, remove duplicates and sort. */
+return easy_As = _.unique(_.pluck(_.filter(courses, {&apos;AVG_GRD&apos;: 4.0}), &apos;CourseTitle&apos;)).sort()</code></pre></p>
 <p>Table 4-1: Which class has the highest rating with the least amount of time spent each week?</p>
 <p></p><p><b>Easy A Courses</b></p><p></p>
 <table>
@@ -4591,17 +4676,15 @@ result = _.sortByOrder(_.pairs(result),<span class="keyword">function</span>(d){
 
 
 <h1 id="question-5-andrew-linenfelser-which-course-level-has-the-lowest-retention">Question 5 [Andrew Linenfelser]: Which course level has the lowest retention?</h1>
-<p><pre>
-<span class="comment">/* Group by level, then calculate average course withdrawal rate for each level */</span>
-<span class="keyword">var</span> grps = _.groupBy(data, <span class="string">&apos;Level&apos;</span>)
-<span class="keyword">var</span> result =_.mapValues(grps, <span class="keyword">function</span>(d){
-    <span class="keyword">return</span> _.sum(_.pluck(d, <span class="string">&apos;PCT.WDRAW&apos;</span>))/d.length
+<p><pre><code>/* Group by level, then calculate average course withdrawal rate for each level */
+var grps = _.groupBy(data, &apos;Level&apos;)
+var result =_.mapValues(grps, function(d){
+    return _.sum(_.pluck(d, &apos;PCT.WDRAW&apos;))/d.length
 })
 
-<span class="comment">/* Convert object to array and sort by withdrawal rate */</span>
-result = _.sortByOrder(_.pairs(result),<span class="keyword">function</span>(d){<span class="keyword">return</span> d[<span class="number">1</span>]},<span class="string">&apos;desc&apos;</span>)
-<span class="keyword">return</span> result
-</pre></p>
+/* Convert object to array and sort by withdrawal rate */
+result = _.sortByOrder(_.pairs(result),function(d){return d[1]},&apos;desc&apos;)
+return result</code></pre></p>
 <p>Table 5-1: Which course level has the lowest retention?</p>
 <table>
 
@@ -4638,14 +4721,24 @@ result = _.sortByOrder(_.pairs(result),<span class="keyword">function</span>(d){
         </div>
 
         
-        <a href="../../hackathons/fcq/warmup.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Warmup"><i class="fa fa-angle-left"></i></a>
+        <a href="../../hackathons/fcq/warmup.html" class="navigation navigation-prev " aria-label="Previous page: Warmup"><i class="fa fa-angle-left"></i></a>
         
+        
+        <a href="../../hackathons/birdstrikes/index.html" class="navigation navigation-next " aria-label="Next page: Birdstrikes"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
 <script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-bigdata/bigdata.js"></script>
+    
+
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    
 
     
     <script src="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>

@@ -29,6 +29,10 @@
         
     
         
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+        
+    
+        
         <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
         
     
@@ -48,7 +52,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.4.1" data-basepath="../.." data-revision="Mon Sep 21 2015 11:10:32 GMT-0600 (MDT)">
+    <div class="book" data-level="1.4.1" data-basepath="../.." data-revision="Tue Sep 22 2015 18:13:02 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -379,6 +383,72 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6" data-path="learning/week5/index.html">
+            
+                
+                    <a href="../../learning/week5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        Week 5
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="learning/week5/birdstrike-report.html">
+            
+                
+                    <a href="../../learning/week5/birdstrike-report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.1.</b>
+                        
+                        Birdstrike Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="learning/week5/viz-steps.html">
+            
+                
+                    <a href="../../learning/week5/viz-steps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.2.</b>
+                        
+                        Viz Intro
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="learning/week5/viz-drills.html">
+            
+                
+                    <a href="../../learning/week5/viz-drills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.3.</b>
+                        
+                        Viz Drills
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -571,6 +641,42 @@
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.2.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="hackathons/birdstrikes/index.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Birdstrikes
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="hackathons/birdstrikes/report.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.1.</b>
                         
                         Report
                     </a>
@@ -855,9 +961,7 @@ you want.</p>
    &quot;followers_url&quot;: &quot;https://api.githu</pre>
 
 <p>There are 28 comments.</p>
-<p><pre>
-<span class="keyword">return</span> _.pluck(data, <span class="string">&apos;user.login&apos;</span>)
-</pre></p>
+<p><pre><code>return _.pluck(data, &apos;user.login&apos;)</code></pre></p>
 <p>The github account names are willzfarmer,twagar95,Malaokia,fadhilfath,hswitte,ZachLamb,zhya215,jocr1627,drewdinger,94kazakov,nicolele,satchelspencer,tiro6090,Linenfelser,KevinKGifford,calebhsu,sumi6109,pail4944,DomoYeti,boanding,kjblakemore,SankethSukumarShetty,AndreyShprengel,co-bri,karisantos,anbe6083,jraesly,doubleshow.</p>
 <h1 id="exercises">Exercises</h1>
 <p>Now it&apos;s your turn to answer the following questions using the real data.</p>
@@ -865,6 +969,45 @@ you want.</p>
 <p><div class="githubapi">       <div class="message">Data is loaded from https://api.github.com/repos/bigdatahci2015/forum/issues</div></div></p>
 <p>This issues data is saved in <code>data</code>. It looks like below.</p>
 <pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/22&quot;,
+  &quot;labels_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/22/labels{/name}&quot;,
+  &quot;comments_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/22/comments&quot;,
+  &quot;events_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/22/events&quot;,
+  &quot;html_url&quot;: &quot;https://github.com/bigdatahci2015/forum/issues/22&quot;,
+  &quot;id&quot;: 107620285,
+  &quot;number&quot;: 22,
+  &quot;title&quot;: &quot;Which Airports had the most incidents of aircraft being damaged?&quot;,
+  &quot;user&quot;: {
+   &quot;login&quot;: &quot;co-bri&quot;,
+   &quot;id&quot;: 5174490,
+   &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/5174490?v=3&quot;,
+   &quot;gravatar_id&quot;: &quot;&quot;,
+   &quot;url&quot;: &quot;https://api.github.com/users/co-bri&quot;,
+   &quot;html_url&quot;: &quot;https://github.com/co-bri&quot;,
+   &quot;followers_url&quot;: &quot;https://api.github.com/users/co-bri/followers&quot;,
+   &quot;following_url&quot;: &quot;https://api.github.com/users/co-bri/following{/other_user}&quot;,
+   &quot;gists_url&quot;: &quot;https://api.github.com/users/co-bri/gists{/gist_id}&quot;,
+   &quot;starred_url&quot;: &quot;https://api.github.com/users/co-bri/starred{/owner}{/repo}&quot;,
+   &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/co-bri/subscriptions&quot;,
+   &quot;organizations_url&quot;: &quot;https://api.github.com/users/co-bri/orgs&quot;,
+   &quot;repos_url&quot;: &quot;https://api.github.com/users/co-bri/repos&quot;,
+   &quot;events_url&quot;: &quot;https://api.github.com/users/co-bri/events{/privacy}&quot;,
+   &quot;received_events_url&quot;: &quot;https://api.github.com/users/co-bri/received_events&quot;,
+   &quot;type&quot;: &quot;User&quot;,
+   &quot;site_admin&quot;: false
+  },
+  &quot;labels&quot;: [],
+  &quot;state&quot;: &quot;open&quot;,
+  &quot;locked&quot;: false,
+  &quot;assignee&quot;: null,
+  &quot;milestone&quot;: null,
+  &quot;comments&quot;: 0,
+  &quot;created_at&quot;: &quot;2015-09-21T23:50:41Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-09-21T23:50:55Z&quot;,
+  &quot;closed_at&quot;: null,
+  &quot;body&quot;: &quot;&quot;
+ },
  {
   &quot;url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/21&quot;,
   &quot;labels_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/21/labels{/name}&quot;,
@@ -898,9 +1041,9 @@ you want.</p>
   &quot;locked&quot;: false,
   &quot;assignee&quot;: null,
   &quot;milestone&quot;: null,
-  &quot;comments&quot;: 1,
+  &quot;comments&quot;: 26,
   &quot;created_at&quot;: &quot;2015-09-21T15:24:41Z&quot;,
-  &quot;updated_at&quot;: &quot;2015-09-21T15:25:26Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-09-22T00:01:31Z&quot;,
   &quot;closed_at&quot;: null,
   &quot;body&quot;: &quot;Post your question here. More details about this will be given during the class.&quot;
  },
@@ -934,44 +1077,13 @@ you want.</p>
   },
   &quot;labels&quot;: [],
   &quot;state&quot;: &quot;open&quot;,
-  &quot;locked&quot;: false,
-  &quot;assignee&quot;: null,
-  &quot;milestone&quot;: null,
-  &quot;comments&quot;: 0,
-  &quot;created_at&quot;: &quot;2015-09-21T05:38:03Z&quot;,
-  &quot;updated_at&quot;: &quot;2015-09-21T05:38:03Z&quot;,
-  &quot;closed_at&quot;: null,
-  &quot;body&quot;: &quot;I am trying to upload my week4 indiv. and I keep getting this error:\r\n\r\nerror: object file .git/objects/63/b7bdfc2ef007e86261225ff5f0b7bcdfa15d24 is empty\r\nerror: object file .git/objects/63/b7bdfc2ef007e86261225ff5f0b7bcdfa15d24 is empty\r\nfatal: loose object 63b7bdfc2ef007e86261225ff5f0b7bcdfa15d24 (stored in .git/objects/63/b7bdfc2ef007e86261225ff5f0b7bcdfa15d24) is corrupt\r\nfatal: The remote end hung up unexpectedly\r\n\r\nI am not sure where to find these corrupt files or if something is missing that I can&apos;t pull/merge.\r\n&quot;
- },
- {
-  &quot;url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/19&quot;,
-  &quot;labels_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/19/labels{/name}&quot;,
-  &quot;comments_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/19/comments&quot;,
-  &quot;events_url&quot;: &quot;https://api.github.com/repos/bigdatahci2015/forum/issues/19/events&quot;,
-  &quot;html_url&quot;: &quot;https://github.com/bigdatahci2015/forum/issues/19&quot;,
-  &quot;id&quot;: 107414426,
-  &quot;number&quot;: 19,
-  &quot;title&quot;: &quot;Converting JSON to Tableau ready (on OSX)&quot;,
-  &quot;user&quot;: {
-   &quot;login&quot;: &quot;karisantos&quot;,
-   &quot;id&quot;: 6976121,
-   &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/6976121?v=3&quot;,
-   &quot;gravatar_id&quot;: &quot;&quot;,
-   &quot;url&quot;: &quot;https://api.github.com/users/karisantos&quot;,
-   &quot;html_url&quot;: &quot;https://github.com/karisantos&quot;,
-   &quot;followers_url&quot;: &quot;https://api.github.com/users/karisantos/followers&quot;,
-   &quot;following_url&quot;: &quot;https://api.github.com/users/karisantos/following{/other_user}&quot;,
-   &quot;gists_url&quot;: &quot;https://api.github.com/users/karisantos/gists{/gist_</pre>
+  &quot;locked&quot;: fal</pre>
 
-<p><pre>
-<span class="keyword">return</span> _.size(data)
-</pre></p>
-<p>There are 18 issues in the HCI Big Data Forum</p>
+<p><pre><code>return _.size(data)</code></pre></p>
+<p>There are 19 issues in the HCI Big Data Forum</p>
 <h3 id="what-are-the-titles-of-these-issues">What are the titles of these issues?</h3>
-<p><pre>
-<span class="keyword">return</span> _.pluck(data, <span class="string">&apos;title&apos;</span>)
-</pre></p>
-<p>The issues of the HCI Big Data Forum are titled: Questions for the Birdstrike Hackathon,Corrupt file in .git,Converting JSON to Tableau ready (on OSX),Week 4 Learning Challenge ,Your FCQ question,Everyone&apos;s book,This week&apos;s challenge and next week&apos;s hackathon,Week 3 Learning Challenge Updated / Posted,Tableau,lodash variables,Week 2 Learning Challenge Updated / Posted,Week 2 Team Learning Clarification,Knowing Your Classmates Hackathon,Problems uploading book to github.io,Hackathons,First Learning Challenge (Update),Learning challenges,Introduction</p>
+<p><pre><code>return _.pluck(data, &apos;title&apos;)</code></pre></p>
+<p>The issues of the HCI Big Data Forum are titled: Which Airports had the most incidents of aircraft being damaged?,Questions for the Birdstrike Hackathon,Corrupt file in .git,Converting JSON to Tableau ready (on OSX),Week 4 Learning Challenge ,Your FCQ question,Everyone&apos;s book,This week&apos;s challenge and next week&apos;s hackathon,Week 3 Learning Challenge Updated / Posted,Tableau,lodash variables,Week 2 Learning Challenge Updated / Posted,Week 2 Team Learning Clarification,Knowing Your Classmates Hackathon,Problems uploading book to github.io,Hackathons,First Learning Challenge (Update),Learning challenges,Introduction</p>
 <h3 id="how-many-repository-have-been-created-to-date-for-our-class">How many repository have been created to date for our class?</h3>
 <p>Our class&apos;s Github organization is <a href="https://github.com/bigdatahci2015/" target="_blank">bigdatahci2015</a>.</p>
 <p><div class="githubapi">       <div class="message">Data is loaded from https://api.github.com/orgs/bigdatahci2015/repos</div></div></p>
@@ -1058,27 +1170,23 @@ you want.</p>
   &quot;has_pages&quot;: false,
   &quot;forks_count&quot;: 4,
   &quot;mirror_url&quot;: null,
-  &quot;open_issues_count&quot;: 18,
+  &quot;open_issues_count&quot;: 19,
   &quot;forks&quot;: 4,
-  &quot;open_issues&quot;: 18,
+  &quot;open_issues&quot;: 19,
   &quot;watcher</pre>
 
-<p><pre>
-<span class="keyword">return</span> _.size(data)
-</pre></p>
+<p><pre><code>return _.size(data)</code></pre></p>
 <p>There are 5 repositories for <a href="https://github.com/bigdatahci2015/" target="_blank">bigdatahci2015</a>.</p>
 <h3 id="what-are-the-fork-counts-of-our-class-s-repositories">What are the fork counts of our class&apos;s repositories?</h3>
-<p><pre>
-<span class="keyword">var</span> repo_names = _.pluck(data, <span class="string">&apos;name&apos;</span>)
-<span class="keyword">var</span> count = _.pluck(data, <span class="string">&apos;forks_count&apos;</span>)
-answer = <span class="string">&quot;&quot;</span>
-<span class="comment">// FIXME: Do without a for loop</span>
-<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; repo_names.length; i++) {
-    <span class="keyword">if</span> (i &lt; repo_names.length - <span class="number">1</span>) {answer += repo_names[i] + <span class="string">&apos; has &apos;</span> + count[i] + <span class="string">&apos; forks; &apos;</span>}
-    <span class="keyword">else</span> {answer += repo_names[i] + <span class="string">&apos; has &apos;</span> + count[i] + <span class="string">&apos; forks.&apos;</span>}
+<p><pre><code>var repo_names = _.pluck(data, &apos;name&apos;)
+var count = _.pluck(data, &apos;forks_count&apos;)
+answer = &quot;&quot;
+// FIXME: Do without a for loop
+for (i = 0; i &lt; repo_names.length; i++) {
+    if (i &lt; repo_names.length - 1) {answer += repo_names[i] + &apos; has &apos; + count[i] + &apos; forks; &apos;}
+    else {answer += repo_names[i] + &apos; has &apos; + count[i] + &apos; forks.&apos;}
 }
-<span class="keyword">return</span> answer
-</pre></p>
+return answer</code></pre></p>
 <p>The results are: forum has 4 forks; course has 2 forks; book-warmup has 26 forks; book has 31 forks; gitbook-plugin-bigdata has 1 forks.</p>
 <h3 id="how-many-public-repositories-does-the-user-doubleshow-have">How many public repositories does the user <code>doubleshow</code> have?</h3>
 <p><div class="githubapi">       <div class="message">Data is loaded from https://api.github.com/users/doubleshow/repos</div></div></p>
@@ -1182,38 +1290,43 @@ answer = <span class="string">&quot;&quot;</span>
    &quot;gravatar_id&quot;: &quot;&quot;,
    &quot;url&quot;: &quot;</pre>
 
-<p><pre>
-<span class="keyword">return</span> _.size(data)
-</pre></p>
+<p><pre><code>return _.size(data)</code></pre></p>
 <p>User doubleshow has 30 public repositories</p>
 <h3 id="how-many-public-gists-does-the-user-doubleshow-have">How many public gists does the user <code>doubleshow</code> have?</h3>
 <p><div class="githubapi">       <div class="message">Data is loaded from https://api.github.com/users/doubleshow/gists</div></div></p>
 <p>The doubleshow gist data is saved in <code>data</code>. It looks like below.</p>
 <pre style="font-size:11px;line-height:1;max-height:300px;">[
  {
-  &quot;url&quot;: &quot;https://api.github.com/gists/3b5106a9b9dbd2894edb&quot;,
-  &quot;forks_url&quot;: &quot;https://api.github.com/gists/3b5106a9b9dbd2894edb/forks&quot;,
-  &quot;commits_url&quot;: &quot;https://api.github.com/gists/3b5106a9b9dbd2894edb/commits&quot;,
-  &quot;id&quot;: &quot;3b5106a9b9dbd2894edb&quot;,
-  &quot;git_pull_url&quot;: &quot;https://gist.github.com/3b5106a9b9dbd2894edb.git&quot;,
-  &quot;git_push_url&quot;: &quot;https://gist.github.com/3b5106a9b9dbd2894edb.git&quot;,
-  &quot;html_url&quot;: &quot;https://gist.github.com/3b5106a9b9dbd2894edb&quot;,
+  &quot;url&quot;: &quot;https://api.github.com/gists/627cc9ec15557c0d1584&quot;,
+  &quot;forks_url&quot;: &quot;https://api.github.com/gists/627cc9ec15557c0d1584/forks&quot;,
+  &quot;commits_url&quot;: &quot;https://api.github.com/gists/627cc9ec15557c0d1584/commits&quot;,
+  &quot;id&quot;: &quot;627cc9ec15557c0d1584&quot;,
+  &quot;git_pull_url&quot;: &quot;https://gist.github.com/627cc9ec15557c0d1584.git&quot;,
+  &quot;git_push_url&quot;: &quot;https://gist.github.com/627cc9ec15557c0d1584.git&quot;,
+  &quot;html_url&quot;: &quot;https://gist.github.com/627cc9ec15557c0d1584&quot;,
   &quot;files&quot;: {
+   &quot;buffalo.stl&quot;: {
+    &quot;filename&quot;: &quot;buffalo.stl&quot;,
+    &quot;type&quot;: &quot;text/plain&quot;,
+    &quot;language&quot;: null,
+    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/627cc9ec15557c0d1584/raw/1b4014dd946b8076b0e9d0937e8f4543f210a52a/buffalo.stl&quot;,
+    &quot;size&quot;: 745584
+   },
    &quot;index.xml&quot;: {
     &quot;filename&quot;: &quot;index.xml&quot;,
     &quot;type&quot;: &quot;application/xml&quot;,
     &quot;language&quot;: &quot;XML&quot;,
-    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/3b5106a9b9dbd2894edb/raw/5f228738e40280761690f9d24725dfaeefa90859/index.xml&quot;,
-    &quot;size&quot;: 364
+    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/627cc9ec15557c0d1584/raw/6cfb9218e7836edffe450d87d81477b33ab4751e/index.xml&quot;,
+    &quot;size&quot;: 79
    }
   },
   &quot;public&quot;: true,
-  &quot;created_at&quot;: &quot;2015-09-18T11:48:04Z&quot;,
-  &quot;updated_at&quot;: &quot;2015-09-18T11:48:17Z&quot;,
+  &quot;created_at&quot;: &quot;2015-09-22T16:08:21Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-09-22T16:20:30Z&quot;,
   &quot;description&quot;: &quot;craftml&quot;,
   &quot;comments&quot;: 0,
   &quot;user&quot;: null,
-  &quot;comments_url&quot;: &quot;https://api.github.com/gists/3b5106a9b9dbd2894edb/comments&quot;,
+  &quot;comments_url&quot;: &quot;https://api.github.com/gists/627cc9ec15557c0d1584/comments&quot;,
   &quot;owner&quot;: {
    &quot;login&quot;: &quot;doubleshow&quot;,
    &quot;id&quot;: 129562,
@@ -1235,29 +1348,29 @@ answer = <span class="string">&quot;&quot;</span>
   }
  },
  {
-  &quot;url&quot;: &quot;https://api.github.com/gists/4572750aa0e45943b418&quot;,
-  &quot;forks_url&quot;: &quot;https://api.github.com/gists/4572750aa0e45943b418/forks&quot;,
-  &quot;commits_url&quot;: &quot;https://api.github.com/gists/4572750aa0e45943b418/commits&quot;,
-  &quot;id&quot;: &quot;4572750aa0e45943b418&quot;,
-  &quot;git_pull_url&quot;: &quot;https://gist.github.com/4572750aa0e45943b418.git&quot;,
-  &quot;git_push_url&quot;: &quot;https://gist.github.com/4572750aa0e45943b418.git&quot;,
-  &quot;html_url&quot;: &quot;https://gist.github.com/4572750aa0e45943b418&quot;,
+  &quot;url&quot;: &quot;https://api.github.com/gists/d2a3eb18fbc2431f93d5&quot;,
+  &quot;forks_url&quot;: &quot;https://api.github.com/gists/d2a3eb18fbc2431f93d5/forks&quot;,
+  &quot;commits_url&quot;: &quot;https://api.github.com/gists/d2a3eb18fbc2431f93d5/commits&quot;,
+  &quot;id&quot;: &quot;d2a3eb18fbc2431f93d5&quot;,
+  &quot;git_pull_url&quot;: &quot;https://gist.github.com/d2a3eb18fbc2431f93d5.git&quot;,
+  &quot;git_push_url&quot;: &quot;https://gist.github.com/d2a3eb18fbc2431f93d5.git&quot;,
+  &quot;html_url&quot;: &quot;https://gist.github.com/d2a3eb18fbc2431f93d5&quot;,
   &quot;files&quot;: {
    &quot;index.xml&quot;: {
     &quot;filename&quot;: &quot;index.xml&quot;,
     &quot;type&quot;: &quot;application/xml&quot;,
     &quot;language&quot;: &quot;XML&quot;,
-    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/4572750aa0e45943b418/raw/ba5360c1a49754524cfa47def73e03374d5adc67/index.xml&quot;,
-    &quot;size&quot;: 1472
+    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/d2a3eb18fbc2431f93d5/raw/ceb3c133cc05f81f71828f03536f6f9cbfff0da0/index.xml&quot;,
+    &quot;size&quot;: 1655
    }
   },
   &quot;public&quot;: true,
-  &quot;created_at&quot;: &quot;2015-09-18T11:47:52Z&quot;,
-  &quot;updated_at&quot;: &quot;2015-09-18T11:47:52Z&quot;,
+  &quot;created_at&quot;: &quot;2015-09-22T16:00:54Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-09-22T16:47:34Z&quot;,
   &quot;description&quot;: &quot;craftml&quot;,
   &quot;comments&quot;: 0,
   &quot;user&quot;: null,
-  &quot;comments_url&quot;: &quot;https://api.github.com/gists/4572750aa0e45943b418/comments&quot;,
+  &quot;comments_url&quot;: &quot;https://api.github.com/gists/d2a3eb18fbc2431f93d5/comments&quot;,
   &quot;owner&quot;: {
    &quot;login&quot;: &quot;doubleshow&quot;,
    &quot;id&quot;: 129562,
@@ -1279,37 +1392,27 @@ answer = <span class="string">&quot;&quot;</span>
   }
  },
  {
-  &quot;url&quot;: &quot;https://api.github.com/gists/61c8adf145dde91b8f18&quot;,
-  &quot;forks_url&quot;: &quot;https://api.github.com/gists/61c8adf145dde91b8f18/forks&quot;,
-  &quot;commits_url&quot;: &quot;https://api.github.com/gists/61c8adf145dde91b8f18/commits&quot;,
-  &quot;id&quot;: &quot;61c8adf145dde91b8f18&quot;,
-  &quot;git_pull_url&quot;: &quot;https://gist.github.com/61c8adf145dde91b8f18.git&quot;,
-  &quot;git_push_url&quot;: &quot;https://gist.github.com/61c8adf145dde91b8f18.git&quot;,
-  &quot;html_url&quot;: &quot;https://gist.github.com/61c8adf145dde91b8f18&quot;,
+  &quot;url&quot;: &quot;https://api.github.com/gists/ddbfed1c72d20d85b7fe&quot;,
+  &quot;forks_url&quot;: &quot;https://api.github.com/gists/ddbfed1c72d20d85b7fe/forks&quot;,
+  &quot;commits_url&quot;: &quot;https://api.github.com/gists/ddbfed1c72d20d85b7fe/commits&quot;,
+  &quot;id&quot;: &quot;ddbfed1c72d20d85b7fe&quot;,
+  &quot;git_pull_url&quot;: &quot;https://gist.github.com/ddbfed1c72d20d85b7fe.git&quot;,
+  &quot;git_push_url&quot;: &quot;https://gist.github.com/ddbfed1c72d20d85b7fe.git&quot;,
+  &quot;html_url&quot;: &quot;https://gist.github.com/ddbfed1c72d20d85b7fe&quot;,
   &quot;files&quot;: {
    &quot;index.xml&quot;: {
     &quot;filename&quot;: &quot;index.xml&quot;,
     &quot;type&quot;: &quot;application/xml&quot;,
     &quot;language&quot;: &quot;XML&quot;,
-    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/61c8adf145dde91b8f18/raw/715a7cf729018e65a15416f4e94e0edce97d591f/index.xml&quot;,
-    &quot;size&quot;: 362
+    &quot;raw_url&quot;: &quot;https://gist.githubusercontent.com/doubleshow/ddbfed1c72d20d85b7fe/raw/c78ef03c42deaba281e4da48b1fc9bf7ff96cebb/index.xml&quot;,
+    &quot;size&quot;: 676
    }
   },
   &quot;public&quot;: true,
-  &quot;created_at&quot;: &quot;2015-09-15T13:38:36Z&quot;,
-  &quot;updated_at&quot;: &quot;2015-09-15T13:38:36Z&quot;,
-  &quot;description&quot;: &quot;craftml&quot;,
-  &quot;comments&quot;: 0,
-  &quot;user&quot;: null,
-  &quot;comments_url&quot;: &quot;https://api.github.com/gists/61c8adf145dde91b8f18/comments&quot;,
-  &quot;owner&quot;: {
-   &quot;login&quot;: &quot;doubleshow&quot;,
-   &quot;id&quot;: 129562,
-   &quot;avatar_url&quot;: &quot;https://avatars.g</pre>
+  &quot;created_at&quot;: &quot;2015-09-22T15:58:25Z&quot;,
+  &quot;upda</pre>
 
-<p><pre>
-<span class="keyword">return</span> _.size(data)
-</pre></p>
+<p><pre><code>return _.size(data)</code></pre></p>
 <p>User <code>doubleshow</code> has 30 public gists</p>
 
                     
@@ -1331,6 +1434,14 @@ answer = <span class="string">&quot;&quot;</span>
 
         
 <script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-bigdata/bigdata.js"></script>
+    
+
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    
 
     
     <script src="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
