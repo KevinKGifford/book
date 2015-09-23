@@ -29,6 +29,10 @@
         
     
         
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+        
+    
+        
         <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
         
     
@@ -48,7 +52,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.2.3" data-basepath="../.." data-revision="Mon Sep 21 2015 11:10:32 GMT-0600 (MDT)">
+    <div class="book" data-level="2.2.3" data-basepath="../.." data-revision="Tue Sep 22 2015 18:13:02 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -379,6 +383,72 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6" data-path="learning/week5/index.html">
+            
+                
+                    <a href="../../learning/week5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        Week 5
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="learning/week5/birdstrike-report.html">
+            
+                
+                    <a href="../../learning/week5/birdstrike-report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.1.</b>
+                        
+                        Birdstrike Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="learning/week5/viz-steps.html">
+            
+                
+                    <a href="../../learning/week5/viz-steps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.2.</b>
+                        
+                        Viz Intro
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="learning/week5/viz-drills.html">
+            
+                
+                    <a href="../../learning/week5/viz-drills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.3.</b>
+                        
+                        Viz Drills
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -583,6 +653,42 @@
             
         </li>
     
+        <li class="chapter " data-level="2.4" data-path="hackathons/birdstrikes/index.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Birdstrikes
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="hackathons/birdstrikes/report.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.1.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -697,138 +803,130 @@
 <p>After completing the warmup exercises, your task is to do four more slightly
 more challenges analyses.</p>
 <h2 id="how-many-students-like-sushi-as-their-favorite-food">How many students like sushi as their favorite food?</h2>
-<p><pre>
-<span class="keyword">var</span> total_count = <span class="number">0</span>
-<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
-    <span class="keyword">var</span> text = data.comments[i].body
-    <span class="keyword">var</span> search_string=  _.last(text.split(<span class="string">&apos;Food: &apos;</span>))
-    <span class="keyword">var</span> found_count = <span class="number">0</span>
+<p><pre><code>var total_count = 0
+for (i = 0; i &lt; _.size(data.comments); i++) {
+    var text = data.comments[i].body
+    var search_string=  _.last(text.split(&apos;Food: &apos;))
+    var found_count = 0
 
-    <span class="keyword">function</span> splitString(stringToSplit, separator) {
-        <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
-        <span class="keyword">var</span> j
-        <span class="keyword">var</span> count = <span class="number">0</span>
+    function splitString(stringToSplit, separator) {
+        var arrayOfStrings = stringToSplit.split(separator)
+        var j
+        var count = 0
 
-        <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; arrayOfStrings.length; j++) {
-            <span class="keyword">if</span> (arrayOfStrings[j] == <span class="string">&quot;Sushi&quot;</span>) { count++ }
+        for (j = 0; j &lt; arrayOfStrings.length; j++) {
+            if (arrayOfStrings[j] == &quot;Sushi&quot;) { count++ }
         }
-        <span class="keyword">return</span> count
+        return count
     }
-    found_count = splitString(search_string, <span class="string">&apos; &apos;</span>)
+    found_count = splitString(search_string, &apos; &apos;)
     total_count += found_count
 }
-<span class="keyword">return</span> total_count
-</pre></p>
+return total_count</code></pre></p>
 <p>The answer is 5.</p>
 <h2 id="who-are-the-students-liking-python-the-most">Who are the students liking Python the most?</h2>
-<p><pre>
-<span class="keyword">var</span> answer = <span class="string">&quot;&quot;</span>
-<span class="keyword">var</span> ndx = <span class="number">0</span>
-<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
-    <span class="keyword">var</span> text = data.comments[i].body
-    <span class="keyword">var</span> found_name
+<p><pre><code>var answer = &quot;&quot;
+var ndx = 0
+for (i = 0; i &lt; _.size(data.comments); i++) {
+    var text = data.comments[i].body
+    var found_name
 
-    <span class="keyword">function</span> splitString(stringToSplit, separator) {
-        <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
-        <span class="keyword">var</span> name = arrayOfStrings[<span class="number">0</span>]
-        <span class="keyword">var</span> language = arrayOfStrings[<span class="number">2</span>]
-        <span class="keyword">var</span> strip = _.trimLeft(_.last(language.split(<span class="string">&apos;:&apos;</span>)))
+    function splitString(stringToSplit, separator) {
+        var arrayOfStrings = stringToSplit.split(separator)
+        var name = arrayOfStrings[0]
+        var language = arrayOfStrings[2]
+        var strip = _.trimLeft(_.last(language.split(&apos;:&apos;)))
 
-        <span class="keyword">var</span> <span class="keyword">array</span> = strip.split(<span class="string">&apos; &apos;</span>)
-        <span class="keyword">var</span> language = _.trimRight(_.first(<span class="keyword">array</span>), <span class="string">&apos;,&apos;</span>)
+        var array = strip.split(&apos; &apos;)
+        var language = _.trimRight(_.first(array), &apos;,&apos;)
 
-        <span class="keyword">if</span> (language == <span class="string">&quot;Python&quot;</span>) {
-            <span class="keyword">return</span> (_.last(name.split(<span class="string">&apos;Name:&apos;</span>)))
+        if (language == &quot;Python&quot;) {
+            return (_.last(name.split(&apos;Name:&apos;)))
         }
-        <span class="keyword">else</span> {
-            <span class="keyword">return</span> <span class="string">&apos;false&apos;</span>
+        else {
+            return &apos;false&apos;
         }
     }
 
-    found_name = splitString(text, <span class="string">&apos;\r\n&apos;</span>)
+    found_name = splitString(text, &apos;\r\n&apos;)
 
-    <span class="keyword">if</span> (found_name != <span class="string">&apos;false&apos;</span>) {
-    answer += (found_name + <span class="string">&apos;,&apos;</span>)
+    if (found_name != &apos;false&apos;) {
+	answer += (found_name + &apos;,&apos;)
     }
 }
-<span class="keyword">return</span> answer
-</pre></p>
+return answer</code></pre></p>
 <p>Their names are  William Farmer, Heather Witte, Zach Lamb, Zhili Yang, John Cronk, Denis Kazakov, Caleb Hsu, Karen Blakemore, Sanketh S Shetty, Andrey Shprengel,.</p>
 <h2 id="are-there-more-javascript-lovers-or-java-lovers">Are there more Javascript lovers or Java lovers?</h2>
-<p><pre>
-<span class="keyword">var</span> java_count = <span class="number">0</span>
-<span class="keyword">var</span> javascript_count = <span class="number">0</span>
+<p><pre><code>var java_count = 0
+var javascript_count = 0
 
-<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
-    <span class="keyword">var</span> text = data.comments[i].body
-    <span class="keyword">var</span> found_language
+for (i = 0; i &lt; _.size(data.comments); i++) {
+    var text = data.comments[i].body
+    var found_language
 
-    <span class="keyword">function</span> splitString(stringToSplit, separator) {
-        <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
-        <span class="keyword">var</span> language = arrayOfStrings[<span class="number">2</span>]
+    function splitString(stringToSplit, separator) {
+        var arrayOfStrings = stringToSplit.split(separator)
+        var language = arrayOfStrings[2]
 
-        found_language = _.last(language.split(<span class="string">&apos;:&apos;</span>))
-        <span class="keyword">if</span> (found_language == <span class="string">&quot; JAVA&quot;</span> || found_language == <span class="string">&apos; Java&apos;</span>) {
+        found_language = _.last(language.split(&apos;:&apos;))
+        if (found_language == &quot; JAVA&quot; || found_language == &apos; Java&apos;) {
             java_count++
         }
-        <span class="keyword">else</span> <span class="keyword">if</span> (found_language == <span class="string">&quot; Javascript&quot;</span> || found_language == <span class="string">&apos;javascript&apos;</span>) {
+        else if (found_language == &quot; Javascript&quot; || found_language == &apos;javascript&apos;) {
             javascript_count++
         }
-        <span class="keyword">else</span> {
-        <span class="keyword">return</span> <span class="string">&apos;false&apos;</span>
+        else {
+	    return &apos;false&apos;
         }
     }
-    found_language = splitString(text, <span class="string">&apos;\r\n&apos;</span>)
+    found_language = splitString(text, &apos;\r\n&apos;)
 }
 
-<span class="keyword">if</span> (java_count &gt; javascript_count) {answer = <span class="string">&quot; there are more Java Lovers&quot;</span>}
-<span class="keyword">else</span> <span class="keyword">if</span> (javascript_count &gt; java_count) {answer = <span class="string">&quot; there are more Javascript Lover&quot;</span>}
-<span class="keyword">else</span> {answer = <span class="string">&quot; there are the same number of Java Lovers and Javascript Lovers...&quot;</span>}
-<span class="keyword">return</span> answer
-</pre></p>
+if (java_count &gt; javascript_count) {answer = &quot; there are more Java Lovers&quot;}
+else if (javascript_count &gt; java_count) {answer = &quot; there are more Javascript Lover&quot;}
+else {answer = &quot; there are the same number of Java Lovers and Javascript Lovers...&quot;}
+return answer</code></pre></p>
 <p>The answer is  there are more Java Lovers.</p>
 <h2 id="-1-who-like-the-same-food-as-kjblakemore">(1) Who like the same food as <code>kjblakemore</code>?</h2>
 <h2 id="-2-who-like-the-same-food-as-willzfarmer">(2) Who like the same food as <code>willzfarmer</code>?</h2>
-<p><pre>
-<span class="keyword">var</span> food_string = <span class="string">&quot;&quot;</span>
-<span class="keyword">var</span> search_name = <span class="string">&quot;kjblakemore&quot;</span>
-<span class="comment">// var search_name = &quot;willzfarmer&quot;</span>
-<span class="keyword">var</span> answer = <span class="string">&quot;&quot;</span>
+<p><pre><code>var food_string = &quot;&quot;
+var search_name = &quot;kjblakemore&quot;
+// var search_name = &quot;willzfarmer&quot;
+var answer = &quot;&quot;
 
-<span class="keyword">for</span> (<span class="keyword">var</span> n = <span class="number">0</span>; n &lt; _.size(data.comments); n++) {
-    <span class="keyword">var</span> text = data.comments[n].body
-    <span class="keyword">var</span> login = data.comments[n].user.login
-    <span class="keyword">var</span> food =  _.last(text.split(<span class="string">&apos;Food:&apos;</span>))
+for (var n = 0; n &lt; _.size(data.comments); n++) {
+    var text = data.comments[n].body
+    var login = data.comments[n].user.login
+    var food =  _.last(text.split(&apos;Food:&apos;))
 
-    <span class="keyword">function</span> splitString(stringToSplit, separator) {
-        <span class="keyword">var</span> arrayOfStrings = stringToSplit.split(separator)
-        <span class="keyword">var</span> j
-        <span class="keyword">var</span> count = <span class="number">0</span>
+    function splitString(stringToSplit, separator) {
+        var arrayOfStrings = stringToSplit.split(separator)
+        var j
+        var count = 0
 
-        <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; arrayOfStrings.length; j++) {
-            <span class="keyword">if</span> (arrayOfStrings[j] == food) { count++ }
+        for (j = 0; j &lt; arrayOfStrings.length; j++) {
+            if (arrayOfStrings[j] == food) { count++ }
         }
-        <span class="keyword">return</span> count
+        return count
     }
 
-    <span class="keyword">if</span> (login == search_name) {
+    if (login == search_name) {
         food_string = food
 
-        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; _.size(data.comments); i++) {
-            <span class="keyword">var</span> new_text = data.comments[i].body
-            <span class="keyword">var</span> login = data.comments[i].user.login
-            <span class="keyword">if</span> (login != search_name) {
-                <span class="keyword">var</span> search_string =  _.last(new_text.split(<span class="string">&apos;Food:&apos;</span>))
-                <span class="keyword">if</span> (splitString(search_string, <span class="string">&quot; &quot;</span>) != <span class="number">0</span>) {
-                    answer += login + <span class="string">&apos;,&apos;</span>
+        for (i = 0; i &lt; _.size(data.comments); i++) {
+            var new_text = data.comments[i].body
+            var login = data.comments[i].user.login
+            if (login != search_name) {
+                var search_string =  _.last(new_text.split(&apos;Food:&apos;))
+                if (splitString(search_string, &quot; &quot;) != 0) {
+                    answer += login + &apos;,&apos;
                 }
             }
         }
     }
 }
-<span class="keyword">if</span> (answer == <span class="string">&quot;&quot;</span>) {answer = <span class="string">&quot;none&quot;</span>}
-<span class="keyword">return</span> answer
-</pre></p>
+if (answer == &quot;&quot;) {answer = &quot;none&quot;}
+return answer</code></pre></p>
 <p>(1) Their names are none.</p>
 
                     
@@ -850,6 +948,14 @@ more challenges analyses.</p>
 
         
 <script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-bigdata/bigdata.js"></script>
+    
+
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    
 
     
     <script src="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>

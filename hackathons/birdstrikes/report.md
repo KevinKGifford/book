@@ -6,53 +6,39 @@ bird strikes.
 # Authors
 
 This report is prepared by
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
+* [William Farmer](http://github.com/willzfarmer)
+* [Parker Illig](http://github.com/pail4944)
+* [Kevin Gifford](http://github.com/kevinkgifford)
+* [John Raesly](http://github.com/jraesly)
+* [Andrew Krodinger](http://github.com/drewdinger)
 
-# (Question 1)
+# Q1: What are the condition:sky where usually caused a damage? [fadhilfath](http://github.com/fadhilfath)
 
-This question was asked by (student's github id).
+![screenshot](skyconditions.png)
 
-![screenshot](screenshot.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# What is the most common flight phase where a birdstrike occurred? [KevinKGifford](http://github.com/kevinkgifford)
 
-# (Question 2)
+![screenshot](phase.png)
 
-This question was asked by (student's github id).
 
-![screenshot](screenshot.png)
+# What is the correlation between the feet above the ground and the number of bird strikes? [Linenfelser](http://github.com/Linenfelser)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](feets.png)
 
-# (Question 3)
 
-This question was asked by (student's github id).
+# Which airport had the highest number of bird strikes? [Zhya215](http://github.com/Zhya215)
 
-![screenshot](screenshot.png)
+![screenshot](strikes.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
 
-# (Question 4)
+# Which airline have to incur most repair cost due to damage? [sumi6109](http://github.com/sumi6109)
 
-This question was asked by (student's github id).
+![screenshot](./airlinesrepair.png)
 
-![screenshot](screenshot.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# Which plane model strikes the most birds? [twagar95](http://github.com/twagar95)
 
-# (Question 5)
+![screenshot](./models.png)
 
-This question was asked by (student's github id).
 
-![screenshot](screenshot.png)
-
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)    
