@@ -22,13 +22,13 @@ This report is prepared by
 * [Andrew Krodinger](http://github.com/drewdinger)
 
 
-NOTE: Command to transform birdstrikes.xlsx to birdstrikes.csv:
+NOTE: Command to transform birdstrikes.xlsx to birdstrike.csv:
 
-prompt> in2csv birdstrikes.xlsx > birdstrike.csv
+    prompt> in2csv birdstrikes.xlsx > birdstrike.csv
 
-NOTE: Command to cut the data and output the birdstrikes.json file utilized as the source data for this report:
+NOTE: Command to cut the data and output the birdstrike.json file utilized as the source data for this report:
 
-prompt> csvcut -c 'Airport: Name','Aircraft: Airline/Operator','Aircraft: Make/Model','Effect: Indicated Damage','When: Phase of flight','Feet above ground','Conditions: Sky','Cost: Total $' birdstrike.csv | csvjson --indent 4 > birdstrike.json
+    prompt> csvcut -c 'Airport: Name','Aircraft: Airline/Operator','Aircraft: Make/Model','Effect: Indicated Damage','When: Phase of flight','Feet above ground','Conditions: Sky','Cost: Total $' birdstrike.csv | csvjson --indent 4 > birdstrike.json
 
 
 The data looks like:
@@ -69,7 +69,7 @@ Table 1-1: What is the distibution of sky conditions where damaged occurred
 
 
 
-# Question 2b: What is the most common flight phase where a birdstrike occurred? From: [KevinKGifford](http://github.com/kevinkgifford) By: [KevinKGifford](http://github.com/kevinkgifford)
+# Question 2a: What is the most common flight phase where a birdstrike occurred? From: [KevinKGifford](http://github.com/kevinkgifford) By: [KevinKGifford](http://github.com/kevinkgifford)
 
 {% lodash %}
 var groups = _.groupBy(data, 'When: Phase of flight')

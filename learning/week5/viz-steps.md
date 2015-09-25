@@ -55,11 +55,11 @@ function computeX(d, i) {
     return i * 20
 }
 
-data.viz = _.map(data.countries, function(d, i){
-        return {
-            x: computeX(d, i)
-        }    
-    })
+data.viz = _.map(data.countries, function(d, i) {
+    return {
+        x: computeX(d, i)
+    }    
+})
 
 {% endlodash %}
 
@@ -72,13 +72,13 @@ The final step is to populate the template with the viz data calculated earlier.
 
 {% lodash %}
 
-// compile the template.foo into a template function
+// Compile the template.foo into a template function
 var compiled = _.template(template.foo)
 
 var result = _.map(data.viz, function(d){
-        // invoke the compiled template function on each viz data
-        return compiled({d: d})
-    })
+    // invoke the compiled template function on each viz data
+    return compiled({d: d})
+})
 return result.join('\n')
 {% endlodash %}
 
@@ -114,17 +114,17 @@ function computeX(d, i) {
     return i * 20
 }
 
-function computeHeight(d, i){
-    // TODO: fix this to return the correct height
-    return 10 + i * 50
+function computeHeight(d, i) {
+    // Use the height of each bar to represent population
+    return (d['pop']/200000000) * 50
 }
 
-data.viz = _.map(data.countries, function(d, i){
-        return {
-            x: computeX(d, i),
-            height: computeHeight(d, i)
-        }    
-    })
+data.viz = _.map(data.countries, function(d, i) {
+    return {
+        x: computeX(d, i),
+        height: computeHeight(d, i)
+    }    
+})
 
 {% endlodash %}
 
@@ -146,10 +146,10 @@ data.viz = _.map(data.countries, function(d, i){
 // compile the template.foo into a template function
 var compiled = _.template(template.foo)
 
-var result = _.map(data.viz, function(d){
-        // invoke the compiled template function on each viz data
-        return compiled({d: d})
-    })
+var result = _.map(data.viz, function(d) {
+    // invoke the compiled template function on each viz data
+    return compiled({d: d})
+})
 return result.join('\n')
 {% endlodash %}
 
@@ -177,23 +177,28 @@ data.countries = [{name: 'China', pop: 1393783836},
 {% lodash %}
 
 function computeX(d, i) {
-    return i * 20
+    return i * 80
 }
 
-function computeHeight(d, i){
-    // TODO: fix this to return the correct height
-    return 10 + i * 50
+function computeHeight(d, i) {
+    // Use the height of each bar to represent population
+    return (d['pop']/200000000) * 50
 }
 
-// TODO: add a new mapper function for width
+function computeWidth(d, i) {
+    // Use the width of each bar to represent population
+    return (d['pop']/200000000) * 10
+}
 
-data.viz = _.map(data.countries, function(d, i){
-        // TODO: add a new attribute to each viz object
-        return {
-            x: computeX(d, i),
-            height: computeHeight(d, i)
-        }    
-    })
+
+data.viz = _.map(data.countries, function(d, i) {
+    // TODO: add a new attribute to each viz object
+    return {
+        x: computeX(d, i),
+        height: computeHeight(d, i),
+        width: computeWidth(d, i)
+    }    
+})
 
 {% endlodash %}
 
@@ -203,8 +208,8 @@ data.viz = _.map(data.countries, function(d, i){
 {% template name='foo' %}
 
 <rect x="${d.x}"
-     width="20"
-     height="20"
+     width="${d.width}"
+     height="${d.height}"
      style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
 
 {% endtemplate %}
@@ -216,13 +221,14 @@ data.viz = _.map(data.countries, function(d, i){
 // compile the template.foo into a template function
 var compiled = _.template(template.foo)
 
-var result = _.map(data.viz, function(d){
-        // invoke the compiled template function on each viz data
-        return compiled({d: d})
-    })
+var result = _.map(data.viz, function(d) {
+    // invoke the compiled template function on each viz data
+    return compiled({d: d})
+})
 return result.join('\n')
 {% endlodash %}
 
 The resulting svg tags are rendered as below
 
 {{ result | svg }}
+

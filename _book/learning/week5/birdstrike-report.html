@@ -29,6 +29,10 @@
         
     
         
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-bigdata/jquery.jsonview.css">
+        
+    
+        
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
         
     
@@ -52,7 +56,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.6.1" data-basepath="../.." data-revision="Wed Sep 23 2015 14:22:37 GMT-0600 (MDT)">
+    <div class="book" data-level="1.6.1" data-basepath="../.." data-revision="Thu Sep 24 2015 19:25:46 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -444,6 +448,21 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6.4" data-path="learning/week5/viz-pokemon.html">
+            
+                
+                    <a href="../../learning/week5/viz-pokemon.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.4.</b>
+                        
+                        Viz Pokemon
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -818,11 +837,11 @@ real data.</p>
 <li><a href="http://github.com/jraesly" target="_blank">John Raesly</a></li>
 <li><a href="http://github.com/drewdinger" target="_blank">Andrew Krodinger</a></li>
 </ul>
-<p>NOTE: Command to transform birdstrikes.xlsx to birdstrikes.csv:</p>
-<p>prompt&gt; in2csv birdstrikes.xlsx &gt; birdstrike.csv</p>
-<p>NOTE: Command to cut the data and output the birdstrikes.json file utilized as the source data for this report:</p>
-<p>prompt&gt; csvcut -c &apos;Airport: Name&apos;,&apos;Aircraft: Airline/Operator&apos;,&apos;Aircraft: Make/Model&apos;,&apos;Effect: Indicated Damage&apos;,&apos;When: Phase of flight&apos;,&apos;Feet above ground&apos;,&apos;Conditions: Sky&apos;,&apos;Cost: Total $&apos; birdstrike.csv | csvjson --indent 4 &gt; birdstrike.json</p>
-<p>The data looks like:</p>
+<p>NOTE: Command to transform birdstrikes.xlsx to birdstrike.csv:</p>
+<pre><code>prompt&gt; in2csv birdstrikes.xlsx &gt; birdstrike.csv
+</code></pre><p>NOTE: Command to cut the data and output the birdstrike.json file utilized as the source data for this report:</p>
+<pre><code>prompt&gt; csvcut -c &apos;Airport: Name&apos;,&apos;Aircraft: Airline/Operator&apos;,&apos;Aircraft: Make/Model&apos;,&apos;Effect: Indicated Damage&apos;,&apos;When: Phase of flight&apos;,&apos;Feet above ground&apos;,&apos;Conditions: Sky&apos;,&apos;Cost: Total $&apos; birdstrike.csv | csvjson --indent 4 &gt; birdstrike.json
+</code></pre><p>The data looks like:</p>
 <pre style="font-size:11px;line-height:1;max-height:300px;">[
  {
   &quot;Airport: Name&quot;: &quot;NEWARK LIBERTY INTL ARPT&quot;,
@@ -1035,7 +1054,7 @@ return _.mapValues(groups, function(d) {
 
 
 
-<h1 id="question-2b-what-is-the-most-common-flight-phase-where-a-birdstrike-occurred-from-kevinkgifford-http-github-com-kevinkgifford-by-kevinkgifford-http-github-com-kevinkgifford">Question 2b: What is the most common flight phase where a birdstrike occurred? From: <a href="http://github.com/kevinkgifford" target="_blank">KevinKGifford</a> By: <a href="http://github.com/kevinkgifford" target="_blank">KevinKGifford</a></h1>
+<h1 id="question-2a-what-is-the-most-common-flight-phase-where-a-birdstrike-occurred-from-kevinkgifford-http-github-com-kevinkgifford-by-kevinkgifford-http-github-com-kevinkgifford">Question 2a: What is the most common flight phase where a birdstrike occurred? From: <a href="http://github.com/kevinkgifford" target="_blank">KevinKGifford</a> By: <a href="http://github.com/kevinkgifford" target="_blank">KevinKGifford</a></h1>
 <p><pre><code>var groups = _.groupBy(data, &apos;When: Phase of flight&apos;)
 var results = _.mapValues(groups, function(d){
     return d.length
@@ -13322,6 +13341,10 @@ return sorted_output</code></pre></p>
 
     
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-bigdata/jquery.jsonview.js"></script>
     
 
     
