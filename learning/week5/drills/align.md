@@ -18,11 +18,11 @@ function computeX(d, i) {
 }
 
 function computeHeight(d, i) {
-    return i * 20 + 100
+    return (d['pop']/3484459.59)
 }
 
 function computeY(d, i) {
-    return 400 - i * 20 - 100
+    return 400 - computeHeight(d, i)
 }
 
 function computeColor(d, i) {
@@ -40,9 +40,9 @@ var viz = _.map(data, function(d, i){
 console.log(viz)
 
 var result = _.map(viz, function(d){
-         // invoke the compiled template function on each viz data
-         return template({d: d})
-     })
+     // invoke the compiled template function on each viz data
+     return template({d: d})
+})
 return result.join('\n')
 
 {% template %}

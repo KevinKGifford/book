@@ -29,7 +29,8 @@ function computeColor(d, i) {
     return 'red'
 }
 
-var viz = _.map(data, function(d, i){
+var sorted_data = _.sortBy(data, 'pop')
+var viz = _.map(sorted_data, function(d, i) {
             return {
                 x: computeX(d, i),
                 y: computeY(d, i),

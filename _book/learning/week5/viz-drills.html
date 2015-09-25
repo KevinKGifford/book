@@ -56,7 +56,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.6.3" data-basepath="../.." data-revision="Thu Sep 24 2015 19:25:46 GMT-0600 (MDT)">
+    <div class="book" data-level="1.6.3" data-basepath="../.." data-revision="Fri Sep 25 2015 16:47:21 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -848,16 +848,16 @@ page in order to put all Javascript code in the same code block.</p>
             stroke:rgb(0,0,0)"/>
 <rect x="60" y="0" width="20" height="72.5542186586242" style="fill:red;
             stroke-width:3;
-            stroke:rgb(0,0,0)"/></svg></div></div><div class="right"><div class="section-title">Actual Viz<svg width="100%" height="400"><rect x="0" y="0" width="20" height="20" style="fill:red;
+            stroke:rgb(0,0,0)"/></svg></div></div><div class="right"><div class="section-title">Actual Viz<svg width="100%" height="400"><rect x="0" y="0" width="20" height="400" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="20" y="0" width="20" height="40" style="fill:red;
+<rect x="20" y="0" width="20" height="363.7298169958114" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="40" y="0" width="20" height="60" style="fill:red;
+<rect x="40" y="0" width="20" height="92.57762865891064" style="fill:blue;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="60" y="0" width="20" height="80" style="fill:red;
+<rect x="60" y="0" width="20" height="72.5542186586242" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/></svg></div></div></div><div class="output"><div class="left">    <div class="section-title">       <pre><code>&lt;rect x=&quot;0&quot;
       y=&quot;0&quot;
@@ -889,28 +889,28 @@ page in order to put all Javascript code in the same code block.</p>
             stroke:rgb(0,0,0)&quot; /&gt;</code></pre></div></div><div class="right">  <div class="section-title">                <pre><code>&lt;rect x=&quot;0&quot;
       y=&quot;0&quot;
      width=&quot;20&quot;
-     height=&quot;20&quot;
+     height=&quot;400&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;rect x=&quot;20&quot;
       y=&quot;0&quot;
      width=&quot;20&quot;
-     height=&quot;40&quot;
+     height=&quot;363.7298169958114&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;rect x=&quot;40&quot;
       y=&quot;0&quot;
      width=&quot;20&quot;
-     height=&quot;60&quot;
-     style=&quot;fill:red;
+     height=&quot;92.57762865891064&quot;
+     style=&quot;fill:blue;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;rect x=&quot;60&quot;
       y=&quot;0&quot;
      width=&quot;20&quot;
-     height=&quot;80&quot;
+     height=&quot;72.5542186586242&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;</code></pre></div></div></div><div class="section-title">Solution: SVG Template<pre><code>&lt;rect x=&quot;${d.x}&quot;
@@ -924,27 +924,28 @@ page in order to put all Javascript code in the same code block.</p>
 }
 
 function computeHeight(d, i) {
-    return i * 20 + 20 // TODO
+    return (d[&apos;pop&apos;]/3484459.59)
 }
 
 function computeColor(d, i) {
-    return &apos;red&apos; // TODO
+    if (d[&apos;name&apos;] == &apos;USA&apos;) { return &apos;blue&apos; }
+    else { return &apos;red&apos; }
 }
 
-var viz = _.map(data, function(d, i){
-            return {
-                x: computeX(d, i),
-                height: computeHeight(d, i),
-                color: computeColor(d, i)
-            }
-         })
+var viz = _.map(data, function(d, i) {
+    return {
+        x: computeX(d, i),
+        height: computeHeight(d, i),
+        color: computeColor(d, i)
+    }
+})
 console.log(viz)
 
-var result = _.map(viz, function(d){
-         // invoke the compiled template function on each viz data
-         return template({d: d})
-     })
-return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;height&quot;:20,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:20,&quot;height&quot;:40,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:40,&quot;height&quot;:60,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:60,&quot;height&quot;:80,&quot;color&quot;:&quot;red&quot;}]</span></div></div></div><p></p>
+var result = _.map(viz, function(d) {
+     // invoke the compiled template function on each viz data
+     return template({d: d})
+})
+return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;height&quot;:400,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:20,&quot;height&quot;:363.7298169958114,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:40,&quot;height&quot;:92.57762865891064,&quot;color&quot;:&quot;blue&quot;},{&quot;x&quot;:60,&quot;height&quot;:72.5542186586242,&quot;color&quot;:&quot;red&quot;}]</span></div></div></div><p></p>
 <p></p><h2> <span class="text">Align the bars at the bottom</span><a href="#top" style="font-size: 14px; float: right;">[top]</a></h2><div class="lodashexercise">   <a name="foo">   </a><div class="section-title">Data        <span style="font-size:10px;line-height:11px;" class="inspect"><span style="visibility:hidden">[{&quot;name&quot;:&quot;China&quot;,&quot;pop&quot;:1393783836},{&quot;name&quot;:&quot;India&quot;,&quot;pop&quot;:1267401849},{&quot;name&quot;:&quot;USA&quot;,&quot;pop&quot;:322583006},{&quot;name&quot;:&quot;Indonesia&quot;,&quot;pop&quot;:252812243}]</span></span></div><div class="output"><div class="left"><div class="section-title">Desired Viz<svg width="100%" height="400"><rect x="0" y="0" width="20" height="400" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
@@ -956,16 +957,16 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
             stroke:rgb(0,0,0)"/>
 <rect x="60" y="327.4457813413758" width="20" height="72.5542186586242" style="fill:red;
             stroke-width:3;
-            stroke:rgb(0,0,0)"/></svg></div></div><div class="right"><div class="section-title">Actual Viz<svg width="100%" height="400"><rect x="0" y="300" width="20" height="100" style="fill:red;
+            stroke:rgb(0,0,0)"/></svg></div></div><div class="right"><div class="section-title">Actual Viz<svg width="100%" height="400"><rect x="0" y="0" width="20" height="400" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="20" y="280" width="20" height="120" style="fill:red;
+<rect x="20" y="36.270183004188596" width="20" height="363.7298169958114" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="40" y="260" width="20" height="140" style="fill:red;
+<rect x="40" y="307.4223713410894" width="20" height="92.57762865891064" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="60" y="240" width="20" height="160" style="fill:red;
+<rect x="60" y="327.4457813413758" width="20" height="72.5542186586242" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/></svg></div></div></div><div class="output"><div class="left">    <div class="section-title">       <pre><code>&lt;rect x=&quot;0&quot;
       y=&quot;0&quot;
@@ -995,30 +996,30 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;</code></pre></div></div><div class="right">  <div class="section-title">                <pre><code>&lt;rect x=&quot;0&quot;
-      y=&quot;300&quot;
+      y=&quot;0&quot;
      width=&quot;20&quot;
-     height=&quot;100&quot;
+     height=&quot;400&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;rect x=&quot;20&quot;
-      y=&quot;280&quot;
+      y=&quot;36.270183004188596&quot;
      width=&quot;20&quot;
-     height=&quot;120&quot;
+     height=&quot;363.7298169958114&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;rect x=&quot;40&quot;
-      y=&quot;260&quot;
+      y=&quot;307.4223713410894&quot;
      width=&quot;20&quot;
-     height=&quot;140&quot;
+     height=&quot;92.57762865891064&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;rect x=&quot;60&quot;
-      y=&quot;240&quot;
+      y=&quot;327.4457813413758&quot;
      width=&quot;20&quot;
-     height=&quot;160&quot;
+     height=&quot;72.5542186586242&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;</code></pre></div></div></div><div class="section-title">Solution: SVG Template<pre><code>&lt;rect x=&quot;${d.x}&quot;
@@ -1032,11 +1033,11 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
 }
 
 function computeHeight(d, i) {
-    return i * 20 + 100
+    return (d[&apos;pop&apos;]/3484459.59)
 }
 
 function computeY(d, i) {
-    return 400 - i * 20 - 100
+    return 400 - computeHeight(d, i)
 }
 
 function computeColor(d, i) {
@@ -1054,10 +1055,10 @@ var viz = _.map(data, function(d, i){
 console.log(viz)
 
 var result = _.map(viz, function(d){
-         // invoke the compiled template function on each viz data
-         return template({d: d})
-     })
-return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:300,&quot;height&quot;:100,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:20,&quot;y&quot;:280,&quot;height&quot;:120,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:40,&quot;y&quot;:260,&quot;height&quot;:140,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:60,&quot;y&quot;:240,&quot;height&quot;:160,&quot;color&quot;:&quot;red&quot;}]</span></div></div></div><p></p>
+     // invoke the compiled template function on each viz data
+     return template({d: d})
+})
+return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:0,&quot;height&quot;:400,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:20,&quot;y&quot;:36.270183004188596,&quot;height&quot;:363.7298169958114,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:40,&quot;y&quot;:307.4223713410894,&quot;height&quot;:92.57762865891064,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:60,&quot;y&quot;:327.4457813413758,&quot;height&quot;:72.5542186586242,&quot;color&quot;:&quot;red&quot;}]</span></div></div></div><p></p>
 <p></p><h2> <span class="text">Add some margins between every two bars</span><a href="#top" style="font-size: 14px; float: right;">[top]</a></h2><div class="lodashexercise">   <a name="foo">   </a><div class="section-title">Data        <span style="font-size:10px;line-height:11px;" class="inspect"><span style="visibility:hidden">[{&quot;name&quot;:&quot;China&quot;,&quot;pop&quot;:1393783836},{&quot;name&quot;:&quot;India&quot;,&quot;pop&quot;:1267401849},{&quot;name&quot;:&quot;USA&quot;,&quot;pop&quot;:322583006},{&quot;name&quot;:&quot;Indonesia&quot;,&quot;pop&quot;:252812243}]</span></span></div><div class="output"><div class="left"><div class="section-title">Desired Viz<svg width="100%" height="400"><rect x="0" y="0" width="20" height="400" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
@@ -1069,16 +1070,16 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
             stroke:rgb(0,0,0)"/>
 <rect x="90" y="327.4457813413758" width="20" height="72.5542186586242" style="fill:red;
             stroke-width:3;
-            stroke:rgb(0,0,0)"/></svg></div></div><div class="right"><div class="section-title">Actual Viz<svg width="100%" height="400"><rect x="0" y="300" width="20" height="100" style="fill:red;
+            stroke:rgb(0,0,0)"/></svg></div></div><div class="right"><div class="section-title">Actual Viz<svg width="100%" height="400"><rect x="0" y="0" width="20" height="400" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="20" y="280" width="20" height="120" style="fill:red;
+<rect x="30" y="36.270183004188596" width="20" height="363.7298169958114" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="40" y="260" width="20" height="140" style="fill:red;
+<rect x="60" y="307.4223713410894" width="20" height="92.57762865891064" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="60" y="240" width="20" height="160" style="fill:red;
+<rect x="90" y="327.4457813413758" width="20" height="72.5542186586242" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/></svg></div></div></div><div class="output"><div class="left">    <div class="section-title">       <pre><code>&lt;rect x=&quot;0&quot;
       y=&quot;0&quot;
@@ -1108,30 +1109,30 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;</code></pre></div></div><div class="right">  <div class="section-title">                <pre><code>&lt;rect x=&quot;0&quot;
-      y=&quot;300&quot;
+      y=&quot;0&quot;
      width=&quot;20&quot;
-     height=&quot;100&quot;
+     height=&quot;400&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
-&lt;rect x=&quot;20&quot;
-      y=&quot;280&quot;
+&lt;rect x=&quot;30&quot;
+      y=&quot;36.270183004188596&quot;
      width=&quot;20&quot;
-     height=&quot;120&quot;
-     style=&quot;fill:red;
-            stroke-width:3;
-            stroke:rgb(0,0,0)&quot; /&gt;
-&lt;rect x=&quot;40&quot;
-      y=&quot;260&quot;
-     width=&quot;20&quot;
-     height=&quot;140&quot;
+     height=&quot;363.7298169958114&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;rect x=&quot;60&quot;
-      y=&quot;240&quot;
+      y=&quot;307.4223713410894&quot;
      width=&quot;20&quot;
-     height=&quot;160&quot;
+     height=&quot;92.57762865891064&quot;
+     style=&quot;fill:red;
+            stroke-width:3;
+            stroke:rgb(0,0,0)&quot; /&gt;
+&lt;rect x=&quot;90&quot;
+      y=&quot;327.4457813413758&quot;
+     width=&quot;20&quot;
+     height=&quot;72.5542186586242&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;</code></pre></div></div></div><div class="section-title">Solution: SVG Template<pre><code>&lt;rect x=&quot;${d.x}&quot;
@@ -1141,15 +1142,15 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
      style=&quot;fill:${d.color};
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;</code></pre></div><div class="section-title">Solution: Javascript</div><pre><code>function computeX(d, i) {
-    return i * 20
+    return i * 30
 }
 
 function computeHeight(d, i) {
-    return i * 20 + 100
+    return (d[&apos;pop&apos;]/3484459.59)
 }
 
 function computeY(d, i) {
-    return 400 - i * 20 - 100
+    return 400 - computeHeight(d, i)
 }
 
 function computeColor(d, i) {
@@ -1170,7 +1171,7 @@ var result = _.map(viz, function(d){
          // invoke the compiled template function on each viz data
          return template({d: d})
      })
-return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:300,&quot;height&quot;:100,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:20,&quot;y&quot;:280,&quot;height&quot;:120,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:40,&quot;y&quot;:260,&quot;height&quot;:140,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:60,&quot;y&quot;:240,&quot;height&quot;:160,&quot;color&quot;:&quot;red&quot;}]</span></div></div></div><p></p>
+return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:0,&quot;height&quot;:400,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:30,&quot;y&quot;:36.270183004188596,&quot;height&quot;:363.7298169958114,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:60,&quot;y&quot;:307.4223713410894,&quot;height&quot;:92.57762865891064,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:90,&quot;y&quot;:327.4457813413758,&quot;height&quot;:72.5542186586242,&quot;color&quot;:&quot;red&quot;}]</span></div></div></div><p></p>
 <p></p><h2> <span class="text">Reverse the order of the bars</span><a href="#top" style="font-size: 14px; float: right;">[top]</a></h2><div class="lodashexercise">   <a name="foo">   </a><div class="section-title">Data        <span style="font-size:10px;line-height:11px;" class="inspect"><span style="visibility:hidden">[{&quot;name&quot;:&quot;China&quot;,&quot;pop&quot;:1393783836},{&quot;name&quot;:&quot;India&quot;,&quot;pop&quot;:1267401849},{&quot;name&quot;:&quot;USA&quot;,&quot;pop&quot;:322583006},{&quot;name&quot;:&quot;Indonesia&quot;,&quot;pop&quot;:252812243}]</span></span></div><div class="output"><div class="left"><div class="section-title">Desired Viz<svg width="100%" height="400"><rect x="0" y="327.4457813413758" width="20" height="72.5542186586242" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
@@ -1182,16 +1183,16 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
             stroke:rgb(0,0,0)"/>
 <rect x="60" y="0" width="20" height="400" style="fill:red;
             stroke-width:3;
-            stroke:rgb(0,0,0)"/></svg></div></div><div class="right"><div class="section-title">Actual Viz<svg width="100%" height="400"><rect x="0" y="0" width="20" height="400" style="fill:red;
+            stroke:rgb(0,0,0)"/></svg></div></div><div class="right"><div class="section-title">Actual Viz<svg width="100%" height="400"><rect x="0" y="327.4457813413758" width="20" height="72.5542186586242" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="20" y="36.270183004188596" width="20" height="363.7298169958114" style="fill:red;
+<rect x="20" y="307.4223713410894" width="20" height="92.57762865891063" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="40" y="307.4223713410894" width="20" height="92.57762865891063" style="fill:red;
+<rect x="40" y="36.270183004188596" width="20" height="363.7298169958114" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="60" y="327.4457813413758" width="20" height="72.5542186586242" style="fill:red;
+<rect x="60" y="0" width="20" height="400" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/></svg></div></div></div><div class="output"><div class="left">    <div class="section-title">       <pre><code>&lt;rect x=&quot;0&quot;
       y=&quot;327.4457813413758&quot;
@@ -1221,30 +1222,30 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;</code></pre></div></div><div class="right">  <div class="section-title">                <pre><code>&lt;rect x=&quot;0&quot;
-      y=&quot;0&quot;
+      y=&quot;327.4457813413758&quot;
      width=&quot;20&quot;
-     height=&quot;400&quot;
+     height=&quot;72.5542186586242&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;rect x=&quot;20&quot;
-      y=&quot;36.270183004188596&quot;
-     width=&quot;20&quot;
-     height=&quot;363.7298169958114&quot;
-     style=&quot;fill:red;
-            stroke-width:3;
-            stroke:rgb(0,0,0)&quot; /&gt;
-&lt;rect x=&quot;40&quot;
       y=&quot;307.4223713410894&quot;
      width=&quot;20&quot;
      height=&quot;92.57762865891063&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
-&lt;rect x=&quot;60&quot;
-      y=&quot;327.4457813413758&quot;
+&lt;rect x=&quot;40&quot;
+      y=&quot;36.270183004188596&quot;
      width=&quot;20&quot;
-     height=&quot;72.5542186586242&quot;
+     height=&quot;363.7298169958114&quot;
+     style=&quot;fill:red;
+            stroke-width:3;
+            stroke:rgb(0,0,0)&quot; /&gt;
+&lt;rect x=&quot;60&quot;
+      y=&quot;0&quot;
+     width=&quot;20&quot;
+     height=&quot;400&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;</code></pre></div></div></div><div class="section-title">Solution: SVG Template<pre><code>&lt;rect x=&quot;${d.x}&quot;
@@ -1269,7 +1270,8 @@ function computeColor(d, i) {
     return &apos;red&apos;
 }
 
-var viz = _.map(data, function(d, i){
+var sorted_data = _.sortBy(data, &apos;pop&apos;)
+var viz = _.map(sorted_data, function(d, i) {
             return {
                 x: computeX(d, i),
                 y: computeY(d, i),
@@ -1283,7 +1285,7 @@ var result = _.map(viz, function(d){
          // invoke the compiled template function on each viz data
          return template({d: d})
      })
-return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:0,&quot;height&quot;:400,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:20,&quot;y&quot;:36.270183004188596,&quot;height&quot;:363.7298169958114,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:40,&quot;y&quot;:307.4223713410894,&quot;height&quot;:92.57762865891063,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:60,&quot;y&quot;:327.4457813413758,&quot;height&quot;:72.5542186586242,&quot;color&quot;:&quot;red&quot;}]</span></div></div></div><p></p>
+return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:327.4457813413758,&quot;height&quot;:72.5542186586242,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:20,&quot;y&quot;:307.4223713410894,&quot;height&quot;:92.57762865891063,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:40,&quot;y&quot;:36.270183004188596,&quot;height&quot;:363.7298169958114,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:60,&quot;y&quot;:0,&quot;height&quot;:400,&quot;color&quot;:&quot;red&quot;}]</span></div></div></div><p></p>
 <p></p><h2> <span class="text">Display bars horizontally</span><a href="#top" style="font-size: 14px; float: right;">[top]</a></h2><div class="lodashexercise">   <a name="foo">   </a><div class="section-title">Data        <span style="font-size:10px;line-height:11px;" class="inspect"><span style="visibility:hidden">[{&quot;name&quot;:&quot;China&quot;,&quot;pop&quot;:1393783836},{&quot;name&quot;:&quot;India&quot;,&quot;pop&quot;:1267401849},{&quot;name&quot;:&quot;USA&quot;,&quot;pop&quot;:322583006},{&quot;name&quot;:&quot;Indonesia&quot;,&quot;pop&quot;:252812243}]</span></span></div><div class="output"><div class="left"><div class="section-title">Desired Viz<svg width="100%" height="400"><rect x="0" y="0" width="300" height="20" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
@@ -1295,16 +1297,16 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
             stroke:rgb(0,0,0)"/>
 <rect x="0" y="60" width="54.415663993968145" height="20" style="fill:red;
             stroke-width:3;
-            stroke:rgb(0,0,0)"/></svg></div></div><div class="right"><div class="section-title">Actual Viz<svg width="100%" height="400"><rect x="0" y="0" width="100" height="20" style="fill:red;
+            stroke:rgb(0,0,0)"/></svg></div></div><div class="right"><div class="section-title">Actual Viz<svg width="100%" height="400"><rect x="0" y="0" width="300" height="20" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="0" y="20" width="120" height="20" style="fill:red;
+<rect x="0" y="20" width="272.79736274685854" height="20" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="0" y="40" width="140" height="20" style="fill:red;
+<rect x="0" y="40" width="69.43322149418297" height="20" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<rect x="0" y="60" width="160" height="20" style="fill:red;
+<rect x="0" y="60" width="54.415663993968145" height="20" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/></svg></div></div></div><div class="output"><div class="left">    <div class="section-title">       <pre><code>&lt;rect x=&quot;0&quot;
       y=&quot;0&quot;
@@ -1335,28 +1337,28 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;</code></pre></div></div><div class="right">  <div class="section-title">                <pre><code>&lt;rect x=&quot;0&quot;
       y=&quot;0&quot;
-     width=&quot;100&quot;
+     width=&quot;300&quot;
      height=&quot;20&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;rect x=&quot;0&quot;
       y=&quot;20&quot;
-     width=&quot;120&quot;
+     width=&quot;272.79736274685854&quot;
      height=&quot;20&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;rect x=&quot;0&quot;
       y=&quot;40&quot;
-     width=&quot;140&quot;
+     width=&quot;69.43322149418297&quot;
      height=&quot;20&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;rect x=&quot;0&quot;
       y=&quot;60&quot;
-     width=&quot;160&quot;
+     width=&quot;54.415663993968145&quot;
      height=&quot;20&quot;
      style=&quot;fill:red;
             stroke-width:3;
@@ -1375,7 +1377,7 @@ function computeHeight(d, i) {
 }
 
 function computeWidth(d, i) {
-    return 20 * i + 100
+    return d.pop * (300 / 1393783836)
 }
 
 function computeY(d, i) {
@@ -1401,7 +1403,7 @@ var result = _.map(viz, function(d){
          // invoke the compiled template function on each viz data
          return template({d: d})
      })
-return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:0,&quot;height&quot;:20,&quot;width&quot;:100,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:0,&quot;y&quot;:20,&quot;height&quot;:20,&quot;width&quot;:120,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:0,&quot;y&quot;:40,&quot;height&quot;:20,&quot;width&quot;:140,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:0,&quot;y&quot;:60,&quot;height&quot;:20,&quot;width&quot;:160,&quot;color&quot;:&quot;red&quot;}]</span></div></div></div><p></p>
+return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:0,&quot;height&quot;:20,&quot;width&quot;:300,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:0,&quot;y&quot;:20,&quot;height&quot;:20,&quot;width&quot;:272.79736274685854,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:0,&quot;y&quot;:40,&quot;height&quot;:20,&quot;width&quot;:69.43322149418297,&quot;color&quot;:&quot;red&quot;},{&quot;x&quot;:0,&quot;y&quot;:60,&quot;height&quot;:20,&quot;width&quot;:54.415663993968145,&quot;color&quot;:&quot;red&quot;}]</span></div></div></div><p></p>
 <p></p><h2> <span class="text">Display a number next to each bar</span><a href="#top" style="font-size: 14px; float: right;">[top]</a></h2><div class="lodashexercise">   <a name="foo">   </a><div class="section-title">Data        <span style="font-size:10px;line-height:11px;" class="inspect"><span style="visibility:hidden">[{&quot;name&quot;:&quot;China&quot;,&quot;pop&quot;:1393783836},{&quot;name&quot;:&quot;India&quot;,&quot;pop&quot;:1267401849},{&quot;name&quot;:&quot;USA&quot;,&quot;pop&quot;:322583006},{&quot;name&quot;:&quot;Indonesia&quot;,&quot;pop&quot;:252812243}]</span></span></div><div class="output"><div class="left"><div class="section-title">Desired Viz<svg width="100%" height="400"><g transform="translate(0 0)">
 <rect width="300" height="20" style="fill:red;
             stroke-width:3;
@@ -1426,28 +1428,28 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
             stroke:rgb(0,0,0)"/>
 <text x="330" y="10">252812243</text>
 </g></svg></div></div><div class="right"><div class="section-title">Actual Viz<svg width="100%" height="400"><g transform="translate(0 0)">
-<rect width="100" height="20" style="fill:red;
+<rect width="300" height="20" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<text x="100" y="10">label</text>
+<text x="330" y="10">1393783836</text>
 </g>
 <g transform="translate(0 20)">
-<rect width="120" height="20" style="fill:red;
+<rect width="272.79736274685854" height="20" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<text x="100" y="10">label</text>
+<text x="330" y="10">1267401849</text>
 </g>
 <g transform="translate(0 40)">
-<rect width="140" height="20" style="fill:red;
+<rect width="69.43322149418297" height="20" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<text x="100" y="10">label</text>
+<text x="330" y="10">322583006</text>
 </g>
 <g transform="translate(0 60)">
-<rect width="160" height="20" style="fill:red;
+<rect width="54.415663993968145" height="20" style="fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)"/>
-<text x="100" y="10">label</text>
+<text x="330" y="10">252812243</text>
 </g></svg></div></div></div><div class="output"><div class="left">    <div class="section-title">       <pre><code>&lt;g transform=&quot;translate(0 0)&quot;&gt;
 &lt;rect width=&quot;300&quot;
      height=&quot;20&quot;
@@ -1480,43 +1482,43 @@ return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Consol
             stroke:rgb(0,0,0)&quot; /&gt;
 &lt;text x=&quot;330&quot; y=&quot;10&quot;&gt;252812243&lt;/text&gt;
 &lt;/g&gt;</code></pre></div></div><div class="right">  <div class="section-title">                <pre><code>&lt;g transform=&quot;translate(0 0)&quot;&gt;
-&lt;rect width=&quot;100&quot;
+&lt;rect width=&quot;300&quot;
      height=&quot;20&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
-&lt;text x=&quot;100&quot; y=&quot;10&quot;&gt;label&lt;/text&gt;
+&lt;text x=&quot;330&quot; y=&quot;10&quot;&gt;1393783836&lt;/text&gt;
 &lt;/g&gt;
 &lt;g transform=&quot;translate(0 20)&quot;&gt;
-&lt;rect width=&quot;120&quot;
+&lt;rect width=&quot;272.79736274685854&quot;
      height=&quot;20&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
-&lt;text x=&quot;100&quot; y=&quot;10&quot;&gt;label&lt;/text&gt;
+&lt;text x=&quot;330&quot; y=&quot;10&quot;&gt;1267401849&lt;/text&gt;
 &lt;/g&gt;
 &lt;g transform=&quot;translate(0 40)&quot;&gt;
-&lt;rect width=&quot;140&quot;
+&lt;rect width=&quot;69.43322149418297&quot;
      height=&quot;20&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
-&lt;text x=&quot;100&quot; y=&quot;10&quot;&gt;label&lt;/text&gt;
+&lt;text x=&quot;330&quot; y=&quot;10&quot;&gt;322583006&lt;/text&gt;
 &lt;/g&gt;
 &lt;g transform=&quot;translate(0 60)&quot;&gt;
-&lt;rect width=&quot;160&quot;
+&lt;rect width=&quot;54.415663993968145&quot;
      height=&quot;20&quot;
      style=&quot;fill:red;
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
-&lt;text x=&quot;100&quot; y=&quot;10&quot;&gt;label&lt;/text&gt;
+&lt;text x=&quot;330&quot; y=&quot;10&quot;&gt;252812243&lt;/text&gt;
 &lt;/g&gt;</code></pre></div></div></div><div class="section-title">Solution: SVG Template<pre><code>&lt;g transform=&quot;translate(${d.x} ${d.y})&quot;&gt;
 &lt;rect width=&quot;${d.width}&quot;
      height=&quot;${d.height}&quot;
      style=&quot;fill:${d.color};
             stroke-width:3;
             stroke:rgb(0,0,0)&quot; /&gt;
-&lt;text x=&quot;100&quot; y=&quot;10&quot;&gt;${d.label}&lt;/text&gt;
+&lt;text x=&quot;330&quot; y=&quot;10&quot;&gt;${d.label}&lt;/text&gt;
 &lt;/g&gt;</code></pre></div><div class="section-title">Solution: Javascript</div><pre><code>function computeX(d, i) {
     return 0
 }
@@ -1526,7 +1528,7 @@ function computeHeight(d, i) {
 }
 
 function computeWidth(d, i) {
-    return 20 * i + 100
+    return d.pop * (300 / 1393783836)
 }
 
 function computeY(d, i) {
@@ -1538,7 +1540,7 @@ function computeColor(d, i) {
 }
 
 function computeLabel(d, i) {
-    return &apos;label&apos;
+    return d.pop
 }
 
 var viz = _.map(data, function(d, i){
@@ -1557,7 +1559,7 @@ var result = _.map(viz, function(d){
          // invoke the compiled template function on each viz data
          return template({d: d})
      })
-return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:0,&quot;height&quot;:20,&quot;width&quot;:100,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;label&quot;},{&quot;x&quot;:0,&quot;y&quot;:20,&quot;height&quot;:20,&quot;width&quot;:120,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;label&quot;},{&quot;x&quot;:0,&quot;y&quot;:40,&quot;height&quot;:20,&quot;width&quot;:140,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;label&quot;},{&quot;x&quot;:0,&quot;y&quot;:60,&quot;height&quot;:20,&quot;width&quot;:160,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;label&quot;}]</span></div></div></div><p></p>
+return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:0,&quot;height&quot;:20,&quot;width&quot;:300,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:1393783836},{&quot;x&quot;:0,&quot;y&quot;:20,&quot;height&quot;:20,&quot;width&quot;:272.79736274685854,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:1267401849},{&quot;x&quot;:0,&quot;y&quot;:40,&quot;height&quot;:20,&quot;width&quot;:69.43322149418297,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:322583006},{&quot;x&quot;:0,&quot;y&quot;:60,&quot;height&quot;:20,&quot;width&quot;:54.415663993968145,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:252812243}]</span></div></div></div><p></p>
 
                     
                     </section>
