@@ -80,11 +80,11 @@ Place a label to the left of each bar
 {% solution %}
 
 function computeX(d, i) {
-    return 0
+    return 120
 }
 
 function computeWidth(d, i) {
-    return i * 20 + 50
+    return d.Attack
 }
 
 function computeY(d, i) {
@@ -95,12 +95,17 @@ function computeColor(d, i) {
     return 'red'
 }
 
+function computeLabel(d, i) {
+    return d.Name
+}
+
 var viz = _.map(data, function(d, i){
             return {
                 x: computeX(d, i),
                 y: computeY(d, i),
                 width: computeWidth(d, i),
-                color: computeColor(d, i)
+                color: computeColor(d, i),
+                label: computeLabel(d, i)
             }
          })
 console.log(viz)
@@ -113,12 +118,16 @@ return result.join('\n')
 
 {% template %}
 <g transform="translate(0 ${d.y})">
-    <rect         
+    <rect 
+         x="${d.x}"
          width="${d.width}"
          height="20"
          style="fill:${d.color};
                 stroke-width:3;
                 stroke:rgb(0,0,0)" />
+    <text transform="translate(0 15)">
+        ${d.label}
+    </text>
 </g>
 
 {% output %}
