@@ -84,7 +84,7 @@ function computeX(d, i) {
 }
 
 function computeWidth(d, i) {
-    return i * 20 + 50
+    return d.Attack
 }
 
 function computeY(d, i) {
