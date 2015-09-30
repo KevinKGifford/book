@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Week 3 | book</title>
+        <title>Mongodb Setup | book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -45,10 +45,10 @@
         
     
     
-    <link rel="next" href="../../learning/week3/github-api.html" />
+    <link rel="next" href="../../learning/week6/mongodb-drills.html" />
     
     
-    <link rel="prev" href="../../learning/week2/viz.html" />
+    <link rel="prev" href="../../learning/week6/design-study.html" />
     
 
         <!-- head:end -->
@@ -56,7 +56,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.4" data-basepath="../.." data-revision="Wed Sep 30 2015 14:11:41 GMT-0600 (MDT)">
+    <div class="book" data-level="1.7.2" data-basepath="../.." data-revision="Wed Sep 30 2015 14:11:41 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -270,7 +270,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="learning/week3/index.html">
+        <li class="chapter " data-level="1.4" data-path="learning/week3/index.html">
             
                 
                     <a href="../../learning/week3/index.html">
@@ -499,7 +499,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="learning/week6/mongodb-setup.html">
+        <li class="chapter active" data-level="1.7.2" data-path="learning/week6/mongodb-setup.html">
             
                 
                     <a href="../../learning/week6/mongodb-setup.html">
@@ -935,12 +935,42 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="week-3-learning-challenges">Week 3 Learning Challenges</h1>
-<p>This week&apos;s learning challenge has two components.</p>
+                        <h1 id="setup">Setup</h1>
+<p>The objective of this part of the learning challenge is to
+download and install a Mongodb server running on your local machine and has the
+server populated with the Android App listing detail data.</p>
+<h2 id="install">Install</h2>
+<h2 id="export-data">Export Data</h2>
+<p>You can obtain data from an existing Mongodb server we&apos;ve already setup. The information
+about this server are provided below:</p>
 <ul>
-<li>Team - Github API</li>
-<li>Individual - Lodash exercises (drills and groupby)</li>
+<li>host: ds041663.mongolab.com</li>
+<li>port: 41663</li>
+<li>user name: bigdatahci</li>
+<li>password: bigdatahci2015</li>
 </ul>
+<p>Read the documentation to figure out what command to run in order to <em>dump</em>
+all the data into a file: <a href="http://docs.mongodb.org/manual/reference/program/mongodump/" target="_blank">mongodump</a>.
+This is a part of the challenge to see if you can rely on online documentation to
+learn how to write appropraite database commands to do what you want.</p>
+<p>This server has been configured to be read-only so you don&apos;t have to worry about
+accidentally wiping the data off this server.</p>
+<p>While the data is dumping, you should see something similar to this
+<img src="dumping.png" alt="dumping"></p>
+<h2 id="import-data">Import Data</h2>
+<p>Then, you can get this data into your own Mongodb server using the restore command.
+Read the documentation to figure out what command to run: <a href="http://docs.mongodb.org/manual/reference/program/mongorestore/" target="_blank">mongorestore</a>.</p>
+<p>While the data is being restored, you should see this
+<img src="restore.png" alt="restore"></p>
+<h2 id="command-line-interface">Command-line Interface</h2>
+<p>Connect to Mongodb through the command line interface.</p>
+<p>Issue a query:</p>
+<pre><code>    db.listings.find({&quot;n&quot;:&quot;com.evernote&quot;}).pretty()
+</code></pre><p>The goal is to be able to see something like below in the terminal.</p>
+<p><img src="query.png" alt="screenshot"></p>
+<p>(Replace this screenshot with a screenshot of each individual&apos;s own computer.
+ Include the entire desktop in the screenshot so we can know this screenshot
+ does belong to an individual)</p>
 
                     
                     </section>
@@ -951,10 +981,10 @@
         </div>
 
         
-        <a href="../../learning/week2/viz.html" class="navigation navigation-prev " aria-label="Previous page: Tableau Viz"><i class="fa fa-angle-left"></i></a>
+        <a href="../../learning/week6/design-study.html" class="navigation navigation-prev " aria-label="Previous page: Design pattern changes"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../learning/week3/github-api.html" class="navigation navigation-next " aria-label="Next page: Github API"><i class="fa fa-angle-right"></i></a>
+        <a href="../../learning/week6/mongodb-drills.html" class="navigation navigation-next " aria-label="Next page: Mongodb Drills"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

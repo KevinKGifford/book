@@ -1,0 +1,7246 @@
+[
+    {
+        "Incident Type": "Fire-Brush", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Steam Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Steam Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Network Condition", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Steam Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Residential", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Other", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Marine-Freight Wet Goods", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Parapet", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Parapet", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Administration-Meeting", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Main Rupture", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Bridge", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Bricks", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Medical-Injured City Worker", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Aviation-Passenger Aircraft", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-School Bus", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Cable TV", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Device", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Sewer Service", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Medical-Public Health", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Explosion", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Explosion", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Payload Truck", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Haz Mat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Administration-Mutual Aid", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Evacuation", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Main Rupture", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Car", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-7th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Ground Level", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Aviation-Large Aircraft", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Device", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Low Pressure", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Commuter Bus", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Aviation-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Explosion", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Sewer Service", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Elevator", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Crane", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Steam Service Line", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Demolition", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Commuter Bus", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-High Rise", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Transportation-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Feeder Cable", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Mobilization", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Medical-EMS MCI (Multiple Casualty Incident)", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Mobilization", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Medical-Injured City Worker", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Device", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Weather-Flooding", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Feeder Cable", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Other", 
+        "Borough": "Citywide"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Medical-Public Health", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Aviation-Passenger Aircraft", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Administration-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Transportation-Car", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Explosion", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Weather-Snow", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Administration-Mutual Aid", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Device", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Explosion", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Evacuation", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Medical-Public Health", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Solid", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Medical-Public Health", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Medical-Public Health", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Medical-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Explosion", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Marine-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Tunnel", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Administration-Drill", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Bricks", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Evacuation", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Marine-Pleasure Craft Large", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Medical-Other", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Commercial", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Main Rupture", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Medical-Public Health", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Commercial Bus", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Solid", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Solid", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Sewer Service", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Medical-Public Health", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Main Rupture", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Administration-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Commuter Bus", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Transformer", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-High Rise", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Administration-1 PP Activation", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Citywide"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Payload Truck", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Evacuation", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Feeder Cable", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Demolition", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-High Rise", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Main Rupture", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Haz Mat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Technical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Solid", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Administration-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Medical-Spray/Larvaciding", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Elevator", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Elevator", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Confined Space", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Medical-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Elevated", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Explosion", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Low Pressure", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Notify NYC Message", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Phone Outage", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Explosion", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Transformer", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Weather-Flooding", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Weather-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Device", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Haz Mat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Haz Mat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Bricks", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Haz Mat", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Administration-Drill", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Device", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise Fire)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Main Rupture", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Device", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Device", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Administration-1 PP Activation", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Confined Space", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Transportation-Payload Truck", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Ground Level", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Marine-Passenger Liner", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Parapet", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Other", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise Fire)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Other", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Other", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Medical-EMS MCI (Multiple Casualty Incident)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Law Enforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Other", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise Fire)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Ground Level", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Evacuation", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Bomb Threat", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Main Rupture", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Report of a Bomb Threat", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Administration-Drill", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Car Fire", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Explosion", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Weather-Flooding", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Sink Hole", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Land Slide from Rain", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Electrical", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Weather-Flooding", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Disabled Train", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Odor Of Gas", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Weather-Rain", 
+        "Borough": "Citywide"
+    }, 
+    {
+        "Incident Type": "HazMat-Suspicious Substance", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Brush", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Rescue-Technical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Natural Gas Leak", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Unknown Substance", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Main Rupture", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Bricks", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Brush", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Water Condition", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Main Rupture", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Marine-Pleasure Craft Medium", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Citywide"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "HazMat-White Substance", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Residence Search", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-White Powder", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Parapet", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Transportation-Car", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Bus Crash into Building", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid Oxygen", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Vehicle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Transportation-Overturned Tractor Trailer", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Unstable Balcony", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Other-Sink Hole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "HazMat-Solid", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Device", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Rescue-Technical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Medical-EMS MCI (Multiple Casualty Incident)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Other-Over Turned Truck", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Leak", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Disruption", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Odor", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Marine Liquid", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-School Bus", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Car into Building", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Car into store", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Ice Condition", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-One Vehicle Collision With Building Damage", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Transformer Fire", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Other-Sinkhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Damaged Sidewalk/ Exposed Wires", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Suspicious Substance", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "HazMat-High CO", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "HazMat-LPG Tanker", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious powder", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Haz Mat", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Other-Henry Hudson Pkwy Flooding Condition", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Other-Elevated CO Levels", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Fumes", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Network Condition", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Other-Tree into House", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Steam Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-arcing in electric panel", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Condition", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Aviation-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-White Powder", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Hospital", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Demolition", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Explosion", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Dielectric Fluid Leak", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Truck into Building", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Flooding in Con Ed Substation", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-School Lock Down", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Low Pressure", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Fumes Court House", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Vehicle Fire on the RFK Bridge", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Mobilization", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Condition", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-6th Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Building Evacuation", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Explosion", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Transformer", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-White Powder", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Aviation-Small Aircraft", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Medical-Nursing Home Relocation", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Heat Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Hospital", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Steam Condition", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Broken Hydrant", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Explosion", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-DOT Light Pole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Transformer Inside Of Substation", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Funeral Home", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Car into Building", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Amtrak Train", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Subway Track Search", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Other-Injured Worker", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Bus into Building", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Device", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Low Pressure", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Vehicle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Main Rupture", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Explosion", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-School Evacuation", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Medical-Cardiac Arrest", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Other-Injured Construction Worker", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Aviation-Helicopter", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Car", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Possible Bomb Threat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-School Bus", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Weather-Coastal Flooding", 
+        "Borough": "Citywide"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Internal Steam Shutdown", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Elevated", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Low Pressure", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Crane", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Parapet", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Vehicle", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Odor", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-SILVER ALERT - Susana Fischer", 
+        "Borough": "Citywide"
+    }, 
+    {
+        "Incident Type": "Transportation-Car", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Main Rupture", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Elevated", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Brush Fire 2nd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Feeder Cable", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Line Down", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Student locked in vault", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-GAS ODOR", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Missing Manhole Cover", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Unstable Scaffolding", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Over Turn Truck", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Downed Wire", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Letter", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Feeder Cable", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Street Cave-In", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Aviation-Large Aircraft", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Aerosol", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Missing Person", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Oil Spill", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Weather-Wind", 
+        "Borough": "Citywide"
+    }, 
+    {
+        "Incident Type": "Structural-Sink Hole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-Explosion", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Derelict Boat", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Car into a Building", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Dielectric Fluid Spill", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-High Angle Rescue", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Medical-Trauma", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Device", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Overhead wires", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Other-Stuck Elevator", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Vehicle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Administration-Injured CIC", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Broken Pipe", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Commuter Bus", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Medical-Public Health", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Crane", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-White Powder", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Suspicious Substance", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Commuter Bus", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Ground Level", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Car Down Elevator Shaft", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Fall", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Transformer", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Car Into House", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Device", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Medical-Spray/Larvaciding", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Aviation-Medium Aircraft", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Unknown Powder", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Device", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-One Phase Down", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Feeder Cable", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Rescue-Water Rescue", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Medical-Spray/Larvaciding", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Medical-Spray/Larvaciding", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Report of Police Officer Shot", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Vehicle Fire", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Tanker Truck", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Roller Coaster Accident", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Overturned Excavator", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Fire in a Hotel", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Medical-Spray/Larvaciding", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Other-DOB Vacate", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Medical-Spray/Larvaciding", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Car Into a Building", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Haz Mat", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Roll Off Container Truck", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-White Powder Substance", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Truck with Crane Struck Overpass", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Oil Feeder", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Overhead", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Rescue-Technical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Rescue-Technical", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Commuter Bus", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Aviation-Passenger Aircraft", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Powder", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Transportation-Freight Train", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Feeder Cable", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Feeder Cable", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Delay in Commuter Service", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Water", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Turbine", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Electrical", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-HVAC System", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Air Conditioner", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Vehicle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Tree Across Track", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Commercial", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Sinkhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Bricks", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Technical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-Metro North Train on Fire", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-White Powder", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Aviation-Helicopter", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Administration-Drill", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Administration-Drill", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Network Condition", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Marine-Overturned Boat", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Cracks", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Sink Hole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Car", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Trench Rescue", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Ground Level", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Condition", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Vehicle into building", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Powder", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Bricks", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Substance", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Substance", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Ammonia leak", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Transportation-Train Subway", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Sensitive Location", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Crane", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Vehicle", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Sinkhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Con Ed Feeder Cables on Fire", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Solid", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-School Evacuation Due to Release of Mace", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Downed Utility Pole", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Medical-EMS MCI (Multiple Casualty Incident)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Bomb Threat", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Paint fumes", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Marine-Commuter", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Feeder Cable", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Trees Down on Building", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Transformer", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Weather-Flooding", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Fire-Haz Mat", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Solid", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-fluorescent Bulb", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Car VS Building", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "HazMat-Solid", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Device", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Street Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Crane", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-High Angle", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Vehicle", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-Brush", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Suspicious White Powder", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Device", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Other-Transformer Expolsion", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-10-76 (Commercial High Rise)", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Technical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Truck Fire", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-white powder", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Structural Integrity", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Administration-Planned Event", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Staten Island"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Roadway Condition", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Steam Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Truck Stuck in Tunnel", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Feeder Cable", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical Odor", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Device", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-10-77 (Residential High Rise)", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Marine-Dolphin in the Water", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Fuel Oil Spill", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Leaning Light Tower", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Device", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Administration-Watch Commander In Hospital", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Partial Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Liquid", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Gas High Pressure", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Falling Debris", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Solid", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Car", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Manhole", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-Smoke Condition", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Power Outage", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Device", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Unsafe Power Source", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Un Authorized Tractor Trailer", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-Technical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-Gasoline", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Stability Problem", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Transportation-Jack-knifed Tractor Trailer", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Life Safety Violations", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Commuter Bus", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-1st Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "HazMat-High Carbon Monoxide", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Marine-Injured Dolphin", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Defective Electrical Service", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Rescue-Confined Space", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "HazMat-Chemical", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Device", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Structural-Construction Accident", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Electric Feeder Cable", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Fire-School", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-4th Alarm", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Rescue-Sidewalk Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Transportation-Truck", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-5th Alarm", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Crane", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Structural-Scaffold", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Marine-Commuter", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Missing Construction Plate", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Collapse", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Suspicious Package", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Structural-Sidewalk Shed", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Manhole", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Utility-Water Main", 
+        "Borough": "Queens"
+    }, 
+    {
+        "Incident Type": "Medical-EMS MCI (Multiple Casualty Incident)", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "LawEnforcement-Device", 
+        "Borough": "Bronx"
+    }, 
+    {
+        "Incident Type": "Fire-3rd Alarm", 
+        "Borough": "Brooklyn"
+    }, 
+    {
+        "Incident Type": "Utility-Gas Service Line", 
+        "Borough": "Manhattan"
+    }, 
+    {
+        "Incident Type": "Fire-2nd Alarm", 
+        "Borough": "Manhattan"
+    } 
+]
