@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Week 3 | book</title>
+        <title>Report | book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -45,10 +45,8 @@
         
     
     
-    <link rel="next" href="../../learning/week3/github-api.html" />
     
-    
-    <link rel="prev" href="../../learning/week2/viz.html" />
+    <link rel="prev" href="../../hackathons/open/warmup.html" />
     
 
         <!-- head:end -->
@@ -56,7 +54,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.4" data-basepath="../.." data-revision="Wed Sep 30 2015 14:11:41 GMT-0600 (MDT)">
+    <div class="book" data-level="2.5.2" data-basepath="../.." data-revision="Wed Sep 30 2015 14:11:41 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -270,7 +268,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="learning/week3/index.html">
+        <li class="chapter " data-level="1.4" data-path="learning/week3/index.html">
             
                 
                     <a href="../../learning/week3/index.html">
@@ -805,7 +803,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5.2" data-path="hackathons/open/report.html">
+        <li class="chapter active" data-level="2.5.2" data-path="hackathons/open/report.html">
             
                 
                     <a href="../../hackathons/open/report.html">
@@ -935,12 +933,462 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="week-3-learning-challenges">Week 3 Learning Challenges</h1>
-<p>This week&apos;s learning challenge has two components.</p>
+                        <p></p>
+<h1 id="report">Report</h1>
+<p>We utilized only Javascript and SVG to produce this data analysis / visualization report.</p>
+<h1 id="authors">Authors</h1>
+<p>This report is prepared by</p>
 <ul>
-<li>Team - Github API</li>
-<li>Individual - Lodash exercises (drills and groupby)</li>
+<li><a href="http://github.com/kevinkgifford" target="_blank">Kevin Gifford</a></li>
+<li><a href="http://github.com/jraesly" target="_blank">John Raesly</a></li>
+<li><a href="http://github.com/DomoYeti" target="_blank">Robert Kendl</a></li>
 </ul>
+<h1 id="data">Data</h1>
+<p>For this assignment the authors opted to spend time and search for Public Safety Open Data available online.  We found several good resources at the state level for several states and also for cities at a more local level.  In particular, New York City maintains an easy-to-use open data website at (<a href="https://nycopendata.socrata.com/" target="_blank">https://nycopendata.socrata.com/</a>)</p>
+<p>The data for this exercise/report came from <a href="https://data.cityofnewyork.us/Public-Safety/Emergency-Response-Incidents/pasr-j7fb" target="_blank">here</a> and looks like:</p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;Incident Type&quot;: &quot;Fire-Brush&quot;,
+  &quot;Borough&quot;: &quot;Staten Island&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Law Enforcement-Suspicious Package&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-1st Alarm&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Structural-Other&quot;,
+  &quot;Borough&quot;: &quot;Bronx&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-2nd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Queens&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Other&quot;,
+  &quot;Borough&quot;: &quot;Queens&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Gas High Pressure&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-1st Alarm&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-2nd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Staten Island&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-3rd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Steam Main&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Steam Main&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Structural-Collapse&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-2nd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Law Enforcement-Other&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Network Condition&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Water Service Line&quot;,
+  &quot;Borough&quot;: &quot;Queens&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-2nd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Bronx&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Water Service Line&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Water Main&quot;,
+  &quot;Borough&quot;: &quot;Bronx&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-2nd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Queens&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Law Enforcement-Other&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Gas Service Line&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Steam Main&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-Sensitive Location&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-2nd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Queens&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-2nd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-2nd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Bronx&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-Residential&quot;,
+  &quot;Borough&quot;: &quot;Queens&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Transportation-Other&quot;,
+  &quot;Borough&quot;: &quot;Staten Island&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-Collapse&quot;,
+  &quot;Borough&quot;: &quot;Bronx&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-10-77 (Residential High Rise Fire)&quot;,
+  &quot;Borough&quot;: &quot;Bronx&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-2nd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-4th Alarm&quot;,
+  &quot;Borough&quot;: &quot;Queens&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-2nd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Bronx&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Water Main&quot;,
+  &quot;Borough&quot;: &quot;Queens&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-2nd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Structural-Scaffold&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Marine-Freight Wet Goods&quot;,
+  &quot;Borough&quot;: &quot;Staten Island&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Structural-Parapet&quot;,
+  &quot;Borough&quot;: &quot;Queens&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Structural-Parapet&quot;,
+  &quot;Borough&quot;: &quot;Queens&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Water Service Line&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-4th Alarm&quot;,
+  &quot;Borough&quot;: &quot;Staten Island&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Administration-Meeting&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Other&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Rescue-Confined Space&quot;,
+  &quot;Borough&quot;: &quot;Bronx&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;HazMat-Fuel&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-1st Alarm&quot;,
+  &quot;Borough&quot;: &quot;Queens&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Structural-Other&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Power Outage&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;HazMat-Fuel&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-Other&quot;,
+  &quot;Borough&quot;: &quot;Bronx&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-School&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;HazMat-High Carbon Monoxide&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Structural-Scaffold&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-10-77 (Residential High Rise Fire)&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;HazMat-Fuel&quot;,
+  &quot;Borough&quot;: &quot;Bronx&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Law Enforcement-Suspicious Package&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-Manhole&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-3rd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-3rd Alarm&quot;,
+  &quot;Borough&quot;: &quot;Staten Island&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Structural-Partial Collapse&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-Other&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Other&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Water Main&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Other&quot;,
+  &quot;Borough&quot;: &quot;Bronx&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Law Enforcement-Suspicious Package&quot;,
+  &quot;Borough&quot;: &quot;Manhattan&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Fire-4th Alarm&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Incident Type&quot;: &quot;Utility-Gas Main Rupture&quot;,
+  &quot;Borough&quot;: &quot;Brooklyn&quot;
+ },
+ {
+  &quot;Inciden</pre>
+
+<p><a name="top"></a></p>
+<div id="autonav"></div>
+
+<h1 id="question-1-which-borough-has-the-highest-number-of-emergency-incidents">Question 1: Which borough has the highest number of emergency incidents?</h1>
+<p><pre><code>var groups = _.groupBy(data, &apos;Borough&apos;)
+var result =_.mapValues(groups, function(d){
+    return d.length
+})
+
+// Convert object to array and sort
+result = _.sortBy(_.pairs(result))
+return result</code></pre></p>
+<p>Table 1-1: Which borough has the highest number of emergency incidents?</p>
+<table>
+
+    <tr>
+        <td>Bronx</td>
+        <td>222</td>
+    </tr>
+
+    <tr>
+        <td>Brooklyn</td>
+        <td>468</td>
+    </tr>
+
+    <tr>
+        <td>Citywide</td>
+        <td>7</td>
+    </tr>
+
+    <tr>
+        <td>Manhattan</td>
+        <td>691</td>
+    </tr>
+
+    <tr>
+        <td>Queens</td>
+        <td>324</td>
+    </tr>
+
+    <tr>
+        <td>Staten Island</td>
+        <td>99</td>
+    </tr>
+
+</table>
+
+<p>Use the warmup exercise as the template to produce an answer here.</p>
+<h1 id="question-2-what-are-the-top-10-most-common-types-of-emergency-incidents">Question 2: What are the top-10 most common types of emergency incidents?</h1>
+<p><pre><code>var groups = _.groupBy(data, &apos;Incident Type&apos;)
+var result =_.mapValues(groups, function(d){
+    return d.length
+})
+
+// Convert object to array and sort 
+result = _.slice(_.sortByOrder(_.pairs(result),function(d){return d[1]},&apos;desc&apos;), 0, 10)
+return result</code></pre></p>
+<p>Table 2-1: What are the top-10 most common types of emergency incidents?</p>
+<table>
+
+    <tr>
+        <td>Utility-Water Main</td>
+        <td>134</td>
+    </tr>
+
+    <tr>
+        <td>LawEnforcement-Suspicious Package</td>
+        <td>132</td>
+    </tr>
+
+    <tr>
+        <td>Fire-2nd Alarm</td>
+        <td>116</td>
+    </tr>
+
+    <tr>
+        <td>Fire-1st Alarm</td>
+        <td>83</td>
+    </tr>
+
+    <tr>
+        <td>Law Enforcement-Suspicious Package</td>
+        <td>67</td>
+    </tr>
+
+    <tr>
+        <td>Fire-3rd Alarm</td>
+        <td>60</td>
+    </tr>
+
+    <tr>
+        <td>Utility-Power Outage</td>
+        <td>54</td>
+    </tr>
+
+    <tr>
+        <td>HazMat-High Carbon Monoxide</td>
+        <td>52</td>
+    </tr>
+
+    <tr>
+        <td>Utility-Other</td>
+        <td>37</td>
+    </tr>
+
+    <tr>
+        <td>Structural-Collapse</td>
+        <td>36</td>
+    </tr>
+
+</table>
+
+
+<p>Use the warmup exercise as the template to produce an answer here.</p>
+<h1 id="question-3-which-borough-has-the-highest-number-of-fire-1st-alarm-incidents">Question 3: Which borough has the highest number of &apos;Fire-1st Alarm&apos; incidents?</h1>
+<p><pre><code>var flist = _.filter(data, function(f) {
+    return f[&apos;Incident Type&apos;] == &quot;Fire-1st Alarm&quot;
+})
+var list = _.map(flist, function(n) {
+    var borough = n[&apos;Borough&apos;]
+    var incident = n[&apos;Incident Type&apos;]
+    return { &quot;Borough&quot;: borough, &quot;Incident Type&quot;: incident }
+})
+var groups = _.groupBy(list, &apos;Borough&apos;)
+var result =_.mapValues(groups, function(d){
+    return d.length
+})
+
+// Convert object to array and sort 
+result = _.sortBy(_.pairs(result))
+return result</code></pre></p>
+<p>Table 3-1: Which borough has the highest number of &apos;Fire-1st Alarm&apos; incidents?</p>
+<table>
+
+    <tr>
+        <td>Bronx</td>
+        <td>5</td>
+    </tr>
+
+    <tr>
+        <td>Brooklyn</td>
+        <td>25</td>
+    </tr>
+
+    <tr>
+        <td>Manhattan</td>
+        <td>29</td>
+    </tr>
+
+    <tr>
+        <td>Queens</td>
+        <td>16</td>
+    </tr>
+
+    <tr>
+        <td>Staten Island</td>
+        <td>8</td>
+    </tr>
+
+</table>
+
+
+<p>Use the warmup exercise as the template to produce an answer here.</p>
 
                     
                     </section>
@@ -951,10 +1399,8 @@
         </div>
 
         
-        <a href="../../learning/week2/viz.html" class="navigation navigation-prev " aria-label="Previous page: Tableau Viz"><i class="fa fa-angle-left"></i></a>
+        <a href="../../hackathons/open/warmup.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Warmup"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../../learning/week3/github-api.html" class="navigation navigation-next " aria-label="Next page: Github API"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

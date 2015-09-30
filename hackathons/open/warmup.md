@@ -6,7 +6,7 @@ together to generate an end-to-end data analysis viz report.
 <a name="top"/>
 <div id="autonav"></div>
 
-{% data src="../fcq/fcq.clean.json" %}
+{% data src="../fcq/fcq.clean.json" %} 
 {% enddata %}
 
 {% viz %}
@@ -17,66 +17,71 @@ What is the distribution of courses across colleges?
 
 {% solution %}
 
-var groups = _.groupBy(data, function(d){
-    return d['CrsPBAColl']
-})
+var groups = _.groupBy(data, 'CrsPBAColl')
 
-// TODO: add real code to convert groups (which is an object) into an array like below
-// This array should have a lot more elements.
-var counts = [{"name": "AS","count": 3237},
-    {"name": "BU","count": 378},
-    {"name": "EB","count": 139},
-    {"name": "EN","count": 573}]
+var counts = _.map(groups, function(value, key) { 
+    return {'name': key, 'count': _.pluck(value, 'Course').length} 
+})
 
 console.log(counts)
 
-// TODO: modify the code below to produce a nice vertical bar charts
+// var x = 0
 
-function computeX(d, i) {
-    return 0
+// Produce a bottom-aligned bar chart with margins
+
+function computeX(d, i) { 
+    return i * 30 
 }
 
 function computeHeight(d, i) {
-    return 20
+    return (d.count/8.0925)
 }
 
 function computeWidth(d, i) {
-    return 20 * i + 100
+    return 20
 }
 
-function computeY(d, i) {
-    return 20 * i
+function computeY(d, i) { 
+    return 400 - computeHeight(d, i)
 }
 
-function computeColor(d, i) {
-    return 'red'
+function computeColor(d, i) { 
+    return 'red' 
 }
 
-var viz = _.map(counts, function(d, i){
-            return {
-                x: computeX(d, i),
-                y: computeY(d, i),
-                height: computeHeight(d, i),
-                width: computeWidth(d, i),
-                color: computeColor(d, i)
-            }
-         })
+function computeLabel(d, i) {
+    return d.name
+}
+
+var viz = _.map(counts, function(d, i) { 
+    return { 
+        x: computeX(d, i), 
+        y: computeY(d, i), 
+        height: computeHeight(d, i), 
+        width: computeWidth(d, i), 
+        color: computeColor(d, i),
+        label: computeLabel(d, i)
+    } 
+}) 
 console.log(viz)
 
-var result = _.map(viz, function(d){
-         // invoke the compiled template function on each viz data
-         return template({d: d})
-     })
+var result = _.map(viz, function(d) { 
+    // invoke the compiled template function on each viz data 
+    return template({d: d}) 
+}) 
 return result.join('\n')
 
 {% template %}
 
-<rect x="0"
+<rect x="${d.x}"
       y="${d.y}"
-      height="20"
+      height="${d.height}"
       width="${d.width}"
       style="fill:${d.color};
              stroke-width:3;
              stroke:rgb(0,0,0)" />
+    <text transform="translate(${d.x} ${d.y})">
+        ${d.label}
+    </text>
 
 {% endviz %}
