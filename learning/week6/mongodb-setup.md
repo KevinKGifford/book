@@ -45,11 +45,8 @@ Issue a query:
 ```
 The goal is to be able to see something like below in the terminal.
 
-![screenshot](./query.png)
+![screenshot](mongo-shell.png)
 
-(Replace this screenshot with a screenshot of each individual's own computer.
- Include the entire desktop in the screenshot so we can know this screenshot
- does belong to an individual)
 
  ## Data
  ## Example:
