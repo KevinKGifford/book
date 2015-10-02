@@ -54,7 +54,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.5.2" data-basepath="../.." data-revision="Wed Sep 30 2015 20:10:27 GMT-0600 (MDT)">
+    <div class="book" data-level="2.5.2" data-basepath="../.." data-revision="Thu Oct 01 2015 21:20:02 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -1229,166 +1229,556 @@
 <p><a name="top"></a></p>
 <div id="autonav"></div>
 
-<h1 id="question-1-which-borough-has-the-highest-number-of-emergency-incidents">Question 1: Which borough has the highest number of emergency incidents?</h1>
-<p><pre><code>var groups = _.groupBy(data, &apos;Borough&apos;)
-var result =_.mapValues(groups, function(d){
-    return d.length
+<p></p><h2> <span class="text"># Question 1: Which borough has the highest number of emergency incidents?</span><a href="#top" style="font-size: 14px; float: right;">[top]</a></h2><div class="lodashexercise">   <a name="foo">   </a><div class="output">       <div class="section-title">Viz<svg width="100%" height="400"><rect x="0" y="345.5571635311143" height="54.44283646888567" width="80" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(0 345.5571635311143)">
+        Staten Island
+    </text>
+<rect x="90" y="20" height="380" width="80" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(90 20)">
+        Manhattan
+    </text>
+<rect x="180" y="277.9160636758321" height="122.08393632416788" width="80" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(180 277.9160636758321)">
+        Bronx
+    </text>
+<rect x="270" y="221.8234442836469" height="178.1765557163531" width="80" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(270 221.8234442836469)">
+        Queens
+    </text>
+<rect x="360" y="142.63386396526772" height="257.3661360347323" width="80" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(360 142.63386396526772)">
+        Brooklyn
+    </text>
+<rect x="450" y="396.15050651230104" height="3.849493487698987" width="80" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(450 396.15050651230104)">
+        Citywide
+    </text></svg></div></div><div class="output"><div class="section-title">                <pre><code>&lt;rect x=&quot;0&quot;
+      y=&quot;345.5571635311143&quot;
+      height=&quot;54.44283646888567&quot;
+      width=&quot;80&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(0 345.5571635311143)&quot;&gt;
+        Staten Island
+    &lt;/text&gt;
+&lt;rect x=&quot;90&quot;
+      y=&quot;20&quot;
+      height=&quot;380&quot;
+      width=&quot;80&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(90 20)&quot;&gt;
+        Manhattan
+    &lt;/text&gt;
+&lt;rect x=&quot;180&quot;
+      y=&quot;277.9160636758321&quot;
+      height=&quot;122.08393632416788&quot;
+      width=&quot;80&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(180 277.9160636758321)&quot;&gt;
+        Bronx
+    &lt;/text&gt;
+&lt;rect x=&quot;270&quot;
+      y=&quot;221.8234442836469&quot;
+      height=&quot;178.1765557163531&quot;
+      width=&quot;80&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(270 221.8234442836469)&quot;&gt;
+        Queens
+    &lt;/text&gt;
+&lt;rect x=&quot;360&quot;
+      y=&quot;142.63386396526772&quot;
+      height=&quot;257.3661360347323&quot;
+      width=&quot;80&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(360 142.63386396526772)&quot;&gt;
+        Brooklyn
+    &lt;/text&gt;
+&lt;rect x=&quot;450&quot;
+      y=&quot;396.15050651230104&quot;
+      height=&quot;3.849493487698987&quot;
+      width=&quot;80&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(450 396.15050651230104)&quot;&gt;
+        Citywide
+    &lt;/text&gt;</code></pre></div></div><div class="section-title">Solution: SVG Template<pre><code>&lt;rect x=&quot;${d.x}&quot;
+      y=&quot;${d.y}&quot;
+      height=&quot;${d.height}&quot;
+      width=&quot;${d.width}&quot;
+      style=&quot;fill:${d.color};
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(${d.x} ${d.y})&quot;&gt;
+        ${d.label}
+    &lt;/text&gt;</code></pre></div><div class="section-title">Solution: Javascript</div><pre><code>var groups = _.groupBy(data, &apos;Borough&apos;)
+var counts = _.map(groups, function(value, key) { 
+    return {&apos;name&apos;: key, &apos;count&apos;: _.pluck(value, &apos;Incident Type&apos;).length} 
 })
 
-// Convert object to array and sort
-result = _.sortBy(_.pairs(result))
-return result</code></pre></p>
-<p>Table 1-1: Which borough has the highest number of emergency incidents?</p>
-<table>
+console.log(counts)
 
-    <tr>
-        <td>Bronx</td>
-        <td>222</td>
-    </tr>
+// Produce a bottom-aligned bar chart with margins
 
-    <tr>
-        <td>Brooklyn</td>
-        <td>468</td>
-    </tr>
+function computeX(d, i) { 
+    return i * 90 
+}
 
-    <tr>
-        <td>Citywide</td>
-        <td>7</td>
-    </tr>
+function computeHeight(d, i) {
+    var value = _.max(_.pluck(counts, &apos;count&apos;))
+    return (d.count/(value/380))
+}
 
-    <tr>
-        <td>Manhattan</td>
-        <td>691</td>
-    </tr>
+function computeWidth(d, i) {
+    return 80
+}
 
-    <tr>
-        <td>Queens</td>
-        <td>324</td>
-    </tr>
+function computeY(d, i) { 
+    return 400 - computeHeight(d, i)
+}
 
-    <tr>
-        <td>Staten Island</td>
-        <td>99</td>
-    </tr>
+function computeColor(d, i) { 
+    return &apos;red&apos; 
+}
 
-</table>
+function computeLabel(d, i) {
+    return d.name
+}
 
-<p>Use the warmup exercise as the template to produce an answer here.</p>
-<h1 id="question-2-what-are-the-top-10-most-common-types-of-emergency-incidents">Question 2: What are the top-10 most common types of emergency incidents?</h1>
-<p><pre><code>var groups = _.groupBy(data, &apos;Incident Type&apos;)
-var result =_.mapValues(groups, function(d){
-    return d.length
+var viz = _.map(counts, function(d, i) { 
+    return { 
+        x: computeX(d, i), 
+        y: computeY(d, i), 
+        height: computeHeight(d, i), 
+        width: computeWidth(d, i), 
+        color: computeColor(d, i),
+        label: computeLabel(d, i)
+    } 
+}) 
+console.log(viz)
+
+var result = _.map(viz, function(d) { 
+    // invoke the compiled template function on each viz data 
+    return template({d: d}) 
+}) 
+return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;name&quot;:&quot;Staten Island&quot;,&quot;count&quot;:99},{&quot;name&quot;:&quot;Manhattan&quot;,&quot;count&quot;:691},{&quot;name&quot;:&quot;Bronx&quot;,&quot;count&quot;:222},{&quot;name&quot;:&quot;Queens&quot;,&quot;count&quot;:324},{&quot;name&quot;:&quot;Brooklyn&quot;,&quot;count&quot;:468},{&quot;name&quot;:&quot;Citywide&quot;,&quot;count&quot;:7}]</span></div><div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:345.5571635311143,&quot;height&quot;:54.44283646888567,&quot;width&quot;:80,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Staten Island&quot;},{&quot;x&quot;:90,&quot;y&quot;:20,&quot;height&quot;:380,&quot;width&quot;:80,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Manhattan&quot;},{&quot;x&quot;:180,&quot;y&quot;:277.9160636758321,&quot;height&quot;:122.08393632416788,&quot;width&quot;:80,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Bronx&quot;},{&quot;x&quot;:270,&quot;y&quot;:221.8234442836469,&quot;height&quot;:178.1765557163531,&quot;width&quot;:80,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Queens&quot;},{&quot;x&quot;:360,&quot;y&quot;:142.63386396526772,&quot;height&quot;:257.3661360347323,&quot;width&quot;:80,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Brooklyn&quot;},{&quot;x&quot;:450,&quot;y&quot;:396.15050651230104,&quot;height&quot;:3.849493487698987,&quot;width&quot;:80,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Citywide&quot;}]</span></div></div></div><p></p>
+<p></p><h2> <span class="text"># Question 2: What are the top-12 most common types of emergency incidents?</span><a href="#top" style="font-size: 14px; float: right;">[top]</a></h2><div class="lodashexercise">   <a name="foo">   </a><div class="output">       <div class="section-title">Viz<svg width="100%" height="400"><rect x="0" y="20" height="380" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(0 20)">
+        Law Enforcement-Suspicious Package
+    </text>
+<rect x="60" y="241.5075376884422" height="158.4924623115578" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(60 241.5075376884422)">
+        Fire-1st Alarm
+    </text>
+<rect x="120" y="178.49246231155777" height="221.50753768844223" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(120 178.49246231155777)">
+        Fire-2nd Alarm
+    </text>
+<rect x="180" y="329.3467336683417" height="70.6532663316583" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(180 329.3467336683417)">
+        Utility-Other
+    </text>
+<rect x="240" y="285.42713567839195" height="114.57286432160805" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(240 285.42713567839195)">
+        Fire-3rd Alarm
+    </text>
+<rect x="300" y="331.2562814070352" height="68.74371859296483" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(300 331.2562814070352)">
+        Structural-Collapse
+    </text>
+<rect x="360" y="333.16582914572865" height="66.83417085427136" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(360 333.16582914572865)">
+        Utility-Water Service Line
+    </text>
+<rect x="420" y="144.12060301507535" height="255.87939698492465" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(420 144.12060301507535)">
+        Utility-Water Main
+    </text>
+<rect x="480" y="336.9849246231156" height="63.015075376884425" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(480 336.9849246231156)">
+        Structural-Scaffold
+    </text>
+<rect x="540" y="296.88442211055275" height="103.11557788944724" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(540 296.88442211055275)">
+        Utility-Power Outage
+    </text>
+<rect x="600" y="300.7035175879397" height="99.29648241206031" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(600 300.7035175879397)">
+        HazMat-High Carbon Monoxide
+    </text>
+<rect x="660" y="336.9849246231156" height="63.015075376884425" width="50" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(660 336.9849246231156)">
+        Structural-Stability Problem
+    </text></svg></div></div><div class="output"><div class="section-title">                <pre><code>&lt;rect x=&quot;0&quot;
+      y=&quot;20&quot;
+      height=&quot;380&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(0 20)&quot;&gt;
+        Law Enforcement-Suspicious Package
+    &lt;/text&gt;
+&lt;rect x=&quot;60&quot;
+      y=&quot;241.5075376884422&quot;
+      height=&quot;158.4924623115578&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(60 241.5075376884422)&quot;&gt;
+        Fire-1st Alarm
+    &lt;/text&gt;
+&lt;rect x=&quot;120&quot;
+      y=&quot;178.49246231155777&quot;
+      height=&quot;221.50753768844223&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(120 178.49246231155777)&quot;&gt;
+        Fire-2nd Alarm
+    &lt;/text&gt;
+&lt;rect x=&quot;180&quot;
+      y=&quot;329.3467336683417&quot;
+      height=&quot;70.6532663316583&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(180 329.3467336683417)&quot;&gt;
+        Utility-Other
+    &lt;/text&gt;
+&lt;rect x=&quot;240&quot;
+      y=&quot;285.42713567839195&quot;
+      height=&quot;114.57286432160805&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(240 285.42713567839195)&quot;&gt;
+        Fire-3rd Alarm
+    &lt;/text&gt;
+&lt;rect x=&quot;300&quot;
+      y=&quot;331.2562814070352&quot;
+      height=&quot;68.74371859296483&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(300 331.2562814070352)&quot;&gt;
+        Structural-Collapse
+    &lt;/text&gt;
+&lt;rect x=&quot;360&quot;
+      y=&quot;333.16582914572865&quot;
+      height=&quot;66.83417085427136&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(360 333.16582914572865)&quot;&gt;
+        Utility-Water Service Line
+    &lt;/text&gt;
+&lt;rect x=&quot;420&quot;
+      y=&quot;144.12060301507535&quot;
+      height=&quot;255.87939698492465&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(420 144.12060301507535)&quot;&gt;
+        Utility-Water Main
+    &lt;/text&gt;
+&lt;rect x=&quot;480&quot;
+      y=&quot;336.9849246231156&quot;
+      height=&quot;63.015075376884425&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(480 336.9849246231156)&quot;&gt;
+        Structural-Scaffold
+    &lt;/text&gt;
+&lt;rect x=&quot;540&quot;
+      y=&quot;296.88442211055275&quot;
+      height=&quot;103.11557788944724&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(540 296.88442211055275)&quot;&gt;
+        Utility-Power Outage
+    &lt;/text&gt;
+&lt;rect x=&quot;600&quot;
+      y=&quot;300.7035175879397&quot;
+      height=&quot;99.29648241206031&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(600 300.7035175879397)&quot;&gt;
+        HazMat-High Carbon Monoxide
+    &lt;/text&gt;
+&lt;rect x=&quot;660&quot;
+      y=&quot;336.9849246231156&quot;
+      height=&quot;63.015075376884425&quot;
+      width=&quot;50&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(660 336.9849246231156)&quot;&gt;
+        Structural-Stability Problem
+    &lt;/text&gt;</code></pre></div></div><div class="section-title">Solution: SVG Template<pre><code>&lt;rect x=&quot;${d.x}&quot;
+      y=&quot;${d.y}&quot;
+      height=&quot;${d.height}&quot;
+      width=&quot;${d.width}&quot;
+      style=&quot;fill:${d.color};
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(${d.x} ${d.y})&quot;&gt;
+        ${d.label}
+    &lt;/text&gt;</code></pre></div><div class="section-title">Solution: Javascript</div><pre><code>var groups = _.groupBy(data, &apos;Incident Type&apos;)
+
+// Using _.map and _.filter enables easy composition of unsorted output for viz purposes
+var counts = _.map(groups, function(value, key) { 
+    return {&apos;name&apos;: key, &apos;count&apos;: _.pluck(value, &apos;Incident Type&apos;).length} 
 })
+console.log(counts)
+var filtered_counts = _.filter(counts, function(d) {
+    return d.count &gt; 30
+})
+console.log(filtered_counts)
 
-// Convert object to array and sort 
-result = _.slice(_.sortByOrder(_.pairs(result),function(d){return d[1]},&apos;desc&apos;), 0, 10)
-return result</code></pre></p>
-<p>Table 2-1: What are the top-10 most common types of emergency incidents?</p>
-<table>
+// Produce a bottom-aligned bar chart with margins
 
-    <tr>
-        <td>Utility-Water Main</td>
-        <td>134</td>
-    </tr>
+function computeX(d, i) { 
+    return i * 60 
+}
 
-    <tr>
-        <td>LawEnforcement-Suspicious Package</td>
-        <td>132</td>
-    </tr>
+function computeHeight(d, i) {
+    var value = _.max(_.pluck(counts, &apos;count&apos;))
+    return (d.count/(value/380))
+}
 
-    <tr>
-        <td>Fire-2nd Alarm</td>
-        <td>116</td>
-    </tr>
+function computeWidth(d, i) {
+    return 50
+}
 
-    <tr>
-        <td>Fire-1st Alarm</td>
-        <td>83</td>
-    </tr>
+function computeY(d, i) { 
+    return 400 - computeHeight(d, i)
+}
 
-    <tr>
-        <td>Law Enforcement-Suspicious Package</td>
-        <td>67</td>
-    </tr>
+function computeColor(d, i) { 
+    return &apos;red&apos; 
+}
 
-    <tr>
-        <td>Fire-3rd Alarm</td>
-        <td>60</td>
-    </tr>
+function computeLabel(d, i) {
+    return d.name
+}
 
-    <tr>
-        <td>Utility-Power Outage</td>
-        <td>54</td>
-    </tr>
+var viz = _.map(filtered_counts, function(d, i) { 
+    return { 
+        x: computeX(d, i), 
+        y: computeY(d, i), 
+        height: computeHeight(d, i), 
+        width: computeWidth(d, i), 
+        color: computeColor(d, i),
+        label: computeLabel(d, i)
+    } 
+}) 
+console.log(viz)
 
-    <tr>
-        <td>HazMat-High Carbon Monoxide</td>
-        <td>52</td>
-    </tr>
-
-    <tr>
-        <td>Utility-Other</td>
-        <td>37</td>
-    </tr>
-
-    <tr>
-        <td>Structural-Collapse</td>
-        <td>36</td>
-    </tr>
-
-</table>
-
-
-<p>Use the warmup exercise as the template to produce an answer here.</p>
-<h1 id="question-3-which-borough-has-the-highest-number-of-fire-1st-alarm-incidents">Question 3: Which borough has the highest number of &apos;Fire-1st Alarm&apos; incidents?</h1>
-<p><pre><code>var flist = _.filter(data, function(f) {
+var result = _.map(viz, function(d) { 
+    // invoke the compiled template function on each viz data 
+    return template({d: d}) 
+}) 
+return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;name&quot;:&quot;Fire-Brush&quot;,&quot;count&quot;:4},{&quot;name&quot;:&quot;Law Enforcement-Suspicious Package&quot;,&quot;count&quot;:199},{&quot;name&quot;:&quot;Fire-1st Alarm&quot;,&quot;count&quot;:83},{&quot;name&quot;:&quot;Structural-Other&quot;,&quot;count&quot;:9},{&quot;name&quot;:&quot;Fire-2nd Alarm&quot;,&quot;count&quot;:116},{&quot;name&quot;:&quot;Utility-Other&quot;,&quot;count&quot;:37},{&quot;name&quot;:&quot;Utility-Gas High Pressure&quot;,&quot;count&quot;:16},{&quot;name&quot;:&quot;Fire-3rd Alarm&quot;,&quot;count&quot;:60},{&quot;name&quot;:&quot;Utility-Steam Main&quot;,&quot;count&quot;:4},{&quot;name&quot;:&quot;Structural-Collapse&quot;,&quot;count&quot;:36},{&quot;name&quot;:&quot;Law Enforcement-Other&quot;,&quot;count&quot;:11},{&quot;name&quot;:&quot;Utility-Network Condition&quot;,&quot;count&quot;:3},{&quot;name&quot;:&quot;Utility-Water Service Line&quot;,&quot;count&quot;:35},{&quot;name&quot;:&quot;Utility-Water Main&quot;,&quot;count&quot;:134},{&quot;name&quot;:&quot;Utility-Gas Service Line&quot;,&quot;count&quot;:21},{&quot;name&quot;:&quot;Fire-Sensitive Location&quot;,&quot;count&quot;:19},{&quot;name&quot;:&quot;Fire-Residential&quot;,&quot;count&quot;:1},{&quot;name&quot;:&quot;Transportation-Other&quot;,&quot;count&quot;:10},{&quot;name&quot;:&quot;Fire-Collapse&quot;,&quot;count&quot;:8},{&quot;name&quot;:&quot;Fire-10-77 (Residential High Rise Fire)&quot;,&quot;count&quot;:16},&quot;... 259 more&quot;]</span></div><div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;name&quot;:&quot;Law Enforcement-Suspicious Package&quot;,&quot;count&quot;:199},{&quot;name&quot;:&quot;Fire-1st Alarm&quot;,&quot;count&quot;:83},{&quot;name&quot;:&quot;Fire-2nd Alarm&quot;,&quot;count&quot;:116},{&quot;name&quot;:&quot;Utility-Other&quot;,&quot;count&quot;:37},{&quot;name&quot;:&quot;Fire-3rd Alarm&quot;,&quot;count&quot;:60},{&quot;name&quot;:&quot;Structural-Collapse&quot;,&quot;count&quot;:36},{&quot;name&quot;:&quot;Utility-Water Service Line&quot;,&quot;count&quot;:35},{&quot;name&quot;:&quot;Utility-Water Main&quot;,&quot;count&quot;:134},{&quot;name&quot;:&quot;Structural-Scaffold&quot;,&quot;count&quot;:33},{&quot;name&quot;:&quot;Utility-Power Outage&quot;,&quot;count&quot;:54},{&quot;name&quot;:&quot;HazMat-High Carbon Monoxide&quot;,&quot;count&quot;:52},{&quot;name&quot;:&quot;Structural-Stability Problem&quot;,&quot;count&quot;:33}]</span></div><div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:20,&quot;height&quot;:380,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Law Enforcement-Suspicious Package&quot;},{&quot;x&quot;:60,&quot;y&quot;:241.5075376884422,&quot;height&quot;:158.4924623115578,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Fire-1st Alarm&quot;},{&quot;x&quot;:120,&quot;y&quot;:178.49246231155777,&quot;height&quot;:221.50753768844223,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Fire-2nd Alarm&quot;},{&quot;x&quot;:180,&quot;y&quot;:329.3467336683417,&quot;height&quot;:70.6532663316583,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Utility-Other&quot;},{&quot;x&quot;:240,&quot;y&quot;:285.42713567839195,&quot;height&quot;:114.57286432160805,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Fire-3rd Alarm&quot;},{&quot;x&quot;:300,&quot;y&quot;:331.2562814070352,&quot;height&quot;:68.74371859296483,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Structural-Collapse&quot;},{&quot;x&quot;:360,&quot;y&quot;:333.16582914572865,&quot;height&quot;:66.83417085427136,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Utility-Water Service Line&quot;},{&quot;x&quot;:420,&quot;y&quot;:144.12060301507535,&quot;height&quot;:255.87939698492465,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Utility-Water Main&quot;},{&quot;x&quot;:480,&quot;y&quot;:336.9849246231156,&quot;height&quot;:63.015075376884425,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Structural-Scaffold&quot;},{&quot;x&quot;:540,&quot;y&quot;:296.88442211055275,&quot;height&quot;:103.11557788944724,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Utility-Power Outage&quot;},{&quot;x&quot;:600,&quot;y&quot;:300.7035175879397,&quot;height&quot;:99.29648241206031,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;HazMat-High Carbon Monoxide&quot;},{&quot;x&quot;:660,&quot;y&quot;:336.9849246231156,&quot;height&quot;:63.015075376884425,&quot;width&quot;:50,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Structural-Stability Problem&quot;}]</span></div></div></div><p></p>
+<p></p><h2> <span class="text"># Question 3: Which borough has the highest number of &apos;Fire-1st Alarm&apos; incidents?</span><a href="#top" style="font-size: 14px; float: right;">[top]</a></h2><div class="lodashexercise">   <a name="foo">   </a><div class="output">       <div class="section-title">Viz<svg width="100%" height="400"><rect x="0" y="20" height="380" width="90" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(0 20)">
+        Manhattan
+    </text>
+<rect x="100" y="72.41379310344826" height="327.58620689655174" width="90" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(100 72.41379310344826)">
+        Brooklyn
+    </text>
+<rect x="200" y="190.3448275862069" height="209.6551724137931" width="90" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(200 190.3448275862069)">
+        Queens
+    </text>
+<rect x="300" y="334.48275862068965" height="65.51724137931035" width="90" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(300 334.48275862068965)">
+        Bronx
+    </text>
+<rect x="400" y="295.17241379310343" height="104.82758620689656" width="90" style="fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)"/>
+    <text transform="translate(400 295.17241379310343)">
+        Staten Island
+    </text></svg></div></div><div class="output"><div class="section-title">                <pre><code>&lt;rect x=&quot;0&quot;
+      y=&quot;20&quot;
+      height=&quot;380&quot;
+      width=&quot;90&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(0 20)&quot;&gt;
+        Manhattan
+    &lt;/text&gt;
+&lt;rect x=&quot;100&quot;
+      y=&quot;72.41379310344826&quot;
+      height=&quot;327.58620689655174&quot;
+      width=&quot;90&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(100 72.41379310344826)&quot;&gt;
+        Brooklyn
+    &lt;/text&gt;
+&lt;rect x=&quot;200&quot;
+      y=&quot;190.3448275862069&quot;
+      height=&quot;209.6551724137931&quot;
+      width=&quot;90&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(200 190.3448275862069)&quot;&gt;
+        Queens
+    &lt;/text&gt;
+&lt;rect x=&quot;300&quot;
+      y=&quot;334.48275862068965&quot;
+      height=&quot;65.51724137931035&quot;
+      width=&quot;90&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(300 334.48275862068965)&quot;&gt;
+        Bronx
+    &lt;/text&gt;
+&lt;rect x=&quot;400&quot;
+      y=&quot;295.17241379310343&quot;
+      height=&quot;104.82758620689656&quot;
+      width=&quot;90&quot;
+      style=&quot;fill:red;
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(400 295.17241379310343)&quot;&gt;
+        Staten Island
+    &lt;/text&gt;</code></pre></div></div><div class="section-title">Solution: SVG Template<pre><code>&lt;rect x=&quot;${d.x}&quot;
+      y=&quot;${d.y}&quot;
+      height=&quot;${d.height}&quot;
+      width=&quot;${d.width}&quot;
+      style=&quot;fill:${d.color};
+             stroke-width:3;
+             stroke:rgb(0,0,0)&quot; /&gt;
+    &lt;text transform=&quot;translate(${d.x} ${d.y})&quot;&gt;
+        ${d.label}
+    &lt;/text&gt;</code></pre></div><div class="section-title">Solution: Javascript</div><pre><code>var flist = _.filter(data, function(f) {
     return f[&apos;Incident Type&apos;] == &quot;Fire-1st Alarm&quot;
 })
-var list = _.map(flist, function(n) {
-    var borough = n[&apos;Borough&apos;]
-    var incident = n[&apos;Incident Type&apos;]
-    return { &quot;Borough&quot;: borough, &quot;Incident Type&quot;: incident }
+var groups = _.groupBy(flist, &apos;Borough&apos;)
+// Using _.map and _.filter enables easy composition of unsorted output for viz purposes
+var counts = _.map(groups, function(value, key) { 
+    return {&apos;name&apos;: key, &apos;count&apos;: _.pluck(value, &apos;Incident Type&apos;).length} 
 })
-var groups = _.groupBy(list, &apos;Borough&apos;)
-var result =_.mapValues(groups, function(d){
-    return d.length
-})
+console.log(counts)
 
-// Convert object to array and sort 
-result = _.sortBy(_.pairs(result))
-return result</code></pre></p>
-<p>Table 3-1: Which borough has the highest number of &apos;Fire-1st Alarm&apos; incidents?</p>
-<table>
+// Produce a bottom-aligned bar chart with margins
 
-    <tr>
-        <td>Bronx</td>
-        <td>5</td>
-    </tr>
+function computeX(d, i) { 
+    return i * 100
+}
 
-    <tr>
-        <td>Brooklyn</td>
-        <td>25</td>
-    </tr>
+function computeHeight(d, i) {
+    var value = _.max(_.pluck(counts, &apos;count&apos;))
+    return (d.count/(value/380))
+}
 
-    <tr>
-        <td>Manhattan</td>
-        <td>29</td>
-    </tr>
+function computeWidth(d, i) {
+    return 90
+}
 
-    <tr>
-        <td>Queens</td>
-        <td>16</td>
-    </tr>
+function computeY(d, i) { 
+    return 400 - computeHeight(d, i)
+}
 
-    <tr>
-        <td>Staten Island</td>
-        <td>8</td>
-    </tr>
+function computeColor(d, i) { 
+    return &apos;red&apos; 
+}
 
-</table>
+function computeLabel(d, i) {
+    return d.name
+}
 
+var viz = _.map(counts, function(d, i) { 
+    return { 
+        x: computeX(d, i), 
+        y: computeY(d, i), 
+        height: computeHeight(d, i), 
+        width: computeWidth(d, i), 
+        color: computeColor(d, i),
+        label: computeLabel(d, i)
+    } 
+}) 
+console.log(viz)
 
-<p>Use the warmup exercise as the template to produce an answer here.</p>
+var result = _.map(viz, function(d) { 
+    // invoke the compiled template function on each viz data 
+    return template({d: d}) 
+}) 
+return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;name&quot;:&quot;Manhattan&quot;,&quot;count&quot;:29},{&quot;name&quot;:&quot;Brooklyn&quot;,&quot;count&quot;:25},{&quot;name&quot;:&quot;Queens&quot;,&quot;count&quot;:16},{&quot;name&quot;:&quot;Bronx&quot;,&quot;count&quot;:5},{&quot;name&quot;:&quot;Staten Island&quot;,&quot;count&quot;:8}]</span></div><div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:20,&quot;height&quot;:380,&quot;width&quot;:90,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Manhattan&quot;},{&quot;x&quot;:100,&quot;y&quot;:72.41379310344826,&quot;height&quot;:327.58620689655174,&quot;width&quot;:90,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Brooklyn&quot;},{&quot;x&quot;:200,&quot;y&quot;:190.3448275862069,&quot;height&quot;:209.6551724137931,&quot;width&quot;:90,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Queens&quot;},{&quot;x&quot;:300,&quot;y&quot;:334.48275862068965,&quot;height&quot;:65.51724137931035,&quot;width&quot;:90,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Bronx&quot;},{&quot;x&quot;:400,&quot;y&quot;:295.17241379310343,&quot;height&quot;:104.82758620689656,&quot;width&quot;:90,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;Staten Island&quot;}]</span></div></div></div><p></p>
 
                     
                     </section>

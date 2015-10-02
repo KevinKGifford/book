@@ -23,91 +23,238 @@ The data for this exercise/report came from [here](https://data.cityofnewyork.us
 <a name="top"/>
 <div id="autonav"></div>
 
+{% viz %}
+
+{% title %}
+
 # Question 1: Which borough has the highest number of emergency incidents?
 
-{% lodash %}
+{% solution %}
+
 var groups = _.groupBy(data, 'Borough')
-var result =_.mapValues(groups, function(d){
-    return d.length
+var counts = _.map(groups, function(value, key) { 
+    return {'name': key, 'count': _.pluck(value, 'Incident Type').length} 
 })
 
-// Convert object to array and sort
-result = _.sortBy(_.pairs(result))
-return result
+console.log(counts)
 
-{% endlodash %}
+// Produce a bottom-aligned bar chart with margins
 
-Table 1-1: Which borough has the highest number of emergency incidents?
-<table>
-{% for key, value in result %}
-    <tr>
-        <td>{{key}}</td>
-        <td>{{value}}</td>
-    </tr>
-{% endfor %}
-</table>
+function computeX(d, i) { 
+    return i * 90 
+}
 
-Use the warmup exercise as the template to produce an answer here.
+function computeHeight(d, i) {
+    var value = _.max(_.pluck(counts, 'count'))
+    return (d.count/(value/380))
+}
+
+function computeWidth(d, i) {
+    return 80
+}
+
+function computeY(d, i) { 
+    return 400 - computeHeight(d, i)
+}
+
+function computeColor(d, i) { 
+    return 'red' 
+}
+
+function computeLabel(d, i) {
+    return d.name
+}
+
+var viz = _.map(counts, function(d, i) { 
+    return { 
+        x: computeX(d, i), 
+        y: computeY(d, i), 
+        height: computeHeight(d, i), 
+        width: computeWidth(d, i), 
+        color: computeColor(d, i),
+        label: computeLabel(d, i)
+    } 
+}) 
+console.log(viz)
+
+var result = _.map(viz, function(d) { 
+    // invoke the compiled template function on each viz data 
+    return template({d: d}) 
+}) 
+return result.join('\n')
+
+{% template %}
+
+<rect x="${d.x}"
+      y="${d.y}"
+      height="${d.height}"
+      width="${d.width}"
+      style="fill:${d.color};
+             stroke-width:3;
+             stroke:rgb(0,0,0)" />
+    <text transform="translate(${d.x} ${d.y})">
+        ${d.label}
+    </text>
+
+{% endviz %}
 
 
-# Question 2: What are the top-10 most common types of emergency incidents?
+{% viz %}
 
-{% lodash %}
+{% title %}
+
+# Question 2: What are the top-12 most common types of emergency incidents?
+
+{% solution %}
+
 var groups = _.groupBy(data, 'Incident Type')
-var result =_.mapValues(groups, function(d){
-    return d.length
+
+// Using _.map and _.filter enables easy composition of unsorted output for viz purposes
+var counts = _.map(groups, function(value, key) { 
+    return {'name': key, 'count': _.pluck(value, 'Incident Type').length} 
 })
+console.log(counts)
+var filtered_counts = _.filter(counts, function(d) {
+    return d.count > 30
+})
+console.log(filtered_counts)
 
-// Convert object to array and sort 
-result = _.slice(_.sortByOrder(_.pairs(result),function(d){return d[1]},'desc'), 0, 10)
-return result
+// Produce a bottom-aligned bar chart with margins
 
-{% endlodash %}
+function computeX(d, i) { 
+    return i * 60 
+}
 
-Table 2-1: What are the top-10 most common types of emergency incidents?
-<table>
-{% for key, value in result %}
-    <tr>
-        <td>{{key}}</td>
-        <td>{{value}}</td>
-    </tr>
-{% endfor %}
-</table>
+function computeHeight(d, i) {
+    var value = _.max(_.pluck(counts, 'count'))
+    return (d.count/(value/380))
+}
+
+function computeWidth(d, i) {
+    return 50
+}
+
+function computeY(d, i) { 
+    return 400 - computeHeight(d, i)
+}
+
+function computeColor(d, i) { 
+    return 'red' 
+}
+
+function computeLabel(d, i) {
+    return d.name
+}
+
+var viz = _.map(filtered_counts, function(d, i) { 
+    return { 
+        x: computeX(d, i), 
+        y: computeY(d, i), 
+        height: computeHeight(d, i), 
+        width: computeWidth(d, i), 
+        color: computeColor(d, i),
+        label: computeLabel(d, i)
+    } 
+}) 
+console.log(viz)
+
+var result = _.map(viz, function(d) { 
+    // invoke the compiled template function on each viz data 
+    return template({d: d}) 
+}) 
+return result.join('\n')
+
+{% template %}
+
+<rect x="${d.x}"
+      y="${d.y}"
+      height="${d.height}"
+      width="${d.width}"
+      style="fill:${d.color};
+             stroke-width:3;
+             stroke:rgb(0,0,0)" />
+    <text transform="translate(${d.x} ${d.y})">
+        ${d.label}
+    </text>
+
+{% endviz %}
 
 
-Use the warmup exercise as the template to produce an answer here.
+{% viz %}
+
+{% title %}
 
 # Question 3: Which borough has the highest number of 'Fire-1st Alarm' incidents?
 
-{% lodash %}
+{% solution %}
+
 var flist = _.filter(data, function(f) {
     return f['Incident Type'] == "Fire-1st Alarm"
 })
-var list = _.map(flist, function(n) {
-    var borough = n['Borough']
-    var incident = n['Incident Type']
-    return { "Borough": borough, "Incident Type": incident }
+var groups = _.groupBy(flist, 'Borough')
+// Using _.map and _.filter enables easy composition of unsorted output for viz purposes
+var counts = _.map(groups, function(value, key) { 
+    return {'name': key, 'count': _.pluck(value, 'Incident Type').length} 
 })
-var groups = _.groupBy(list, 'Borough')
-var result =_.mapValues(groups, function(d){
-    return d.length
-})
+console.log(counts)
 
-// Convert object to array and sort 
-result = _.sortBy(_.pairs(result))
-return result
+// Produce a bottom-aligned bar chart with margins
 
-{% endlodash %}
+function computeX(d, i) { 
+    return i * 100
+}
 
-Table 3-1: Which borough has the highest number of 'Fire-1st Alarm' incidents?
-<table>
-{% for key, value in result %}
-    <tr>
-        <td>{{key}}</td>
-        <td>{{value}}</td>
-    </tr>
-{% endfor %}
-</table>
+function computeHeight(d, i) {
+    var value = _.max(_.pluck(counts, 'count'))
+    return (d.count/(value/380))
+}
 
+function computeWidth(d, i) {
+    return 90
+}
 
-Use the warmup exercise as the template to produce an answer here.
+function computeY(d, i) { 
+    return 400 - computeHeight(d, i)
+}
+
+function computeColor(d, i) { 
+    return 'red' 
+}
+
+function computeLabel(d, i) {
+    return d.name
+}
+
+var viz = _.map(counts, function(d, i) { 
+    return { 
+        x: computeX(d, i), 
+        y: computeY(d, i), 
+        height: computeHeight(d, i), 
+        width: computeWidth(d, i), 
+        color: computeColor(d, i),
+        label: computeLabel(d, i)
+    } 
+}) 
+console.log(viz)
+
+var result = _.map(viz, function(d) { 
+    // invoke the compiled template function on each viz data 
+    return template({d: d}) 
+}) 
+return result.join('\n')
+
+{% template %}
+
+<rect x="${d.x}"
+      y="${d.y}"
+      height="${d.height}"
+      width="${d.width}"
+      style="fill:${d.color};
+             stroke-width:3;
+             stroke:rgb(0,0,0)" />
+    <text transform="translate(${d.x} ${d.y})">
+        ${d.label}
+    </text>
+
+{% endviz %}
+

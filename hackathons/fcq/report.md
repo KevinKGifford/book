@@ -86,6 +86,7 @@ var results = _.mapValues(en_depts, function(d) {
 var sorted_output = _.sortBy(_.pairs(results), function(d) {
     return d[1]
 })
+console.log(sorted_output)
 return sorted_output
 {% endlodash %}
 

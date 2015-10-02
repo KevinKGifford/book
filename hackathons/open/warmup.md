@@ -9,6 +9,10 @@ together to generate an end-to-end data analysis viz report.
 {% data src="../fcq/fcq.clean.json" %} 
 {% enddata %}
 
+The data looks like this:
+
+{{ data | json }}
+
 {% viz %}
 
 {% title %}
@@ -25,8 +29,6 @@ var counts = _.map(groups, function(value, key) {
 
 console.log(counts)
 
-// var x = 0
-
 // Produce a bottom-aligned bar chart with margins
 
 function computeX(d, i) { 
@@ -34,7 +36,8 @@ function computeX(d, i) {
 }
 
 function computeHeight(d, i) {
-    return (d.count/8.0925)
+    var value = _.max(_.pluck(counts, 'count'))
+    return (d.count/(value/380))
 }
 
 function computeWidth(d, i) {
