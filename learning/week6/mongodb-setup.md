@@ -15,6 +15,8 @@ about this server are provided below:
 - port: 41663
 - user name: bigdatahci
 - password: bigdatahci2015
+- db: apps
+- collection: listings
 
 Read the documentation to figure out what command to run in order to _dump_
 all the data into a file: [mongodump](http://docs.mongodb.org/manual/reference/program/mongodump/).
