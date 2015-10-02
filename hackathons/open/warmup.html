@@ -56,7 +56,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="2.5.1" data-basepath="../.." data-revision="Wed Sep 30 2015 20:10:27 GMT-0600 (MDT)">
+    <div class="book" data-level="2.5.1" data-basepath="../.." data-revision="Thu Oct 01 2015 21:20:02 GMT-0600 (MDT)">
     
 
 <div class="book-summary">
@@ -942,179 +942,465 @@ together to generate an end-to-end data analysis viz report.</p>
 <div id="autonav"></div>
 
 <p></p>
-<p></p><h2> <span class="text">What is the distribution of courses across colleges?</span><a href="#top" style="font-size: 14px; float: right;">[top]</a></h2><div class="lodashexercise">   <a name="foo">   </a><div class="output">       <div class="section-title">Viz<svg width="100%" height="400"><rect x="0" y="-5.684341886080802e-14" height="400.00000000000006" width="20" style="fill:red;
+<p>The data looks like this:</p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;AVG_GRD&quot;: 2.98,
+  &quot;Activity_Type&quot;: &quot;LEC - Lecture&quot;,
+  &quot;AvgCourse&quot;: 5.4,
+  &quot;AvgInstructor&quot;: 5.6,
+  &quot;Course&quot;: &quot;4808&quot;,
+  &quot;CourseTitle&quot;: &quot;Special Topics in World Areas History&quot;,
+  &quot;CrsLvlNum&quot;: &quot;4XXX&quot;,
+  &quot;CrsPBAColl&quot;: &quot;AS&quot;,
+  &quot;CrsPBADept&quot;: &quot;HIST&quot;,
+  &quot;CrsPBADiv&quot;: &quot;AH&quot;,
+  &quot;Honors&quot;: &quot;0&quot;,
+  &quot;Hours&quot;: 3,
+  &quot;Instruction_Mode&quot;: &quot;P  - In Person&quot;,
+  &quot;Level&quot;: &quot;Upper&quot;,
+  &quot;NComb&quot;: 2,
+  &quot;NIntrFCQ&quot;: 1,
+  &quot;N&quot;: {
+   &quot;ENROLL&quot;: 16,
+   &quot;EOT&quot;: 16,
+   &quot;GRADE&quot;: 16,
+   &quot;INCOMP&quot;: 0,
+   &quot;NOCRED&quot;: 0,
+   &quot;PASS&quot;: 0,
+   &quot;Ret&quot;: 15
+  },
+  &quot;PCT&quot;: {
+   &quot;A&quot;: 0.31,
+   &quot;B&quot;: 0.5,
+   &quot;C&quot;: 0.12,
+   &quot;C_MINUS_OR_BELOW&quot;: 0.06,
+   &quot;D&quot;: 0,
+   &quot;DF&quot;: 0.06,
+   &quot;F&quot;: 0.06,
+   &quot;GRADE&quot;: 1,
+   &quot;INCOMP&quot;: 0,
+   &quot;WDRAW&quot;: 0
+  },
+  &quot;RAP&quot;: &quot;0&quot;,
+  &quot;Section&quot;: &quot;001&quot;,
+  &quot;Subject&quot;: &quot;HIST&quot;,
+  &quot;Subject_Label&quot;: &quot;History&quot;,
+  &quot;Workload&quot;: {
+   &quot;Hrs_Wk&quot;: &quot;7-9&quot;,
+   &quot;Raw&quot;: &quot;3.40&quot;
+  },
+  &quot;YearTerm&quot;: &quot;20137&quot;,
+  &quot;Instructors&quot;: [
+   {
+    &quot;group&quot;: &quot;1 TTT&quot;,
+    &quot;name&quot;: &quot;MOJOLA, SANYU AMIMO&quot;,
+    &quot;title&quot;: &quot;ASST PROFESSOR&quot;
+   },
+   {
+    &quot;group&quot;: &quot;1 TTT&quot;,
+    &quot;name&quot;: &quot;OSBORNE, MYLES GREGORY&quot;,
+    &quot;title&quot;: &quot;ASST PROFESSOR&quot;
+   }
+  ]
+ },
+ {
+  &quot;AVG_GRD&quot;: 3.25,
+  &quot;Activity_Type&quot;: &quot;LEC - Lecture&quot;,
+  &quot;AvgCourse&quot;: 5.15,
+  &quot;AvgInstructor&quot;: 5,
+  &quot;Course&quot;: &quot;4820&quot;,
+  &quot;CourseTitle&quot;: &quot;Human Rights: Historical Perspectives&quot;,
+  &quot;CrsLvlNum&quot;: &quot;4XXX&quot;,
+  &quot;CrsPBAColl&quot;: &quot;AS&quot;,
+  &quot;CrsPBADept&quot;: &quot;HIST&quot;,
+  &quot;CrsPBADiv&quot;: &quot;AH&quot;,
+  &quot;Honors&quot;: &quot;0&quot;,
+  &quot;Hours&quot;: 3,
+  &quot;Instruction_Mode&quot;: &quot;P  - In Person&quot;,
+  &quot;Level&quot;: &quot;Upper&quot;,
+  &quot;NComb&quot;: 1,
+  &quot;NIntrFCQ&quot;: 1,
+  &quot;N&quot;: {
+   &quot;ENROLL&quot;: 30,
+   &quot;EOT&quot;: 30,
+   &quot;GRADE&quot;: 30,
+   &quot;INCOMP&quot;: 0,
+   &quot;NOCRED&quot;: 0,
+   &quot;PASS&quot;: 0,
+   &quot;Ret&quot;: 20
+  },
+  &quot;PCT&quot;: {
+   &quot;A&quot;: 0.5,
+   &quot;B&quot;: 0.33,
+   &quot;C&quot;: 0.13,
+   &quot;C_MINUS_OR_BELOW&quot;: 0.03,
+   &quot;D&quot;: 0.03,
+   &quot;DF&quot;: 0.03,
+   &quot;F&quot;: 0,
+   &quot;GRADE&quot;: 1,
+   &quot;INCOMP&quot;: 0,
+   &quot;WDRAW&quot;: 0
+  },
+  &quot;RAP&quot;: &quot;0&quot;,
+  &quot;Section&quot;: &quot;002&quot;,
+  &quot;Subject&quot;: &quot;HIST&quot;,
+  &quot;Subject_Label&quot;: &quot;History&quot;,
+  &quot;Workload&quot;: {
+   &quot;Hrs_Wk&quot;: &quot;7-9&quot;,
+   &quot;Raw&quot;: &quot;2.71&quot;
+  },
+  &quot;YearTerm&quot;: &quot;20137&quot;,
+  &quot;Instructors&quot;: [
+   {
+    &quot;group&quot;: &quot;1 TTT&quot;,
+    &quot;name&quot;: &quot;MUKHERJEE, MITHI&quot;,
+    &quot;title&quot;: &quot;ASSOCIATE PROFESSOR&quot;
+   }
+  ]
+ },
+ {
+  &quot;AVG_GRD&quot;: 3.84,
+  &quot;Activity_Type&quot;: &quot;SEM - Seminar&quot;,
+  &quot;AvgCourse&quot;: 4.73,
+  &quot;AvgInstructor&quot;: 4.91,
+  &quot;Course&quot;: &quot;5000&quot;,
+  &quot;CourseTitle&quot;: &quot;Historical Methods: Introduction to the Professional Study of History&quot;,
+  &quot;CrsLvlNum&quot;: &quot;5XXX&quot;,
+  &quot;CrsPBAColl&quot;: &quot;AS&quot;,
+  &quot;CrsPBADept&quot;: &quot;HIST&quot;,
+  &quot;CrsPBADiv&quot;: &quot;AH&quot;,
+  &quot;Honors&quot;: &quot;0&quot;,
+  &quot;Hours&quot;: 3,
+  &quot;Instruction_Mode&quot;: &quot;P  - In Person&quot;,
+  &quot;Level&quot;: &quot;Masters&quot;,
+  &quot;NComb&quot;: 1,
+  &quot;NIntrFCQ&quot;: 1,
+  &quot;N&quot;: {
+   &quot;ENROLL&quot;: 13,
+   &quot;EOT&quot;: 13,
+   &quot;GRADE&quot;: 13,
+   &quot;INCOMP&quot;: 0,
+   &quot;NOCRED&quot;: 0,
+   &quot;PASS&quot;: 0,
+   &quot;Ret&quot;: 11
+  },
+  &quot;PCT&quot;: {
+   &quot;A&quot;: 1,
+   &quot;B&quot;: 0,
+   &quot;C&quot;: 0,
+   &quot;C_MINUS_OR_BELOW&quot;: 0,
+   &quot;D&quot;: 0,
+   &quot;DF&quot;: 0,
+   &quot;F&quot;: 0,
+   &quot;GRADE&quot;: 1,
+   &quot;INCOMP&quot;: 0,
+   &quot;WDRAW&quot;: 0
+  },
+  &quot;RAP&quot;: &quot;1&quot;,
+  &quot;Section&quot;: &quot;801&quot;,
+  &quot;Subject&quot;: &quot;HIST&quot;,
+  &quot;Subject_Label&quot;: &quot;History&quot;,
+  &quot;Workload&quot;: {
+   &quot;Hrs_Wk&quot;: &quot;10-12&quot;,
+   &quot;Raw&quot;: &quot;3.55&quot;
+  },
+  &quot;YearTerm&quot;: &quot;20137&quot;,
+  &quot;Instructors&quot;: [
+   {
+    &quot;group&quot;: &quot;1 TTT&quot;,
+    &quot;name&quot;: &quot;MUKHERJEE, MITHI&quot;,
+    &quot;title&quot;: &quot;ASSOCIATE PROFESSOR&quot;
+   }
+  ]
+ },
+ {
+  &quot;AVG_GRD&quot;: 3.9,
+  &quot;Activity_Type&quot;: &quot;SEM - Seminar&quot;,
+  &quot;AvgCourse&quot;: 5.27,
+  &quot;AvgInstructor&quot;: 5.36,
+  &quot;Course&quot;: &quot;6410&quot;,
+  &quot;CourseTitle&quot;: &quot;Readings in Environmental History&quot;,
+  &quot;CrsLvlNum&quot;: &quot;6XXX&quot;,
+  &quot;CrsPBAColl&quot;: &quot;AS&quot;,
+  &quot;CrsPBADept&quot;: &quot;HIST&quot;,
+  &quot;CrsPBADiv&quot;: &quot;AH&quot;,
+  &quot;Honors&quot;: &quot;0&quot;,
+  &quot;Hours&quot;: 3,
+  &quot;Instruction_Mode&quot;: &quot;P  - In Person&quot;,
+  &quot;Level&quot;: &quot;Masters&quot;,
+  &quot;NComb&quot;: 1,
+  &quot;NIntrFCQ&quot;: 1,
+  &quot;N&quot;: {
+   &quot;ENROLL&quot;: 13,
+   &quot;EOT&quot;: 13,
+   &quot;GRADE&quot;: 13,
+   &quot;INCOMP&quot;: 0,
+   &quot;NOCRED&quot;: 0,
+   &quot;PASS&quot;: 0,
+   &quot;Ret&quot;: 11
+  },
+  &quot;PCT&quot;: {
+   &quot;A&quot;: 0.92,
+   &quot;B&quot;: 0.08,
+   &quot;C&quot;: 0,
+   &quot;C_MINUS_OR_BELOW&quot;: 0,
+   &quot;D&quot;: 0,
+   &quot;DF&quot;: 0,
+   &quot;F&quot;: 0,
+   &quot;GRADE&quot;: 1,
+   &quot;INCOMP&quot;: 0,
+   &quot;WDRAW&quot;: 0
+  },
+  &quot;RAP&quot;: &quot;1&quot;,
+  &quot;Section&quot;: &quot;802&quot;,
+  &quot;Subject&quot;: &quot;HIST&quot;,
+  &quot;Subject_Label&quot;: &quot;History&quot;,
+  &quot;Workload&quot;: {
+   &quot;Hrs_Wk&quot;: &quot;10-12&quot;,
+   &quot;Raw&quot;: &quot;4.36&quot;
+  },
+  &quot;YearTerm&quot;: &quot;20137&quot;,
+  &quot;Instructors&quot;: [
+   {
+    &quot;group&quot;: &quot;1 TTT&quot;,
+    &quot;name&quot;: &quot;SUTTER, PAUL SHRIVER&quot;,
+    &quot;title&quot;: &quot;ASSOCIATE PROFESSOR&quot;
+   }
+  ]
+ },
+ {
+  &quot;AVG_GRD&quot;: 3.8,
+  &quot;Activity_Type&quot;: &quot;SEM - Seminar&quot;,
+  &quot;AvgCourse&quot;: 5.71,
+  &quot;AvgInstructor&quot;: 5.93,
+  &quot;Course&quot;: &quot;7052&quot;,
+  &quot;CourseTitle&quot;: &quot;Seminar: Modern European History&quot;,
+  &quot;CrsLvlNum&quot;: &quot;7XXX&quot;,
+  &quot;CrsPBAColl&quot;: &quot;AS&quot;,
+  &quot;CrsPBADept&quot;: &quot;HIST&quot;,
+  &quot;CrsPBADiv&quot;: &quot;AH&quot;,
+  &quot;Honors&quot;: &quot;0&quot;,
+  &quot;Hours&quot;: 3,
+  &quot;Instruction_Mode&quot;: &quot;P  - In Person&quot;,
+  &quot;Level&quot;: &quot;Doctoral&quot;,
+  &quot;NComb&quot;: 1,
+  &quot;NIntrFCQ&quot;: 1,
+  &quot;N&quot;: {
+   &quot;ENROLL&quot;: 14,
+   &quot;EOT&quot;: 14,
+   &quot;GRADE&quot;: 10,
+   &quot;INCOMP&quot;: 4,
+   &quot;NOCRED&quot;: 0,
+   &quot;PASS&quot;: 0,
+   &quot;Ret&quot;: 14
+  },
+  &quot;PCT&quot;: {
+   &quot;A&quot;: 0.8,
+   &quot;B&quot;: 0.2,
+   &quot;C&quot;: 0,
+   &quot;C_MINUS_OR_BELOW&quot;: 0,
+   &quot;D&quot;: 0,
+   &quot;DF&quot;: 0,
+   &quot;F&quot;: 0,
+   &quot;GRADE&quot;: 0.71,
+   &quot;INCOMP&quot;: 0.29,
+   &quot;WDRAW&quot;: 0
+  },
+  &quot;RAP&quot;: &quot;1&quot;,
+  &quot;Section&quot;: &quot;801&quot;,
+  &quot;Subject&quot;: &quot;HIST&quot;,
+  &quot;Subject_Label&quot;: &quot;History&quot;,
+  &quot;Workload&quot;: {
+   &quot;Hrs_Wk&quot;: &quot;10-12&quot;,
+   &quot;Raw&quot;: &quot;3.75&quot;
+  },
+  &quot;YearTerm&quot;: &quot;20137&quot;,
+  &quot;Instructors&quot;: [
+   {
+    &quot;group&quot;: &quot;1 TTT&quot;,
+    &quot;name&quot;: &quot;HANNA, MARTHA&quot;,
+    &quot;title&quot;: &quot;PROFESSOR&quot;
+   }
+  ]
+ },
+ {
+  &quot;AVG_GRD&quot;: 4,
+  &quot;Activit</pre>
+
+<p></p><h2> <span class="text">What is the distribution of courses across colleges?</span><a href="#top" style="font-size: 14px; float: right;">[top]</a></h2><div class="lodashexercise">   <a name="foo">   </a><div class="output">       <div class="section-title">Viz<svg width="100%" height="400"><rect x="0" y="20" height="380" width="20" style="fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)"/>
-    <text transform="translate(0 -5.684341886080802e-14)">
+    <text transform="translate(0 20)">
         AS
     </text>
-<rect x="30" y="353.29008341056533" height="46.70991658943466" width="20" style="fill:red;
+<rect x="30" y="355.62557924003704" height="44.37442075996293" width="20" style="fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)"/>
-    <text transform="translate(30 353.29008341056533)">
+    <text transform="translate(30 355.62557924003704)">
         BU
     </text>
-<rect x="60" y="382.82360210071056" height="17.176397899289466" width="20" style="fill:red;
+<rect x="60" y="383.682421995675" height="16.317578004324993" width="20" style="fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)"/>
-    <text transform="translate(60 382.82360210071056)">
+    <text transform="translate(60 383.682421995675)">
         EB
     </text>
-<rect x="90" y="329.19369786839667" height="70.80630213160335" width="20" style="fill:red;
+<rect x="90" y="332.73401297497685" height="67.26598702502316" width="20" style="fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)"/>
-    <text transform="translate(90 329.19369786839667)">
+    <text transform="translate(90 332.73401297497685)">
         EN
     </text>
-<rect x="120" y="393.6978683966636" height="6.302131603336423" width="20" style="fill:red;
+<rect x="120" y="394.0129749768304" height="5.987025023169601" width="20" style="fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)"/>
-    <text transform="translate(120 393.6978683966636)">
+    <text transform="translate(120 394.0129749768304)">
         GR
     </text>
-<rect x="150" y="388.1371640407785" height="11.862835959221503" width="20" style="fill:red;
+<rect x="150" y="388.7303058387396" height="11.269694161260427" width="20" style="fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)"/>
-    <text transform="translate(150 388.1371640407785)">
+    <text transform="translate(150 388.7303058387396)">
         JR
     </text>
-<rect x="180" y="378.2514674080939" height="21.748532591906088" width="20" style="fill:red;
+<rect x="180" y="379.3388940376892" height="20.66110596231078" width="20" style="fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)"/>
-    <text transform="translate(180 378.2514674080939)">
+    <text transform="translate(180 379.3388940376892)">
         LW
     </text>
-<rect x="210" y="370.21933889403766" height="29.780661105962313" width="20" style="fill:red;
+<rect x="210" y="371.7083719493358" height="28.291628050664194" width="20" style="fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)"/>
-    <text transform="translate(210 370.21933889403766)">
+    <text transform="translate(210 371.7083719493358)">
         MB
     </text>
-<rect x="240" y="396.2928637627433" height="3.7071362372567194" width="20" style="fill:red;
+<rect x="240" y="396.4782205746061" height="3.5217794253938832" width="20" style="fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)"/>
-    <text transform="translate(240 396.2928637627433)">
+    <text transform="translate(240 396.4782205746061)">
         XX
     </text>
-<rect x="270" y="397.65214704973744" height="2.347852950262589" width="20" style="fill:red;
+<rect x="270" y="397.76953969725054" height="2.230460302749459" width="20" style="fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)"/>
-    <text transform="translate(270 397.65214704973744)">
+    <text transform="translate(270 397.76953969725054)">
         undefined
     </text>
-<rect x="300" y="392.58572752548656" height="7.414272474513439" width="20" style="fill:red;
+<rect x="300" y="392.95644114921225" height="7.0435588507877664" width="20" style="fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)"/>
-    <text transform="translate(300 392.58572752548656)">
+    <text transform="translate(300 392.95644114921225)">
         AP
     </text></svg></div></div><div class="output"><div class="section-title">                <pre><code>&lt;rect x=&quot;0&quot;
-      y=&quot;-5.684341886080802e-14&quot;
-      height=&quot;400.00000000000006&quot;
+      y=&quot;20&quot;
+      height=&quot;380&quot;
       width=&quot;20&quot;
       style=&quot;fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)&quot; /&gt;
-    &lt;text transform=&quot;translate(0 -5.684341886080802e-14)&quot;&gt;
+    &lt;text transform=&quot;translate(0 20)&quot;&gt;
         AS
     &lt;/text&gt;
 &lt;rect x=&quot;30&quot;
-      y=&quot;353.29008341056533&quot;
-      height=&quot;46.70991658943466&quot;
+      y=&quot;355.62557924003704&quot;
+      height=&quot;44.37442075996293&quot;
       width=&quot;20&quot;
       style=&quot;fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)&quot; /&gt;
-    &lt;text transform=&quot;translate(30 353.29008341056533)&quot;&gt;
+    &lt;text transform=&quot;translate(30 355.62557924003704)&quot;&gt;
         BU
     &lt;/text&gt;
 &lt;rect x=&quot;60&quot;
-      y=&quot;382.82360210071056&quot;
-      height=&quot;17.176397899289466&quot;
+      y=&quot;383.682421995675&quot;
+      height=&quot;16.317578004324993&quot;
       width=&quot;20&quot;
       style=&quot;fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)&quot; /&gt;
-    &lt;text transform=&quot;translate(60 382.82360210071056)&quot;&gt;
+    &lt;text transform=&quot;translate(60 383.682421995675)&quot;&gt;
         EB
     &lt;/text&gt;
 &lt;rect x=&quot;90&quot;
-      y=&quot;329.19369786839667&quot;
-      height=&quot;70.80630213160335&quot;
+      y=&quot;332.73401297497685&quot;
+      height=&quot;67.26598702502316&quot;
       width=&quot;20&quot;
       style=&quot;fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)&quot; /&gt;
-    &lt;text transform=&quot;translate(90 329.19369786839667)&quot;&gt;
+    &lt;text transform=&quot;translate(90 332.73401297497685)&quot;&gt;
         EN
     &lt;/text&gt;
 &lt;rect x=&quot;120&quot;
-      y=&quot;393.6978683966636&quot;
-      height=&quot;6.302131603336423&quot;
+      y=&quot;394.0129749768304&quot;
+      height=&quot;5.987025023169601&quot;
       width=&quot;20&quot;
       style=&quot;fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)&quot; /&gt;
-    &lt;text transform=&quot;translate(120 393.6978683966636)&quot;&gt;
+    &lt;text transform=&quot;translate(120 394.0129749768304)&quot;&gt;
         GR
     &lt;/text&gt;
 &lt;rect x=&quot;150&quot;
-      y=&quot;388.1371640407785&quot;
-      height=&quot;11.862835959221503&quot;
+      y=&quot;388.7303058387396&quot;
+      height=&quot;11.269694161260427&quot;
       width=&quot;20&quot;
       style=&quot;fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)&quot; /&gt;
-    &lt;text transform=&quot;translate(150 388.1371640407785)&quot;&gt;
+    &lt;text transform=&quot;translate(150 388.7303058387396)&quot;&gt;
         JR
     &lt;/text&gt;
 &lt;rect x=&quot;180&quot;
-      y=&quot;378.2514674080939&quot;
-      height=&quot;21.748532591906088&quot;
+      y=&quot;379.3388940376892&quot;
+      height=&quot;20.66110596231078&quot;
       width=&quot;20&quot;
       style=&quot;fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)&quot; /&gt;
-    &lt;text transform=&quot;translate(180 378.2514674080939)&quot;&gt;
+    &lt;text transform=&quot;translate(180 379.3388940376892)&quot;&gt;
         LW
     &lt;/text&gt;
 &lt;rect x=&quot;210&quot;
-      y=&quot;370.21933889403766&quot;
-      height=&quot;29.780661105962313&quot;
+      y=&quot;371.7083719493358&quot;
+      height=&quot;28.291628050664194&quot;
       width=&quot;20&quot;
       style=&quot;fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)&quot; /&gt;
-    &lt;text transform=&quot;translate(210 370.21933889403766)&quot;&gt;
+    &lt;text transform=&quot;translate(210 371.7083719493358)&quot;&gt;
         MB
     &lt;/text&gt;
 &lt;rect x=&quot;240&quot;
-      y=&quot;396.2928637627433&quot;
-      height=&quot;3.7071362372567194&quot;
+      y=&quot;396.4782205746061&quot;
+      height=&quot;3.5217794253938832&quot;
       width=&quot;20&quot;
       style=&quot;fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)&quot; /&gt;
-    &lt;text transform=&quot;translate(240 396.2928637627433)&quot;&gt;
+    &lt;text transform=&quot;translate(240 396.4782205746061)&quot;&gt;
         XX
     &lt;/text&gt;
 &lt;rect x=&quot;270&quot;
-      y=&quot;397.65214704973744&quot;
-      height=&quot;2.347852950262589&quot;
+      y=&quot;397.76953969725054&quot;
+      height=&quot;2.230460302749459&quot;
       width=&quot;20&quot;
       style=&quot;fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)&quot; /&gt;
-    &lt;text transform=&quot;translate(270 397.65214704973744)&quot;&gt;
+    &lt;text transform=&quot;translate(270 397.76953969725054)&quot;&gt;
         undefined
     &lt;/text&gt;
 &lt;rect x=&quot;300&quot;
-      y=&quot;392.58572752548656&quot;
-      height=&quot;7.414272474513439&quot;
+      y=&quot;392.95644114921225&quot;
+      height=&quot;7.0435588507877664&quot;
       width=&quot;20&quot;
       style=&quot;fill:red;
              stroke-width:3;
              stroke:rgb(0,0,0)&quot; /&gt;
-    &lt;text transform=&quot;translate(300 392.58572752548656)&quot;&gt;
+    &lt;text transform=&quot;translate(300 392.95644114921225)&quot;&gt;
         AP
     &lt;/text&gt;</code></pre></div></div><div class="section-title">Solution: SVG Template<pre><code>&lt;rect x=&quot;${d.x}&quot;
       y=&quot;${d.y}&quot;
@@ -1133,8 +1419,6 @@ var counts = _.map(groups, function(value, key) {
 
 console.log(counts)
 
-// var x = 0
-
 // Produce a bottom-aligned bar chart with margins
 
 function computeX(d, i) { 
@@ -1142,7 +1426,8 @@ function computeX(d, i) {
 }
 
 function computeHeight(d, i) {
-    return (d.count/8.0925)
+    var value = _.max(_.pluck(counts, &apos;count&apos;))
+    return (d.count/(value/380))
 }
 
 function computeWidth(d, i) {
@@ -1177,7 +1462,7 @@ var result = _.map(viz, function(d) {
     // invoke the compiled template function on each viz data 
     return template({d: d}) 
 }) 
-return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;name&quot;:&quot;AS&quot;,&quot;count&quot;:3237},{&quot;name&quot;:&quot;BU&quot;,&quot;count&quot;:378},{&quot;name&quot;:&quot;EB&quot;,&quot;count&quot;:139},{&quot;name&quot;:&quot;EN&quot;,&quot;count&quot;:573},{&quot;name&quot;:&quot;GR&quot;,&quot;count&quot;:51},{&quot;name&quot;:&quot;JR&quot;,&quot;count&quot;:96},{&quot;name&quot;:&quot;LW&quot;,&quot;count&quot;:176},{&quot;name&quot;:&quot;MB&quot;,&quot;count&quot;:241},{&quot;name&quot;:&quot;XX&quot;,&quot;count&quot;:30},{&quot;name&quot;:&quot;undefined&quot;,&quot;count&quot;:19},{&quot;name&quot;:&quot;AP&quot;,&quot;count&quot;:60}]</span></div><div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:-5.684341886080802e-14,&quot;height&quot;:400.00000000000006,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;AS&quot;},{&quot;x&quot;:30,&quot;y&quot;:353.29008341056533,&quot;height&quot;:46.70991658943466,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;BU&quot;},{&quot;x&quot;:60,&quot;y&quot;:382.82360210071056,&quot;height&quot;:17.176397899289466,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;EB&quot;},{&quot;x&quot;:90,&quot;y&quot;:329.19369786839667,&quot;height&quot;:70.80630213160335,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;EN&quot;},{&quot;x&quot;:120,&quot;y&quot;:393.6978683966636,&quot;height&quot;:6.302131603336423,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;GR&quot;},{&quot;x&quot;:150,&quot;y&quot;:388.1371640407785,&quot;height&quot;:11.862835959221503,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;JR&quot;},{&quot;x&quot;:180,&quot;y&quot;:378.2514674080939,&quot;height&quot;:21.748532591906088,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;LW&quot;},{&quot;x&quot;:210,&quot;y&quot;:370.21933889403766,&quot;height&quot;:29.780661105962313,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;MB&quot;},{&quot;x&quot;:240,&quot;y&quot;:396.2928637627433,&quot;height&quot;:3.7071362372567194,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;XX&quot;},{&quot;x&quot;:270,&quot;y&quot;:397.65214704973744,&quot;height&quot;:2.347852950262589,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;undefined&quot;},{&quot;x&quot;:300,&quot;y&quot;:392.58572752548656,&quot;height&quot;:7.414272474513439,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;AP&quot;}]</span></div></div></div><p></p>
+return result.join(&apos;\n&apos;)</code></pre><div class="section-title">Console<div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;name&quot;:&quot;AS&quot;,&quot;count&quot;:3237},{&quot;name&quot;:&quot;BU&quot;,&quot;count&quot;:378},{&quot;name&quot;:&quot;EB&quot;,&quot;count&quot;:139},{&quot;name&quot;:&quot;EN&quot;,&quot;count&quot;:573},{&quot;name&quot;:&quot;GR&quot;,&quot;count&quot;:51},{&quot;name&quot;:&quot;JR&quot;,&quot;count&quot;:96},{&quot;name&quot;:&quot;LW&quot;,&quot;count&quot;:176},{&quot;name&quot;:&quot;MB&quot;,&quot;count&quot;:241},{&quot;name&quot;:&quot;XX&quot;,&quot;count&quot;:30},{&quot;name&quot;:&quot;undefined&quot;,&quot;count&quot;:19},{&quot;name&quot;:&quot;AP&quot;,&quot;count&quot;:60}]</span></div><div style="border:1px solid #eee; margin-bottom: 5px;"><span style="font-size:10px;line-height:11px;" class="inspect">       [{&quot;x&quot;:0,&quot;y&quot;:20,&quot;height&quot;:380,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;AS&quot;},{&quot;x&quot;:30,&quot;y&quot;:355.62557924003704,&quot;height&quot;:44.37442075996293,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;BU&quot;},{&quot;x&quot;:60,&quot;y&quot;:383.682421995675,&quot;height&quot;:16.317578004324993,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;EB&quot;},{&quot;x&quot;:90,&quot;y&quot;:332.73401297497685,&quot;height&quot;:67.26598702502316,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;EN&quot;},{&quot;x&quot;:120,&quot;y&quot;:394.0129749768304,&quot;height&quot;:5.987025023169601,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;GR&quot;},{&quot;x&quot;:150,&quot;y&quot;:388.7303058387396,&quot;height&quot;:11.269694161260427,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;JR&quot;},{&quot;x&quot;:180,&quot;y&quot;:379.3388940376892,&quot;height&quot;:20.66110596231078,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;LW&quot;},{&quot;x&quot;:210,&quot;y&quot;:371.7083719493358,&quot;height&quot;:28.291628050664194,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;MB&quot;},{&quot;x&quot;:240,&quot;y&quot;:396.4782205746061,&quot;height&quot;:3.5217794253938832,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;XX&quot;},{&quot;x&quot;:270,&quot;y&quot;:397.76953969725054,&quot;height&quot;:2.230460302749459,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;undefined&quot;},{&quot;x&quot;:300,&quot;y&quot;:392.95644114921225,&quot;height&quot;:7.0435588507877664,&quot;width&quot;:20,&quot;color&quot;:&quot;red&quot;,&quot;label&quot;:&quot;AP&quot;}]</span></div></div></div><p></p>
 
                     
                     </section>
