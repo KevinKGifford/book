@@ -90,7 +90,7 @@ There are {{ data.length }} apps that have been rated above 4 stars by 1,000,000
 ## 8- Find apps whose content rating is Teen but not categorized in any of the following categories: Card, Entertainment, Comics, and Puzzle?
 {% mongoquery %}
 
-{ "$and": [ { crat: "Teen" }, { cat: { "$nin": ["Card", "Entertainment", "Comics", "Puzzle"] } } ] }
+{ "$and": [ { "crat": "Teen" }, { "cat": { "$nin": ["Card", "Entertainment", "Comics", "Puzzle"] } } ] }
 
 {% endmongoquery %}
 
@@ -101,7 +101,7 @@ There are {{ data.length }} apps.
 ## 9- Find the title, category, download count, and star rating of apps with the phrase "in-app purchase" in their description and download count greater than 10,000,000?
 {% mongoquery %}
 
-{ "$and": [ { dct: { "$gt": 10000000 } }, { "$text": { "$search": "in-app purchase" } } ] }, {"t":1, "cat":1, "dct":1, "rate":1, "_id":0} 
+{ "$and": [ { "dct": { "$gt": 10000000 } }, { "$text": { "$search": "in-app purchase" } } ] }, {"t":1, "cat":1, "dct":1, "rate":1, "_id":0} 
 
 {% endmongoquery %}
 
@@ -111,12 +111,11 @@ There are {{ data.length }} apps.
 
 ## 10- Find the title and address of the creator of apps with download count greater than 1,000,000 and star rating greater than 4.5?
 Hint: ensure that the results include apps that have creator address (not equal "")
+This works without the address filter:
 
 {% mongoquery %}
 
-// This works (without the caddress filter): { $and: [ { dct: { $gt: 1000000 }}, { rate: { $gt: 4.5}} ] }, {t:1, cadd:1, _id:0} 
-
-{ $and: [ { dct: { $gt: 1000000 }}, { rate: { $gt: 4.5}}, { cadd: { $ne: "" } } ] }, {t:1, cadd:1, _id:0}
+{ "$and": [ { "dct": { "$gt": 1000000 }}, { "rate": { "$gt": 4.5 }}, { "cadd": { "$ne": ""}} ] }, {"t":1, "cadd":1, "_id":0} 
 
 {% endmongoquery %}
 
@@ -128,6 +127,8 @@ There are {{ data.length }} apps.
 
 {% mongoquery %}
 
+{ "$and": [ { "dct": { "$gte": 1000000 }}, { "purl": { "$nin": [] }} ] }, {"t":1, "cat":1, "dct":1, "rate":1, "_id":0}
+
 {% endmongoquery %}
 
 {{ data | json }}
@@ -138,6 +139,8 @@ There are {{ data.length }} apps.
 Hint: You can use the $regex operator
 
 {% mongoquery %}
+
+{"dtp": {"$regex": "^September.*2015$"}}, {"t":1, "dtp":1, "_id":0}
 
 {% endmongoquery %}
 
